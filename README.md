@@ -1,4 +1,3 @@
-
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -28,7 +27,7 @@ header{
   padding:14px;
 }
 #pageTitle{
-  font-size:1.3rem;
+  font-size:1.5rem;
   background:rgba(255,255,255,.15);
   padding:4px 14px;
   border-radius:999px;
@@ -202,6 +201,43 @@ section.active{display:block}
 }
 .timeline-date{color:var(--accent);font-weight:bold}
 
+/* Achievements */
+.achievement-card {
+  background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+  border-right: 4px solid var(--accent);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.achievement-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M0,0 L100,0 L100,100 Z" fill="rgba(255,255,255,0.3)"/></svg>');
+  background-size: cover;
+}
+
+.achievement-year {
+  background: var(--accent);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.achievement-content {
+  position: relative;
+  z-index: 1;
+}
+
 footer{
   background:var(--primary);
   color:white;
@@ -260,6 +296,10 @@ footer{
       <svg viewBox="0 0 24 24"><path d="M20 6h-4V4a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2H4a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Z"/></svg>
       <span id="navExp">الخبرات</span>
     </div>
+    <div class="nav-link" data-section="achievements">
+      <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8 8 0 0 1-8 8Z"/><path d="m14.8 10.4-2.2 2.2-1.4-1.4-1.4 1.4 2.8 2.8 3.6-3.6Z"/></svg>
+      <span id="navAchievements">الإنجازات</span>
+    </div>
     <div class="nav-link" data-section="skills">
       <svg viewBox="0 0 24 24"><path d="M12 17.27 18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21Z"/></svg>
       <span id="navSkills">المهارات</span>
@@ -314,6 +354,24 @@ footer{
 </div>
 </section>
 
+<section id="achievements">
+<h2 class="section-title" id="achievementsTitle">الإنجازات</h2>
+<div class="card">
+  <div class="achievement-card">
+    <div class="achievement-year">2022</div>
+    <div class="achievement-content">
+      <p id="achievementText">
+        في عام 2022 حصلتُ على ترقية إلى رتبة معلم متقدم بعد مسيرة مهنية امتدت لسنوات كمعلم ممارس، قدمت خلالها أداءً متميزًا أسهم في تطوير العملية التعليمية داخل المدرسة. جاءت هذه الترقية تقديرًا لجهودي في توظيف استراتيجيات تدريس حديثة تعزز مهارات التفكير النقدي والإبداعي لدى الطلاب، إضافة إلى قدرتي على تحليل نواتج التعلم وبناء خطط علاجية فردية أثمرت عن تحسين واضح في مستويات الطلاب.<br><br>
+
+        وقد عكست هذه الترقية ثقة الجهة التعليمية بمهاراتي المهنية، خصوصًا في مجال تصميم أنشطة مبتكرة تُدمج مهارات الفهم العميق، والعمل التعاوني، والتعليم الذاتي داخل البيئة الصفية. كما كانت اعترافًا بدوري في تطوير البرامج التربوية والأنشطة التعليمية قبل عام 2022، ومساهمتي في بناء بيئة صفية محفزة يشعر فيها الطلاب بالأمان والرغبة في المشاركة والتعلم.<br><br>
+
+        تعد هذه الترقية محطة مهمة في مسيرتي، لأنها لم تكن مجرد انتقال إلى مستوى وظيفي أعلى، بل كانت نتيجة تراكم خبرات وممارسات مهنية أثبتت أثرها على الطلاب وعلى منظومة التعليم داخل المدرسة. واليوم أواصل عملي كمعلم متقدم ملتزم بالتحسين المستمر، وتطبيق أفضل الممارسات التربوية، والمساهمة في رفع جودة التعليم وتحقيق نواتج تعلم أعلى.
+      </p>
+    </div>
+  </div>
+</div>
+</section>
+
 <section id="skills">
 <h2 class="section-title" id="skillsTitle">المهارات</h2>
 <div class="card">
@@ -359,12 +417,14 @@ const translations = {
     pageTitle: "الملف المهني للمعلم فهد الخالدي",
     navAbout: "نبذة عني",
     navExp: "الخبرات",
+    navAchievements: "الإنجازات",
     navSkills: "المهارات",
     navTrain: "الدورات",
     navTech: "التقنية",
     navContact: "تواصل",
     aboutTitle: "نبذة عني",
     experienceTitle: "الخبرات",
+    achievementsTitle: "الإنجازات",
     skillsTitle: "المهارات",
     trainingTitle: "الدورات التدريبية",
     techTitle: "التقنية",
@@ -376,6 +436,7 @@ const translations = {
     stat1: "سنوات خبرة",
     stat2: "ساعات تدريبية",
     stat3: "مدن تعليمية",
+    achievementText: "في عام 2022 حصلتُ على ترقية إلى رتبة معلم متقدم بعد مسيرة مهنية امتدت لسنوات كمعلم ممارس، قدمت خلالها أداءً متميزًا أسهم في تطوير العملية التعليمية داخل المدرسة. جاءت هذه الترقية تقديرًا لجهودي في توظيف استراتيجيات تدريس حديثة تعزز مهارات التفكير النقدي والإبداعي لدى الطلاب، إضافة إلى قدرتي على تحليل نواتج التعلم وبناء خطط علاجية فردية أثمرت عن تحسين واضح في مستويات الطلاب.<br><br>وقد عكست هذه الترقية ثقة الجهة التعليمية بمهاراتي المهنية، خصوصًا في مجال تصميم أنشطة مبتكرة تُدمج مهارات الفهم العميق، والعمل التعاوني، والتعليم الذاتي داخل البيئة الصفية. كما كانت اعترافًا بدوري في تطوير البرامج التربوية والأنشطة التعليمية قبل عام 2022، ومساهمتي في بناء بيئة صفية محفزة يشعر فيها الطلاب بالأمان والرغبة في المشاركة والتعلم.<br><br>تعد هذه الترقية محطة مهمة في مسيرتي، لأنها لم تكن مجرد انتقال إلى مستوى وظيفي أعلى، بل كانت نتيجة تراكم خبرات وممارسات مهنية أثبتت أثرها على الطلاب وعلى منظومة التعليم داخل المدرسة. واليوم أواصل عملي كمعلم متقدم ملتزم بالتحسين المستمر، وتطبيق أفضل الممارسات التربوية، والمساهمة في رفع جودة التعليم وتحقيق نواتج تعلم أعلى.",
     experiences: [
       {date: "2011 - 2012", title: "مترجم – وزارة الحج والعمرة", location: "مكة المكرمة"},
       {date: "2012 - 2014", title: "معلم لغة إنجليزية – سعيد بن زيد", location: "عفيف"},
@@ -415,12 +476,14 @@ const translations = {
     pageTitle: "Professional Portfolio - Fahad AlKhaldi",
     navAbout: "About Me",
     navExp: "Experience",
+    navAchievements: "Achievements",
     navSkills: "Skills",
     navTrain: "Training",
     navTech: "Technology",
     navContact: "Contact",
     aboutTitle: "About Me",
     experienceTitle: "Professional Experience",
+    achievementsTitle: "Achievements",
     skillsTitle: "Skills",
     trainingTitle: "Training Courses",
     techTitle: "Technology",
@@ -432,6 +495,7 @@ const translations = {
     stat1: "Years of Experience",
     stat2: "Training Hours",
     stat3: "Education Cities",
+    achievementText: "In 2022, I was promoted to the rank of Senior Teacher after a professional career spanning years as a practicing teacher, during which I provided outstanding performance that contributed to the development of the educational process within the school. This promotion came in recognition of my efforts in employing modern teaching strategies that enhance students' critical and creative thinking skills, in addition to my ability to analyze learning outcomes and build individual remedial plans that resulted in a clear improvement in student levels.<br><br>This promotion reflected the educational authority's confidence in my professional skills, especially in designing innovative activities that integrate deep understanding skills, collaborative work, and self-learning within the classroom environment. It was also an acknowledgment of my role in developing educational programs and activities before 2022, and my contribution to building a stimulating classroom environment where students feel safe and eager to participate and learn.<br><br>This promotion is an important milestone in my career, as it was not just a transition to a higher functional level, but rather the result of accumulated experiences and professional practices that proved their impact on students and the educational system within the school. Today, I continue my work as a senior teacher committed to continuous improvement, applying the best educational practices, and contributing to raising the quality of education and achieving higher learning outcomes.",
     experiences: [
       {date: "2011 - 2012", title: "Translator - Ministry of Hajj and Umrah", location: "Makkah"},
       {date: "2012 - 2014", title: "English Teacher - Saeed Bin Zaid", location: "Afif"},
@@ -476,12 +540,14 @@ const langBtn = document.getElementById('langBtn');
 const pageTitle = document.getElementById('pageTitle');
 const navAbout = document.getElementById('navAbout');
 const navExp = document.getElementById('navExp');
+const navAchievements = document.getElementById('navAchievements');
 const navSkills = document.getElementById('navSkills');
 const navTrain = document.getElementById('navTrain');
 const navTech = document.getElementById('navTech');
 const navContact = document.getElementById('navContact');
 const aboutTitle = document.getElementById('aboutTitle');
 const experienceTitle = document.getElementById('experienceTitle');
+const achievementsTitle = document.getElementById('achievementsTitle');
 const skillsTitle = document.getElementById('skillsTitle');
 const trainingTitle = document.getElementById('trainingTitle');
 const techTitle = document.getElementById('techTitle');
@@ -493,6 +559,7 @@ const badge = document.getElementById('badge');
 const stat1 = document.getElementById('stat1');
 const stat2 = document.getElementById('stat2');
 const stat3 = document.getElementById('stat3');
+const achievementText = document.getElementById('achievementText');
 const timeline = document.getElementById('timeline');
 const skillsList = document.getElementById('skillsList');
 const trainingList = document.getElementById('trainingList');
@@ -508,12 +575,14 @@ function loadLanguage(lang) {
   pageTitle.textContent = t.pageTitle;
   navAbout.textContent = t.navAbout;
   navExp.textContent = t.navExp;
+  navAchievements.textContent = t.navAchievements;
   navSkills.textContent = t.navSkills;
   navTrain.textContent = t.navTrain;
   navTech.textContent = t.navTech;
   navContact.textContent = t.navContact;
   aboutTitle.textContent = t.aboutTitle;
   experienceTitle.textContent = t.experienceTitle;
+  achievementsTitle.textContent = t.achievementsTitle;
   skillsTitle.textContent = t.skillsTitle;
   trainingTitle.textContent = t.trainingTitle;
   techTitle.textContent = t.techTitle;
@@ -525,6 +594,7 @@ function loadLanguage(lang) {
   stat1.textContent = t.stat1;
   stat2.textContent = t.stat2;
   stat3.textContent = t.stat3;
+  achievementText.innerHTML = t.achievementText;
   techText.textContent = t.techText;
   contactText.innerHTML = t.contactText;
   footerText.textContent = t.footerText;
