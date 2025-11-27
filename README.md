@@ -49,7 +49,7 @@
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
             border-bottom: 3px solid var(--accent);
-            height: 85px; /* تصغير ارتفاع الهيدر */
+            height: 87px; /* تصغير ارتفاع الهيدر */
         }
 
         .header-container {
@@ -671,6 +671,21 @@
             font-size: 0.8rem; /* تصغير حجم الخط */
         }
 
+        .project-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+        }
+
+        .project-link:hover {
+            color: var(--accent-dark);
+            text-decoration: underline;
+        }
+
         /* Testimonials Section */
         .testimonials-container {
             display: grid;
@@ -870,35 +885,35 @@
                 <div class="nav-scroll" id="navScroll">
                     <a href="#about" class="nav-item active" data-section="about">
                         <i class="fas fa-user"></i>
-                        <span>نبذة عني</span>
+                        <span id="navAbout">نبذة عني</span>
                     </a>
                     <a href="#experience" class="nav-item" data-section="experience">
                         <i class="fas fa-briefcase"></i>
-                        <span>الخبرات</span>
+                        <span id="navExp">الخبرات</span>
                     </a>
                     <a href="#achievements" class="nav-item" data-section="achievements">
                         <i class="fas fa-trophy"></i>
-                        <span>الإنجازات</span>
+                        <span id="navAchievements">الإنجازات</span>
                     </a>
                     <a href="#skills" class="nav-item" data-section="skills">
                         <i class="fas fa-star"></i>
-                        <span>المهارات</span>
+                        <span id="navSkills">المهارات</span>
                     </a>
                     <a href="#training" class="nav-item" data-section="training">
                         <i class="fas fa-graduation-cap"></i>
-                        <span>الدورات</span>
+                        <span id="navTrain">الدورات</span>
                     </a>
                     <a href="#tech" class="nav-item" data-section="tech">
                         <i class="fas fa-code"></i>
-                        <span>التقنية</span>
+                        <span id="navTech">التقنية</span>
                     </a>
                     <a href="#portfolio" class="nav-item" data-section="portfolio">
                         <i class="fas fa-laptop-code"></i>
-                        <span>معرض الأعمال</span>
+                        <span id="navPortfolio">معرض الأعمال</span>
                     </a>
                     <a href="#contact" class="nav-item" data-section="contact">
                         <i class="fas fa-envelope"></i>
-                        <span>بيانات التواصل</span>
+                        <span id="navContact">بيانات التواصل</span>
                     </a>
                 </div>
                 
@@ -1078,11 +1093,13 @@
             <h2 class="section-title" id="portfolioTitle">معرض الأعمال</h2>
             <div class="card">
                 <div class="portfolio-grid">
+                    <!-- مشروع اختبار الرخصة المهنية التفاعلي -->
                     <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/300x180/3B82F6/FFFFFF?text=مشروع+تعليمي" alt="مشروع تعليمي">
+                        <img src="https://via.placeholder.com/300x180/3B82F6/FFFFFF?text=اختبار+الرخصة+المهنية" alt="اختبار الرخصة المهنية التفاعلي">
                         <div class="portfolio-content">
-                            <h3>أنشطة تفاعلية</h3>
-                            <p>تصميم أنشطة تعليمية مبتكرة لتعزيز تجربة التعلم</p>
+                            <h3>مشروع: اختبار الرخصة المهنية التفاعلي</h3>
+                            <p>مشروع تعليمي رقمي يهدف إلى محاكاة اختبار الرخصة المهنية للمعلمين، من خلال تقديم أسئلة تفاعلية مبنية على المعايير المعتمدة، مع تغذية راجعة فورية توضح السبب العلمي لكل إجابة صحيحة أو خاطئة، بما يسهم في رفع كفاءة المتدربين وتعزيز جاهزيتهم للاختبار الرسمي.</p>
+                            <a href="https://visionof2030-pixel.github.io/Professional-License-Exam/" class="project-link" target="_blank">عرض المشروع <i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                     <div class="portfolio-item">
@@ -1207,7 +1224,16 @@
                 stat3: "مدن تعليمية",
                 achievementText: "في عام 2022 حصلتُ على ترقية إلى رتبة معلم متقدم بعد مسيرة مهنية امتدت لسنوات كمعلم ممارس، قدمت خلالها أداءً متميزًا أسهم في تطوير العملية التعليمية داخل المدرسة. جاءت هذه الترقية تقديرًا لجهودي في توظيف استراتيجيات تدريس حديثة تعزز مهارات التفكير النقدي والإبداعي لدى الطلاب، إضافة إلى قدرتي على تحليل نواتج التعلم وبناء خطط علاجية فردية أثمرت عن تحسين واضح في مستويات الطلاب.<br><br>وقد عكست هذه الترقية ثقة الجهة التعليمية بمهاراتي المهنية، خصوصًا في مجال تصميم أنشطة مبتكرة تُدمج مهارات الفهم العميق، والعمل التعاوني، والتعليم الذاتي داخل البيئة الصفية. كما كانت اعترافًا بدوري في تطوير البرامج التربوية والأنشطة التعليمية قبل عام 2022، ومساهمتي في بناء بيئة صفية محفزة يشعر فيها الطلاب بالأمان والرغبة في المشاركة والتعلم.<br><br>تعد هذه الترقية محطة مهمة في مسيرتي، لأنها لم تكن مجرد انتقال إلى مستوى وظيفي أعلى، بل كانت نتيجة تراكم خبرات وممارسات مهنية أثبتت أثرها على الطلاب وعلى منظومة التعليم داخل المدرسة. واليوم أواصل عملي كمعلم متقدم ملتزم بالتحسين المستمر، وتطبيق أفضل الممارسات التربوية، والمساهمة في رفع جودة التعليم وتحقيق نواتج تعلم أعلى.",
                 techText: "أتمتع بشغف كبير تجاه التقنية والتعليم الرقمي، وأواكب أحدث التطورات في مجال الذكاء الاصطناعي وتطبيقاته التعليمية. أمتلك خبرة عملية في تصميم وتطوير أنشطة تفاعلية واختبارات إلكترونية باستخدام HTML وCSS وJavaScript، مما يثري تجربة التعلم ويجعلها أكثر تفاعلية وجاذبية للطلاب. أستخدم أدوات الذكاء الاصطناعي في تحليل أداء الطلاب وتصميم خطط تعليمية مخصصة، كما أصمم محتوى رقميًا مبتكرًا يتناسب مع احتياجات التعلم الحديثة. أسعى دائمًا لدمج التقنية في العملية التعليمية بطرق إبداعية تواكب متطلبات العصر الرقمي وتخدم أهداف رؤية المملكة 2030.",
-                footerText: "© 2024 جميع الحقوق محفوظة - فهد الخالدي"
+                footerText: "© 2024 جميع الحقوق محفوظة - فهد الخالدي",
+                // إضافة ترجمة نصوص الأيقونات
+                navAbout: "نبذة عني",
+                navExp: "الخبرات",
+                navAchievements: "الإنجازات",
+                navSkills: "المهارات",
+                navTrain: "الدورات",
+                navTech: "التقنية",
+                navPortfolio: "معرض الأعمال",
+                navContact: "بيانات التواصل"
             },
             en: {
                 pageTitle: "Fahad AlKhaldi",
@@ -1234,7 +1260,16 @@
                 stat3: "Education Cities",
                 achievementText: "In 2022, I was promoted to the rank of Senior Teacher after a professional career spanning years as a practicing teacher, during which I provided outstanding performance that contributed to the development of the educational process within the school. This promotion came in recognition of my efforts in employing modern teaching strategies that enhance students' critical and creative thinking skills, in addition to my ability to analyze learning outcomes and build individual remedial plans that resulted in a clear improvement in student levels.<br><br>This promotion reflected the educational authority's confidence in my professional skills, especially in designing innovative activities that integrate deep understanding skills, collaborative work, and self-learning within the classroom environment. It was also an acknowledgment of my role in developing educational programs and activities before 2022, and my contribution to building a stimulating classroom environment where students feel safe and eager to participate and learn.<br><br>This promotion is an important milestone in my career, as it was not just a transition to a higher functional level, but rather the result of accumulated experiences and professional practices that proved their impact on students and the educational system within the school. Today, I continue my work as a senior teacher committed to continuous improvement, applying the best educational practices, and contributing to raising the quality of education and achieving higher learning outcomes.",
                 techText: "I have a great passion for technology and digital education, and I keep up with the latest developments in the field of artificial intelligence and its educational applications. I have practical experience in designing and developing interactive activities and electronic tests using HTML, CSS, and JavaScript, which enriches the learning experience and makes it more interactive and attractive for students. I use AI tools to analyze student performance and design customized educational plans, and I also design innovative digital content that suits modern learning needs. I always strive to integrate technology into the educational process in creative ways that keep pace with the requirements of the digital age and serve the goals of Saudi Vision 2030.",
-                footerText: "© 2024 All Rights Reserved - Fahad AlKhaldi"
+                footerText: "© 2024 All Rights Reserved - Fahad AlKhaldi",
+                // إضافة ترجمة نصوص الأيقونات
+                navAbout: "About Me",
+                navExp: "Experience",
+                navAchievements: "Achievements",
+                navSkills: "Skills",
+                navTrain: "Training",
+                navTech: "Technology",
+                navPortfolio: "Portfolio",
+                navContact: "Contact Info"
             }
         };
 
@@ -1270,6 +1305,16 @@
         const navScroll = document.getElementById('navScroll');
         const navScrollPrev = document.querySelector('.nav-scroll-prev');
         const navScrollNext = document.querySelector('.nav-scroll-next');
+        
+        // عناصر نصوص الأيقونات
+        const navAbout = document.getElementById('navAbout');
+        const navExp = document.getElementById('navExp');
+        const navAchievements = document.getElementById('navAchievements');
+        const navSkills = document.getElementById('navSkills');
+        const navTrain = document.getElementById('navTrain');
+        const navTech = document.getElementById('navTech');
+        const navPortfolio = document.getElementById('navPortfolio');
+        const navContact = document.getElementById('navContact');
 
         // وظيفة لتحميل اللغة
         function loadLanguage(lang) {
@@ -1301,6 +1346,16 @@
             achievementText.innerHTML = t.achievementText;
             techText.textContent = t.techText;
             footerText.textContent = t.footerText;
+            
+            // تحديث نصوص الأيقونات
+            navAbout.textContent = t.navAbout;
+            navExp.textContent = t.navExp;
+            navAchievements.textContent = t.navAchievements;
+            navSkills.textContent = t.navSkills;
+            navTrain.textContent = t.navTrain;
+            navTech.textContent = t.navTech;
+            navPortfolio.textContent = t.navPortfolio;
+            navContact.textContent = t.navContact;
             
             // تحديث اتجاه النص
             document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
