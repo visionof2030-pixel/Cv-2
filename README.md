@@ -36,7 +36,7 @@
             color: var(--text);
             line-height: 1.7;
             overflow-x: hidden;
-            padding-top: 87px; /* مساحة للهيدر الموسع */
+            padding-top: 87px;
         }
 
         /* ========== HEADER REDESIGN ========== */
@@ -49,7 +49,7 @@
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
             border-bottom: 3px solid var(--accent);
-            height: 87px; /* زيادة ارتفاع الهيدر */
+            height: 87px;
         }
 
         .header-container {
@@ -66,7 +66,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 20px;
-            height: 47px; /* تعديل ارتفاع القسم العلوي */
+            height: 47px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             position: relative;
         }
@@ -76,7 +76,7 @@
             align-items: center;
             gap: 15px;
             flex: 1;
-            justify-content: center; /* توسيط العنوان */
+            justify-content: center;
         }
 
         .title-section {
@@ -84,7 +84,7 @@
         }
 
         .title-section h1 {
-            font-size: 1.5rem; /* زيادة حجم الخط */
+            font-size: 1.5rem;
             font-weight: 800;
             margin: 0;
             background: var(--gold-gradient);
@@ -96,15 +96,15 @@
         /* زر الترجمة في أقصى الزاوية اليسرى العلوية */
         .header-actions {
             position: absolute;
-            left: 15px; /* نقل إلى أقصى الزاوية اليسرى */
-            top: 10px; /* نقل إلى أعلى الزاوية */
+            left: 15px;
+            top: 10px;
         }
 
         .lang-btn {
             background: rgba(255, 255, 255, 0.15);
             color: white;
             border: 1px solid rgba(255, 255, 255, 0.2);
-            padding: 5px 10px; /* تصغير الزر أكثر */
+            padding: 5px 10px;
             border-radius: 6px;
             font-weight: 600;
             cursor: pointer;
@@ -113,7 +113,7 @@
             align-items: center;
             gap: 6px;
             backdrop-filter: blur(10px);
-            font-size: 0.75rem; /* تصغير حجم الخط */
+            font-size: 0.75rem;
         }
 
         .lang-btn:hover {
@@ -126,7 +126,7 @@
             position: relative;
             overflow: hidden;
             background: rgba(0, 0, 0, 0.1);
-            height: 40px; /* ارتفاع شريط التنقل */
+            height: 40px;
         }
 
         .nav-scroll {
@@ -136,29 +136,29 @@
             overflow-x: auto;
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
-            scrollbar-width: none; /* Firefox */
-            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none;
+            -ms-overflow-style: none;
             height: 100%;
         }
 
         .nav-scroll::-webkit-scrollbar {
-            display: none; /* Chrome, Safari and Opera */
+            display: none;
         }
 
         .nav-item {
             flex: 0 0 auto;
-            padding: 8px 12px; /* تصغير الحشوة */
+            padding: 8px 12px;
             text-decoration: none;
             color: white;
             font-weight: 600;
-            font-size: 0.65rem; /* تصغير حجم الخط */
+            font-size: 0.65rem;
             transition: all 0.3s ease;
             position: relative;
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 4px; /* تقليل المسافة بين الأيقونة والنص */
-            min-width: 60px; /* تصغير العرض الأدنى */
+            gap: 4px;
+            min-width: 60px;
             border-left: 1px solid rgba(255, 255, 255, 0.1);
             height: 100%;
             justify-content: center;
@@ -169,7 +169,7 @@
         }
 
         .nav-item i {
-            font-size: 0.7rem; /* تصغير حجم الأيقونات */
+            font-size: 0.7rem;
             transition: all 0.3s ease;
         }
 
@@ -193,8 +193,8 @@
             bottom: 0;
             right: 50%;
             transform: translateX(50%);
-            width: 25px; /* تصغير العرض */
-            height: 2px; /* تصغير الارتفاع */
+            width: 25px;
+            height: 2px;
             background: var(--accent-dark);
             border-radius: 2px;
         }
@@ -203,7 +203,7 @@
             position: absolute;
             top: 0;
             bottom: 0;
-            width: 30px; /* تصغير عرض عناصر التحكم */
+            width: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -232,7 +232,7 @@
 
         .nav-scroll-controls i {
             color: white;
-            font-size: 1rem; /* تصغير حجم الأيقونات */
+            font-size: 1rem;
         }
 
         /* ========== MAIN CONTENT ========== */
@@ -246,7 +246,7 @@
             background: var(--blue-gradient);
             color: white;
             border-radius: 20px;
-            padding: 30px; /* تقليل الحشوة */
+            padding: 30px;
             margin-bottom: 30px;
             text-align: center;
             position: relative;
@@ -271,7 +271,7 @@
         }
 
         .hero-title {
-            font-size: 2rem; /* تصغير حجم الخط */
+            font-size: 2rem;
             font-weight: 800;
             margin-bottom: 12px;
             background: var(--gold-gradient);
@@ -281,7 +281,7 @@
         }
 
         .hero-subtitle {
-            font-size: 1rem; /* تصغير حجم الخط */
+            font-size: 1rem;
             margin-bottom: 20px;
             opacity: 0.9;
             max-width: 600px;
@@ -301,7 +301,7 @@
         }
 
         .hero-stat .number {
-            font-size: 1.6rem; /* تصغير حجم الخط */
+            font-size: 1.6rem;
             font-weight: 800;
             display: block;
             background: var(--gold-gradient);
@@ -311,7 +311,7 @@
         }
 
         .hero-stat .label {
-            font-size: 0.8rem; /* تصغير حجم الخط */
+            font-size: 0.8rem;
             opacity: 0.8;
         }
 
@@ -329,7 +329,7 @@
             text-align: center;
             color: var(--primary);
             margin-bottom: 25px;
-            font-size: 1.8rem; /* تصغير حجم الخط */
+            font-size: 1.8rem;
             font-weight: 800;
             position: relative;
             padding-bottom: 12px;
@@ -341,8 +341,8 @@
             bottom: 0;
             right: 50%;
             transform: translateX(50%);
-            width: 70px; /* تصغير العرض */
-            height: 3px; /* تصغير الارتفاع */
+            width: 70px;
+            height: 3px;
             background: var(--gold-gradient);
             border-radius: 2px;
         }
@@ -351,7 +351,7 @@
         .card {
             background: var(--card-bg);
             border-radius: 15px;
-            padding: 25px; /* تقليل الحشوة */
+            padding: 25px;
             margin-bottom: 25px;
             box-shadow: var(--shadow);
             transition: all 0.3s ease;
@@ -371,12 +371,12 @@
         }
 
         .profile-img {
-            width: 130px; /* تصغير حجم الصورة */
-            height: 130px; /* تصغير حجم الصورة */
+            width: 130px;
+            height: 130px;
             margin: 0 auto 15px;
             border-radius: 50%;
             overflow: hidden;
-            border: 3px solid var(--accent); /* تصغير الحدود */
+            border: 3px solid var(--accent);
             box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
         }
 
@@ -387,13 +387,13 @@
         }
 
         .profile-info h2 {
-            font-size: 1.3rem; /* تصغير حجم الخط */
+            font-size: 1.3rem;
             color: var(--primary);
             margin-bottom: 5px;
         }
 
         .profile-info .title {
-            font-size: 0.9rem; /* تصغير حجم الخط */
+            font-size: 0.9rem;
             color: var(--accent-dark);
             font-weight: 700;
             margin-bottom: 12px;
@@ -401,7 +401,7 @@
 
         .bio {
             text-align: justify;
-            font-size: 0.9rem; /* تصغير حجم الخط */
+            font-size: 0.9rem;
             line-height: 1.7;
             color: var(--text);
             margin: 15px 0;
@@ -411,12 +411,12 @@
             display: inline-block;
             background: var(--gold-gradient);
             color: var(--primary-dark);
-            padding: 8px 16px; /* تصغير الحشوة */
+            padding: 8px 16px;
             border-radius: 20px;
             font-weight: 700;
             margin: 12px 0;
             box-shadow: 0 3px 8px rgba(212, 175, 55, 0.3);
-            font-size: 0.85rem; /* تصغير حجم الخط */
+            font-size: 0.85rem;
         }
 
         /* Stats Grid */
@@ -429,11 +429,11 @@
 
         .stat-card {
             background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 15px; /* تقليل الحشوة */
+            padding: 15px;
             border-radius: 10px;
             text-align: center;
             transition: all 0.3s ease;
-            border-top: 3px solid var(--accent); /* تصغير الحدود */
+            border-top: 3px solid var(--accent);
         }
 
         .stat-card:hover {
@@ -442,7 +442,7 @@
         }
 
         .stat-number {
-            font-size: 1.6rem; /* تصغير حجم الخط */
+            font-size: 1.6rem;
             font-weight: 800;
             color: var(--primary);
             display: block;
@@ -450,7 +450,7 @@
         }
 
         .stat-label {
-            font-size: 0.8rem; /* تصغير حجم الخط */
+            font-size: 0.8rem;
             color: var(--light-text);
             font-weight: 600;
         }
@@ -458,16 +458,16 @@
         /* Timeline */
         .timeline {
             position: relative;
-            padding-right: 25px; /* تقليل الحشوة */
+            padding-right: 25px;
         }
 
         .timeline::before {
             content: "";
             position: absolute;
-            right: 12px; /* تقليل المسافة */
+            right: 12px;
             top: 0;
             bottom: 0;
-            width: 2px; /* تصغير العرض */
+            width: 2px;
             background: var(--gold-gradient);
             border-radius: 2px;
         }
@@ -475,41 +475,41 @@
         .timeline-item {
             background: var(--card-bg);
             border-radius: 10px;
-            padding: 15px; /* تقليل الحشوة */
+            padding: 15px;
             margin-bottom: 15px;
             position: relative;
             box-shadow: var(--shadow);
-            border-right: 2px solid var(--accent); /* تصغير الحدود */
+            border-right: 2px solid var(--accent);
         }
 
         .timeline-item::before {
             content: "";
             position: absolute;
-            right: -20px; /* تعديل المسافة */
+            right: -20px;
             top: 20px;
-            width: 10px; /* تصغير الحجم */
-            height: 10px; /* تصغير الحجم */
+            width: 10px;
+            height: 10px;
             background: var(--accent);
             border-radius: 50%;
-            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2); /* تصغير الظل */
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
         }
 
         .timeline-date {
             color: var(--accent-dark);
             font-weight: 700;
-            font-size: 0.8rem; /* تصغير حجم الخط */
+            font-size: 0.8rem;
             margin-bottom: 6px;
         }
 
         .timeline-content h3 {
-            font-size: 0.9rem; /* تصغير حجم الخط */
+            font-size: 0.9rem;
             color: var(--primary);
             margin-bottom: 5px;
         }
 
         .timeline-content p {
             color: var(--light-text);
-            font-size: 0.8rem; /* تصغير حجم الخط */
+            font-size: 0.8rem;
         }
 
         /* Skills */
@@ -521,15 +521,15 @@
 
         .skill-category {
             background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 20px; /* تقليل الحشوة */
+            padding: 20px;
             border-radius: 10px;
-            border-top: 3px solid var(--accent); /* تصغير الحدود */
+            border-top: 3px solid var(--accent);
         }
 
         .skill-category h3 {
             color: var(--primary);
             margin-bottom: 12px;
-            font-size: 1.1rem; /* تصغير حجم الخط */
+            font-size: 1.1rem;
         }
 
         .skill-list {
@@ -538,12 +538,12 @@
         }
 
         .skill-list li {
-            padding: 6px 0; /* تقليل الحشوة */
+            padding: 6px 0;
             border-bottom: 1px solid var(--border);
             display: flex;
             align-items: center;
             gap: 8px;
-            font-size: 0.85rem; /* تصغير حجم الخط */
+            font-size: 0.85rem;
         }
 
         .skill-list li:last-child {
@@ -552,14 +552,14 @@
 
         .skill-list li i {
             color: var(--accent);
-            font-size: 0.8rem; /* تصغير حجم الأيقونة */
+            font-size: 0.8rem;
         }
 
         /* Achievements Section */
         .achievement-card {
             background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
-            border-right: 4px solid var(--accent); /* تصغير الحدود */
-            padding: 25px; /* تقليل الحشوة */
+            border-right: 4px solid var(--accent);
+            padding: 25px;
             border-radius: 12px;
             margin-bottom: 20px;
             position: relative;
@@ -570,19 +570,19 @@
         .achievement-year {
             background: var(--accent);
             color: white;
-            padding: 8px 16px; /* تصغير الحشوة */
+            padding: 8px 16px;
             border-radius: 20px;
             font-weight: 700;
             display: inline-block;
             margin-bottom: 15px;
-            font-size: 0.8rem; /* تصغير حجم الخط */
+            font-size: 0.8rem;
             box-shadow: 0 3px 8px rgba(212, 175, 55, 0.3);
         }
 
         .achievement-content p {
             line-height: 1.8;
             text-align: justify;
-            font-size: 0.9rem; /* تصغير حجم الخط */
+            font-size: 0.9rem;
             color: var(--text);
             margin: 0;
         }
@@ -590,8 +590,8 @@
         /* Training Section */
         .training-card {
             background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
-            border-right: 4px solid var(--accent); /* تصغير الحدود */
-            padding: 25px; /* تقليل الحشوة */
+            border-right: 4px solid var(--accent);
+            padding: 25px;
             border-radius: 12px;
             margin-bottom: 20px;
             box-shadow: var(--shadow);
@@ -603,12 +603,12 @@
         }
 
         .training-list li {
-            padding: 8px 0; /* تقليل الحشوة */
+            padding: 8px 0;
             border-bottom: 1px solid var(--border);
             display: flex;
             align-items: center;
             gap: 8px;
-            font-size: 0.85rem; /* تصغير حجم الخط */
+            font-size: 0.85rem;
         }
 
         .training-list li:last-child {
@@ -617,14 +617,14 @@
 
         .training-list li i {
             color: var(--accent);
-            font-size: 0.8rem; /* تصغير حجم الأيقونة */
+            font-size: 0.8rem;
         }
 
         /* Tech Section */
         .tech-card {
             background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
-            border-right: 4px solid var(--accent); /* تصغير الحدود */
-            padding: 25px; /* تقليل الحشوة */
+            border-right: 4px solid var(--accent);
+            padding: 25px;
             border-radius: 12px;
             margin-bottom: 20px;
             box-shadow: var(--shadow);
@@ -697,9 +697,9 @@
 
         .testimonial-item {
             background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            padding: 20px; /* تقليل الحشوة */
+            padding: 20px;
             border-radius: 10px;
-            border-top: 3px solid var(--accent); /* تصغير الحدود */
+            border-top: 3px solid var(--accent);
             box-shadow: var(--shadow);
         }
 
@@ -711,7 +711,7 @@
             font-style: italic;
             line-height: 1.6;
             color: var(--text);
-            font-size: 0.9rem; /* تصغير حجم الخط */
+            font-size: 0.9rem;
         }
 
         .testimonial-author {
@@ -721,11 +721,11 @@
         .testimonial-author strong {
             display: block;
             color: var(--primary);
-            font-size: 0.9rem; /* تصغير حجم الخط */
+            font-size: 0.9rem;
         }
 
         .testimonial-author span {
-            font-size: 0.8rem; /* تصغير حجم الخط */
+            font-size: 0.8rem;
             color: var(--light-text);
         }
 
@@ -744,13 +744,13 @@
         }
 
         .footer-links {
-            display: none; /* إخفاء روابط الفوتر */
+            display: none;
         }
 
         .copyright {
             margin-top: 15px;
             opacity: 0.8;
-            font-size: 0.85rem; /* تصغير حجم الخط */
+            font-size: 0.85rem;
         }
 
         /* Animations */
@@ -765,41 +765,219 @@
             }
         }
 
+        /* أنماط إضافية للمعرض التفاعلي */
+        .gallery-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .gallery-scroll {
+            display: flex;
+            flex-direction: column;
+            max-height: 500px;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 12px;
+        }
+
+        .gallery-scroll::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .gallery-scroll::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .gallery-scroll::-webkit-scrollbar-thumb {
+            background: var(--accent);
+            border-radius: 10px;
+        }
+
+        .gallery-scroll::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-dark);
+        }
+
+        .gallery-item {
+            margin-bottom: 20px;
+            text-align: center;
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-caption {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        .gallery-controls {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .gallery-btn {
+            background: var(--gold-gradient);
+            color: var(--primary-dark);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(212, 175, 55, 0.3);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .gallery-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(212, 175, 55, 0.4);
+        }
+
+        .gallery-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .gallery-indicator {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            gap: 8px;
+        }
+
+        .indicator-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--border);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .indicator-dot.active {
+            background: var(--accent);
+            transform: scale(1.2);
+        }
+
+        /* تحسينات شريط التنقل */
+        .nav-container {
+            background: linear-gradient(90deg, rgba(26, 54, 93, 0.9), rgba(45, 74, 127, 0.9));
+            backdrop-filter: blur(10px);
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-scroll {
+            padding: 0 15px;
+        }
+
+        .nav-item {
+            border-left: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px 8px 0 0;
+            margin: 0 2px;
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-item:first-child {
+            border-radius: 0 8px 0 0;
+        }
+
+        .nav-item:last-child {
+            border-radius: 8px 0 0 0;
+        }
+
+        .nav-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .nav-item.active {
+            background: var(--gold-gradient);
+            color: var(--primary-dark);
+            box-shadow: 0 -4px 8px rgba(212, 175, 55, 0.3);
+            transform: translateY(-2px);
+        }
+
+        .nav-item.active::before {
+            width: 30px;
+            height: 3px;
+            background: var(--primary-dark);
+        }
+
+        .nav-scroll-controls {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            border-radius: 0 0 8px 8px;
+        }
+
+        .nav-scroll-controls:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             body {
-                padding-top: 82px; /* تقليل المسافة للهيدر المصغر */
+                padding-top: 82px;
             }
             
             .header-top {
                 padding: 0 15px;
-                height: 42px; /* تصغير أكثر للجوال */
+                height: 42px;
             }
             
             .title-section h1 {
-                font-size: 1.3rem; /* تصغير حجم الخط للجوال */
+                font-size: 1.3rem;
             }
             
             .nav-item {
-                padding: 6px 10px; /* تصغير الحشوة للجوال */
-                font-size: 0.55rem; /* تصغير حجم الخط للجوال */
-                min-width: 55px; /* تصغير العرض الأدنى للجوال */
+                padding: 6px 10px;
+                font-size: 0.55rem;
+                min-width: 55px;
             }
             
             .nav-item i {
-                font-size: 0.6rem; /* تصغير حجم الأيقونات للجوال */
+                font-size: 0.6rem;
             }
             
             .hero-section {
-                padding: 20px 15px; /* تقليل الحشوة للجوال */
+                padding: 20px 15px;
             }
             
             .hero-title {
-                font-size: 1.5rem; /* تصغير حجم الخط للجوال */
+                font-size: 1.5rem;
             }
             
             .hero-subtitle {
-                font-size: 0.9rem; /* تصغير حجم الخط للجوال */
+                font-size: 0.9rem;
             }
             
             .hero-stats {
@@ -807,30 +985,34 @@
             }
             
             .hero-stat .number {
-                font-size: 1.3rem; /* تصغير حجم الخط للجوال */
+                font-size: 1.3rem;
             }
             
             .section-title {
-                font-size: 1.4rem; /* تصغير حجم الخط للجوال */
+                font-size: 1.4rem;
             }
             
             .card {
-                padding: 15px; /* تقليل الحشوة للجوال */
+                padding: 15px;
             }
             
             .nav-scroll-controls {
-                display: none; /* إخفاء عناصر التحكم على الجوال */
+                display: none;
             }
             
             .header-actions {
-                left: 10px; /* تعديل المسافة للجوال */
-                top: 8px; /* تعديل المسافة للجوال */
+                left: 10px;
+                top: 8px;
+            }
+            
+            .gallery-container {
+                max-height: 400px;
             }
         }
 
         @media (max-width: 480px) {
             .header-top {
-                flex-direction: row; /* الحفاظ على الاتجاه الأفقي */
+                flex-direction: row;
                 height: auto;
                 padding: 8px 15px;
                 gap: 10px;
@@ -852,6 +1034,15 @@
             
             .nav-item span {
                 font-size: 0.5rem;
+            }
+            
+            .gallery-container {
+                max-height: 350px;
+            }
+            
+            .gallery-btn {
+                padding: 8px 15px;
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -926,7 +1117,7 @@
         </div>
     </header>
 
-    <!-- باقي المحتوى يبقى كما هو -->
+    <!-- باقي المحتوى -->
     <main>
         <!-- Hero Section -->
         <section class="hero-section">
@@ -996,29 +1187,29 @@
                     <div class="timeline-item">
                         <div class="timeline-date">2017 - الآن</div>
                         <div class="timeline-content">
-                            <h3>معلم لغة إنجليزية – سعيد بن العاص</h3>
-                            <p>مكة المكرمة</p>
+                            <h3 id="exp1Title">معلم لغة إنجليزية – سعيد بن العاص</h3>
+                            <p id="exp1Location">مكة المكرمة</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2015 - 2016</div>
                         <div class="timeline-content">
-                            <h3>معلم لغة إنجليزية – ثانوية الأمير سعود بن عبدالمحسن</h3>
-                            <p>الليث</p>
+                            <h3 id="exp2Title">معلم لغة إنجليزية – ثانوية الأمير سعود بن عبدالمحسن</h3>
+                            <p id="exp2Location">الليث</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2012 - 2014</div>
                         <div class="timeline-content">
-                            <h3>معلم لغة إنجليزية – سعيد بن زيد</h3>
-                            <p>عفيف</p>
+                            <h3 id="exp3Title">معلم لغة إنجليزية – سعيد بن زيد</h3>
+                            <p id="exp3Location">عفيف</p>
                         </div>
                     </div>
                     <div class="timeline-item">
                         <div class="timeline-date">2011 - 2012</div>
                         <div class="timeline-content">
-                            <h3>مترجم – وزارة الحج والعمرة</h3>
-                            <p>مكة المكرمة</p>
+                            <h3 id="exp4Title">مترجم – وزارة الحج والعمرة</h3>
+                            <p id="exp4Location">مكة المكرمة</p>
                         </div>
                     </div>
                 </div>
@@ -1113,12 +1304,66 @@
                     
                     <!-- مشروع تطبيق الاستراتيجيات الحديثة في التعليم -->
                     <div class="portfolio-item">
-                        <img src="https://i.ibb.co/xSzz0fyh/teaching-strategies.png" alt="تطبيق الاستراتيجيات الحديثة في التعليم">
                         <div class="portfolio-content">
                             <h3 id="project2Title">تطبيق الاستراتيجيات الحديثة في التعليم</h3>
-                            <p id="project2Desc1">تُعدّ الاستراتيجيات الحديثة جزءًا أساسيًا من تطوير العملية التعليمية ورفع مستوى مشاركة الطلاب داخل الصف. وفي هذه الأمثلة الثلاثة يظهر جانب بسيط من الأساليب المتنوعة التي أطبقها داخل الحصة؛ حيث حرصت على دمج التقنيات التفاعلية والتعلم التعاوني والتحفيزي لجعل الدرس أكثر متعة وفعالية.</p>
-                            <p id="project2Desc2">في الصورة الأولى يظهر التعلم بالألعاب الذي يهدف إلى تنشيط دافعية الطلاب وإثارة روح التحدي الإيجابي لديهم، مما يسهم في ترسيخ المفاهيم بطريقة ممتعة. أما الصورة الثانية فتجسّد التعلم التعاوني حيث يعمل الطلاب في مجموعات صغيرة، يتبادلون الآراء ويحلّلون المعلومات معًا، وهي استراتيجية فعّالة لبناء مهارات التواصل والعمل الجماعي. وفي الصورة الثالثة يتضح استخدام السبورة التفاعلية التي تساعد في عرض المحتوى بصورة واضحة وجاذبة، وتتيح مشاركة جميع الطلاب في مناقشة الأفكار وتصحيح الإجابات بشكل مباشر.</p>
-                            <p id="project2Desc3">هذه الأمثلة ليست إلا نماذج بسيطة من العديد من الاستراتيجيات الأخرى التي أحرص على توظيفها داخل الدرس، بما يضمن تنويع طرق التدريس وتلبية احتياجات جميع الطلاب، وصولًا إلى بيئة تعليمية أكثر حيوية وفاعلية.</p>
+                            <p id="project2Desc1" style="margin-bottom: 20px;">
+                                تُعدّ الاستراتيجيات الحديثة عنصرًا محوريًا في تطوير العملية التعليمية وتعزيز فاعلية التعلم داخل الصف؛ إذ تسهم في رفع مستوى التفاعل، وتحفيز الدافعية، وتنمية مهارات التفكير والعمل لدى الطلاب. ومن هذا المنطلق أحرص على توظيف مجموعة متنوعة من الأساليب التدريسية التي تجمع بين المتعة والفائدة، وتعتمد على التفاعل الإيجابي والمشاركة الفعّالة.<br><br>
+
+                                ويأتي التعلم القائم على التحفيز والتحدي كأحد الأساليب التي تسهم في ترسيخ المفاهيم بطريقة مشوقة، وتساعد الطلاب على التعلم بروح المنافسة الإيجابية. كما يمثل التعلم التعاوني ركيزة أساسية في بناء مهارات التواصل والعمل الجماعي، من خلال إتاحة الفرصة للطلاب لتبادل الآراء، ومناقشة الأفكار، وحل المشكلات بشكل جماعي. كذلك أحرص على توظيف التقنيات التعليمية الحديثة التي تسهم في عرض المحتوى بصورة جذابة، وتتيح تفاعل جميع الطلاب ومشاركتهم في تصحيح المفاهيم وبناء المعرفة بشكل مباشر.<br><br>
+
+                                وتعد هذه الممارسات نماذج من جملة من الاستراتيجيات التي أعمل على تنويعها داخل الحصة بما يراعي الفروق الفردية، ويحقق الأهداف التعليمية، ويهيئ بيئة تعليمية نشطة ومحفزة تسهم في تحسين مستوى التحصيل الدراسي وتعزيز مهارات القرن الحادي والعشرين.
+                            </p>
+                            
+                            <!-- معرض الصور التفاعلي -->
+                            <div class="gallery-container">
+                                <div class="gallery-scroll" id="galleryScroll">
+                                    <!-- الصور الثلاثة الأولى مع عناوينها الحالية -->
+                                    <div class="gallery-item">
+                                        <img src="https://i.ibb.co/YrXjKC4/strategy7.jpg" alt="مهارات القرن الحادي والعشرين">
+                                        <div class="gallery-caption" id="galleryCaption1">تعزيز مهارات القرن الحادي والعشرين لدى الطلاب</div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="https://i.ibb.co/DPWWd5Z9/strategy4.jpg" alt="أنشطة تعليمية تفاعلية">
+                                        <div class="gallery-caption" id="galleryCaption2">أنشطة تعليمية تفاعلية لتحسين مستوى التحصيل الدراسي</div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="https://i.ibb.co/bR1Cn1WZ/strategy6.jpg" alt="بيئة تعليمية نشطة">
+                                        <div class="gallery-caption" id="galleryCaption3">إعداد بيئة تعليمية نشطة ومحفزة للطلاب</div>
+                                    </div>
+                                    <!-- باقي الصور مع التعليق الجديد -->
+                                    <div class="gallery-item">
+                                        <img src="https://i.ibb.co/DyNDhNX/strategy1.jpg" alt="استراتيجية تعليمية تفاعلية">
+                                        <div class="gallery-caption">تطبيق استراتيجيات تعليمية حديثة لتعزيز التفاعل داخل الصف.</div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="https://i.ibb.co/BK6XTNG0/strategy2.jpg" alt="التعلم التعاوني">
+                                        <div class="gallery-caption">تطبيق استراتيجيات تعليمية حديثة لتعزيز التفاعل داخل الصف.</div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="https://i.ibb.co/LzbN9WYb/strategy3.jpg" alt="تقنيات تعليمية حديثة">
+                                        <div class="gallery-caption">تطبيق استراتيجيات تعليمية حديثة لتعزيز التفاعل داخل الصف.</div>
+                                    </div>
+                                    <div class="gallery-item">
+                                        <img src="https://i.ibb.co/C3bhdCFt/strategy5.jpg" alt="مهارات التفكير والعمل">
+                                        <div class="gallery-caption">تطبيق استراتيجيات تعليمية حديثة لتعزيز التفاعل داخل الصف.</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="gallery-controls">
+                                    <button class="gallery-btn" id="scrollUpBtn">
+                                        <i class="fas fa-chevron-up"></i>
+                                        <span id="scrollUpText">تمرير للأعلى</span>
+                                    </button>
+                                    <button class="gallery-btn" id="scrollDownBtn">
+                                        <i class="fas fa-chevron-down"></i>
+                                        <span id="scrollDownText">تمرير للأسفل</span>
+                                    </button>
+                                </div>
+                                
+                                <div class="gallery-indicator" id="galleryIndicator">
+                                    <!-- سيتم إنشاء النقاط ديناميكيًا -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
@@ -1126,8 +1371,9 @@
                     <div class="portfolio-item">
                         <img src="https://via.placeholder.com/300x180/8B5CF6/FFFFFF?text=عروض+تقديمية" alt="عروض تقديمية">
                         <div class="portfolio-content">
-                            <h3 id="project3Title">عروض تقديمية</h3>
-                            <p id="project3Desc">تصميم عروض تفاعلية جذابة للطلاب</p>
+                            <h3 id="project3Title">عروض تقديمية تفاعلية</h3>
+                            <p id="project3Desc">تصميم عروض تفاعلية جذابة للطلاب باستخدام أحدث الأدوات والتقنيات التعليمية. تتضمن هذه العروض أنشطة تفاعلية، ومقاطع فيديو تعليمية، وأسئلة تقييم فورية لضمان مشاركة فعالة من الطلاب.</p>
+                            <a href="https://visionof2030-pixel.github.io/English-quiz/" class="project-link" target="_blank"><span id="project3Link">عرض المشروع</span> <i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
                 </div>
@@ -1201,8 +1447,6 @@
         <div class="footer-content">
             <h3 id="footerName">فهد الخالدي</h3>
             <p id="footerDesc">معلم متخصص في اللغة الإنجليزية - تطوير التعليم من خلال التقنية والابتكار</p>
-            
-            <!-- تم إزالة روابط الفوتر -->
             
             <div class="copyright" id="footerText">
                 © 2024 جميع الحقوق محفوظة - فهد الخالدي
@@ -1279,11 +1523,10 @@
                 project1Desc: "مشروع تعليمي رقمي يهدف إلى محاكاة اختبار الرخصة المهنية للمعلمين، من خلال تقديم أسئلة تفاعلية مبنية على المعايير المعتمدة، مع تغذية راجعة فورية توضح السبب العلمي لكل إجابة صحيحة أو خاطئة، بما يسهم في رفع كفاءة المتدربين وتعزيز جاهزيتهم للاختبار الرسمي.",
                 project1Link: "عرض المشروع",
                 project2Title: "تطبيق الاستراتيجيات الحديثة في التعليم",
-                project2Desc1: "تُعدّ الاستراتيجيات الحديثة جزءًا أساسيًا من تطوير العملية التعليمية ورفع مستوى مشاركة الطلاب داخل الصف. وفي هذه الأمثلة الثلاثة يظهر جانب بسيط من الأساليب المتنوعة التي أطبقها داخل الحصة؛ حيث حرصت على دمج التقنيات التفاعلية والتعلم التعاوني والتحفيزي لجعل الدرس أكثر متعة وفعالية.",
-                project2Desc2: "في الصورة الأولى يظهر التعلم بالألعاب الذي يهدف إلى تنشيط دافعية الطلاب وإثارة روح التحدي الإيجابي لديهم، مما يسهم في ترسيخ المفاهيم بطريقة ممتعة. أما الصورة الثانية فتجسّد التعلم التعاوني حيث يعمل الطلاب في مجموعات صغيرة، يتبادلون الآراء ويحلّلون المعلومات معًا، وهي استراتيجية فعّالة لبناء مهارات التواصل والعمل الجماعي. وفي الصورة الثالثة يتضح استخدام السبورة التفاعلية التي تساعد في عرض المحتوى بصورة واضحة وجاذبة، وتتيح مشاركة جميع الطلاب في مناقشة الأفكار وتصحيح الإجابات بشكل مباشر.",
-                project2Desc3: "هذه الأمثلة ليست إلا نماذج بسيطة من العديد من الاستراتيجيات الأخرى التي أحرص على توظيفها داخل الدرس، بما يضمن تنويع طرق التدريس وتلبية احتياجات جميع الطلاب، وصولًا إلى بيئة تعليمية أكثر حيوية وفاعلية.",
-                project3Title: "عروض تقديمية",
-                project3Desc: "تصميم عروض تفاعلية جذابة للطلاب",
+                project2Desc1: "تُعدّ الاستراتيجيات الحديثة عنصرًا محوريًا في تطوير العملية التعليمية وتعزيز فاعلية التعلم داخل الصف؛ إذ تسهم في رفع مستوى التفاعل، وتحفيز الدافعية، وتنمية مهارات التفكير والعمل لدى الطلاب. ومن هذا المنطلق أحرص على توظيف مجموعة متنوعة من الأساليب التدريسية التي تجمع بين المتعة والفائدة، وتعتمد على التفاعل الإيجابي والمشاركة الفعّالة.<br><br>ويأتي التعلم القائم على التحفيز والتحدي كأحد الأساليب التي تسهم في ترسيخ المفاهيم بطريقة مشوقة، وتساعد الطلاب على التعلم بروح المنافسة الإيجابية. كما يمثل التعلم التعاوني ركيزة أساسية في بناء مهارات التواصل والعمل الجماعي، من خلال إتاحة الفرصة للطلاب لتبادل الآراء، ومناقشة الأفكار، وحل المشكلات بشكل جماعي. كذلك أحرص على توظيف التقنيات التعليمية الحديثة التي تسهم في عرض المحتوى بصورة جذابة، وتتيح تفاعل جميع الطلاب ومشاركتهم في تصحيح المفاهيم وبناء المعرفة بشكل مباشر.<br><br>وتعد هذه الممارسات نماذج من جملة من الاستراتيجيات التي أعمل على تنويعها داخل الحصة بما يراعي الفروق الفردية، ويحقق الأهداف التعليمية، ويهيئ بيئة تعليمية نشطة ومحفزة تسهم في تحسين مستوى التحصيل الدراسي وتعزيز مهارات القرن الحادي والعشرين.",
+                project3Title: "عروض تقديمية تفاعلية",
+                project3Desc: "تصميم عروض تفاعلية جذابة للطلاب باستخدام أحدث الأدوات والتقنيات التعليمية. تتضمن هذه العروض أنشطة تفاعلية، ومقاطع فيديو تعليمية، وأسئلة تقييم فورية لضمان مشاركة فعالة من الطلاب.",
+                project3Link: "عرض المشروع",
                 // ترجمة التوصيات
                 testimonial1Text: "\"المعلم فهد يتميز بالإبداع والابتكار في أساليب التدريس، وقد قدم إضافة حقيقية لفريق العمل\"",
                 testimonial1Author: "مدير المدرسة",
@@ -1300,7 +1543,22 @@
                 contactPhone: "+9665554449824",
                 // ترجمة الفوتر
                 footerName: "فهد الخالدي",
-                footerDesc: "معلم متخصص في اللغة الإنجليزية - تطوير التعليم من خلال التقنية والابتكار"
+                footerDesc: "معلم متخصص في اللغة الإنجليزية - تطوير التعليم من خلال التقنية والابتكار",
+                // ترجمة المعرض التفاعلي
+                scrollUpText: "تمرير للأعلى",
+                scrollDownText: "تمرير للأسفل",
+                galleryCaption1: "تعزيز مهارات القرن الحادي والعشرين لدى الطلاب",
+                galleryCaption2: "أنشطة تعليمية تفاعلية لتحسين مستوى التحصيل الدراسي",
+                galleryCaption3: "إعداد بيئة تعليمية نشطة ومحفزة للطلاب",
+                // ترجمة قسم الخبرات
+                exp1Title: "معلم لغة إنجليزية – سعيد بن العاص",
+                exp1Location: "مكة المكرمة",
+                exp2Title: "معلم لغة إنجليزية – ثانوية الأمير سعود بن عبدالمحسن",
+                exp2Location: "الليث",
+                exp3Title: "معلم لغة إنجليزية – سعيد بن زيد",
+                exp3Location: "عفيف",
+                exp4Title: "مترجم – وزارة الحج والعمرة",
+                exp4Location: "مكة المكرمة"
             },
             en: {
                 pageTitle: "Fahad AlKhaldi",
@@ -1368,11 +1626,10 @@
                 project1Desc: "A digital educational project that aims to simulate the professional license exam for teachers, by providing interactive questions based on approved standards, with immediate feedback that explains the scientific reason for each correct or incorrect answer, which helps raise the efficiency of trainees and enhance their readiness for the official exam.",
                 project1Link: "View Project",
                 project2Title: "Applying Modern Strategies in Education",
-                project2Desc1: "Modern strategies are an essential part of developing the educational process and raising the level of student engagement in the classroom. In these three examples, a small aspect of the diverse methods I apply during classes is shown; where I have focused on integrating interactive technologies, cooperative learning, and motivational techniques to make the lesson more enjoyable and effective.",
-                project2Desc2: "In the first image, game-based learning is shown, which aims to activate student motivation and stimulate positive competitive spirit, thus helping to consolidate concepts in an enjoyable way. The second image embodies cooperative learning where students work in small groups, exchange opinions and analyze information together, which is an effective strategy for building communication and teamwork skills. In the third image, the use of interactive whiteboards is evident, which helps in presenting content clearly and attractively, and allows all students to participate in discussing ideas and correcting answers directly.",
-                project2Desc3: "These examples are only simple models of the many other strategies that I am keen to employ during lessons, ensuring the diversification of teaching methods and meeting the needs of all students, leading to a more vibrant and effective educational environment.",
-                project3Title: "Presentations",
-                project3Desc: "Designing interactive and engaging presentations for students",
+                project2Desc1: "Modern strategies are a pivotal element in developing the educational process and enhancing the effectiveness of learning in the classroom. They contribute to raising the level of interaction, stimulating motivation, and developing thinking and working skills among students. From this standpoint, I am keen to employ a variety of teaching methods that combine fun and benefit, and rely on positive interaction and effective participation.<br><br>Challenge-based learning comes as one of the methods that helps consolidate concepts in an exciting way and helps students learn with a spirit of positive competition. Cooperative learning also represents a fundamental pillar in building communication and teamwork skills, by providing students with the opportunity to exchange opinions, discuss ideas, and solve problems collectively. I also strive to employ modern educational technologies that contribute to presenting content in an attractive way, and allow all students to interact and participate in correcting concepts and building knowledge directly.<br><br>These practices are examples of a range of strategies that I work to diversify within the class, taking into account individual differences, achieving educational goals, and preparing an active and stimulating educational environment that contributes to improving academic achievement and enhancing 21st century skills.",
+                project3Title: "Interactive Presentations",
+                project3Desc: "Designing interactive and engaging presentations for students using the latest educational tools and technologies. These presentations include interactive activities, educational videos, and instant assessment questions to ensure effective student participation.",
+                project3Link: "View Project",
                 // ترجمة التوصيات
                 testimonial1Text: "\"Teacher Fahad is distinguished by creativity and innovation in teaching methods, and has made a real addition to the work team\"",
                 testimonial1Author: "School Principal",
@@ -1386,10 +1643,25 @@
                 // ترجمة الاتصال
                 contactSubtitle: "For Contact",
                 contactEmail: "iFahadenglish@gmail.com",
-                contactPhone: "+9665554449824",
+                contactPhone: "+966554449824",
                 // ترجمة الفوتر
                 footerName: "Fahad AlKhaldi",
-                footerDesc: "English Language Specialist - Developing Education Through Technology and Innovation"
+                footerDesc: "English Language Specialist - Developing Education Through Technology and Innovation",
+                // ترجمة المعرض التفاعلي
+                scrollUpText: "Scroll Up",
+                scrollDownText: "Scroll Down",
+                galleryCaption1: "Enhancing 21st century skills among students",
+                galleryCaption2: "Interactive educational activities to improve academic achievement",
+                galleryCaption3: "Preparing an active and stimulating educational environment for students",
+                // ترجمة قسم الخبرات
+                exp1Title: "English Teacher – Saeed bin Al-Aas",
+                exp1Location: "Makkah",
+                exp2Title: "English Teacher – Prince Saud bin Abdulmohsen Secondary School",
+                exp2Location: "Al-Lith",
+                exp3Title: "English Teacher – Saeed bin Zaid",
+                exp3Location: "Afif",
+                exp4Title: "Translator – Ministry of Hajj and Umrah",
+                exp4Location: "Makkah"
             }
         };
 
@@ -1470,10 +1742,9 @@
         const project1Link = document.getElementById('project1Link');
         const project2Title = document.getElementById('project2Title');
         const project2Desc1 = document.getElementById('project2Desc1');
-        const project2Desc2 = document.getElementById('project2Desc2');
-        const project2Desc3 = document.getElementById('project2Desc3');
         const project3Title = document.getElementById('project3Title');
         const project3Desc = document.getElementById('project3Desc');
+        const project3Link = document.getElementById('project3Link');
 
         // عناصر التوصيات
         const testimonial1Text = document.getElementById('testimonial1Text');
@@ -1494,6 +1765,23 @@
         // عناصر الفوتر
         const footerName = document.getElementById('footerName');
         const footerDesc = document.getElementById('footerDesc');
+
+        // عناصر المعرض التفاعلي
+        const scrollUpText = document.getElementById('scrollUpText');
+        const scrollDownText = document.getElementById('scrollDownText');
+        const galleryCaption1 = document.getElementById('galleryCaption1');
+        const galleryCaption2 = document.getElementById('galleryCaption2');
+        const galleryCaption3 = document.getElementById('galleryCaption3');
+
+        // عناصر قسم الخبرات
+        const exp1Title = document.getElementById('exp1Title');
+        const exp1Location = document.getElementById('exp1Location');
+        const exp2Title = document.getElementById('exp2Title');
+        const exp2Location = document.getElementById('exp2Location');
+        const exp3Title = document.getElementById('exp3Title');
+        const exp3Location = document.getElementById('exp3Location');
+        const exp4Title = document.getElementById('exp4Title');
+        const exp4Location = document.getElementById('exp4Location');
 
         // وظيفة لتحميل اللغة
         function loadLanguage(lang) {
@@ -1570,10 +1858,9 @@
             project1Link.textContent = t.project1Link;
             project2Title.textContent = t.project2Title;
             project2Desc1.textContent = t.project2Desc1;
-            project2Desc2.textContent = t.project2Desc2;
-            project2Desc3.textContent = t.project2Desc3;
             project3Title.textContent = t.project3Title;
             project3Desc.textContent = t.project3Desc;
+            project3Link.textContent = t.project3Link;
             
             // تحديث التوصيات
             testimonial1Text.textContent = t.testimonial1Text;
@@ -1594,6 +1881,23 @@
             // تحديث الفوتر
             footerName.textContent = t.footerName;
             footerDesc.textContent = t.footerDesc;
+            
+            // تحديث المعرض التفاعلي
+            scrollUpText.textContent = t.scrollUpText;
+            scrollDownText.textContent = t.scrollDownText;
+            galleryCaption1.textContent = t.galleryCaption1;
+            galleryCaption2.textContent = t.galleryCaption2;
+            galleryCaption3.textContent = t.galleryCaption3;
+            
+            // تحديث قسم الخبرات
+            exp1Title.textContent = t.exp1Title;
+            exp1Location.textContent = t.exp1Location;
+            exp2Title.textContent = t.exp2Title;
+            exp2Location.textContent = t.exp2Location;
+            exp3Title.textContent = t.exp3Title;
+            exp3Location.textContent = t.exp3Location;
+            exp4Title.textContent = t.exp4Title;
+            exp4Location.textContent = t.exp4Location;
             
             // تحديث اتجاه النص
             document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -1641,8 +1945,107 @@
             navScroll.scrollBy({ left: -200, behavior: 'smooth' });
         });
 
+        // وظيفة إدارة معرض الصور
+        function initGallery() {
+            const galleryScroll = document.getElementById('galleryScroll');
+            const scrollUpBtn = document.getElementById('scrollUpBtn');
+            const scrollDownBtn = document.getElementById('scrollDownBtn');
+            const galleryIndicator = document.getElementById('galleryIndicator');
+            
+            // إنشاء نقاط المؤشر
+            const galleryItems = galleryScroll.querySelectorAll('.gallery-item');
+            galleryItems.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('indicator-dot');
+                if (index === 0) dot.classList.add('active');
+                dot.addEventListener('click', () => {
+                    scrollToItem(index);
+                });
+                galleryIndicator.appendChild(dot);
+            });
+            
+            const dots = galleryIndicator.querySelectorAll('.indicator-dot');
+            
+            // وظيفة التمرير إلى عنصر محدد
+            function scrollToItem(index) {
+                const item = galleryItems[index];
+                galleryScroll.scrollTo({
+                    top: item.offsetTop - galleryScroll.offsetTop,
+                    behavior: 'smooth'
+                });
+                updateActiveDot(index);
+            }
+            
+            // تحديث النقطة النشطة
+            function updateActiveDot(index) {
+                dots.forEach(dot => dot.classList.remove('active'));
+                dots[index].classList.add('active');
+            }
+            
+            // التمرير لأعلى
+            scrollUpBtn.addEventListener('click', () => {
+                const currentScroll = galleryScroll.scrollTop;
+                const itemHeight = galleryItems[0].offsetHeight + 20; // الارتفاع + الهامش
+                
+                // البحث عن العنصر الحالي
+                let currentIndex = 0;
+                for (let i = 0; i < galleryItems.length; i++) {
+                    if (galleryItems[i].offsetTop - galleryScroll.offsetTop >= currentScroll) {
+                        currentIndex = i;
+                        break;
+                    }
+                }
+                
+                // التمرير للعنصر السابق
+                if (currentIndex > 0) {
+                    scrollToItem(currentIndex - 1);
+                }
+            });
+            
+            // التمرير لأسفل
+            scrollDownBtn.addEventListener('click', () => {
+                const currentScroll = galleryScroll.scrollTop;
+                const itemHeight = galleryItems[0].offsetHeight + 20; // الارتفاع + الهامش
+                
+                // البحث عن العنصر الحالي
+                let currentIndex = 0;
+                for (let i = 0; i < galleryItems.length; i++) {
+                    if (galleryItems[i].offsetTop - galleryScroll.offsetTop >= currentScroll) {
+                        currentIndex = i;
+                        break;
+                    }
+                }
+                
+                // التمرير للعنصر التالي
+                if (currentIndex < galleryItems.length - 1) {
+                    scrollToItem(currentIndex + 1);
+                }
+            });
+            
+            // تحديث النقطة النشطة أثناء التمرير
+            galleryScroll.addEventListener('scroll', () => {
+                const scrollPosition = galleryScroll.scrollTop;
+                
+                for (let i = 0; i < galleryItems.length; i++) {
+                    const item = galleryItems[i];
+                    const itemTop = item.offsetTop - galleryScroll.offsetTop;
+                    const itemBottom = itemTop + item.offsetHeight;
+                    
+                    if (scrollPosition >= itemTop && scrollPosition < itemBottom) {
+                        updateActiveDot(i);
+                        break;
+                    }
+                }
+            });
+        }
+
         // التحميل الأولي
         loadLanguage(currentLang);
+        
+        // تهيئة المعرض عند تحميل الصفحة
+        document.addEventListener('DOMContentLoaded', () => {
+            initGallery();
+        });
     </script>
 </body>
 </html>
