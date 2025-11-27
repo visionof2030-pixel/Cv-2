@@ -36,7 +36,7 @@
             color: var(--text);
             line-height: 1.7;
             overflow-x: hidden;
-            padding-top: 60px; /* مساحة أقل للهيدر المصغر */
+            padding-top: 87px; /* مساحة للهيدر الموسع */
         }
 
         /* ========== HEADER REDESIGN ========== */
@@ -49,7 +49,7 @@
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
             border-bottom: 3px solid var(--accent);
-            height: 87px; /* تصغير ارتفاع الهيدر */
+            height: 87px; /* زيادة ارتفاع الهيدر */
         }
 
         .header-container {
@@ -66,7 +66,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 0 20px;
-            height: 60px; /* تصغير ارتفاع القسم العلوي */
+            height: 47px; /* تعديل ارتفاع القسم العلوي */
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
             position: relative;
         }
@@ -84,7 +84,7 @@
         }
 
         .title-section h1 {
-            font-size: 1.3rem; /* تصغير حجم الخط */
+            font-size: 1.5rem; /* زيادة حجم الخط */
             font-weight: 800;
             margin: 0;
             background: var(--gold-gradient);
@@ -126,7 +126,7 @@
             position: relative;
             overflow: hidden;
             background: rgba(0, 0, 0, 0.1);
-            height: 40px; /* تصغير ارتفاع شريط التنقل */
+            height: 40px; /* ارتفاع شريط التنقل */
         }
 
         .nav-scroll {
@@ -633,8 +633,8 @@
         /* Portfolio Section */
         .portfolio-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
         }
 
         .portfolio-item {
@@ -652,23 +652,25 @@
 
         .portfolio-item img {
             width: 100%;
-            height: 160px; /* تصغير الارتفاع */
+            height: 180px;
             object-fit: cover;
         }
 
         .portfolio-content {
-            padding: 12px; /* تقليل الحشوة */
+            padding: 15px;
         }
 
         .portfolio-content h3 {
             color: var(--primary);
-            margin-bottom: 6px;
-            font-size: 1rem; /* تصغير حجم الخط */
+            margin-bottom: 10px;
+            font-size: 1.1rem;
         }
 
         .portfolio-content p {
             color: var(--light-text);
-            font-size: 0.8rem; /* تصغير حجم الخط */
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 10px;
         }
 
         .project-link {
@@ -766,16 +768,16 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             body {
-                padding-top: 55px; /* تقليل المسافة للهيدر المصغر */
+                padding-top: 82px; /* تقليل المسافة للهيدر المصغر */
             }
             
             .header-top {
                 padding: 0 15px;
-                height: 55px; /* تصغير أكثر للجوال */
+                height: 42px; /* تصغير أكثر للجوال */
             }
             
             .title-section h1 {
-                font-size: 1.1rem; /* تصغير حجم الخط للجوال */
+                font-size: 1.3rem; /* تصغير حجم الخط للجوال */
             }
             
             .nav-item {
@@ -904,7 +906,7 @@
                         <span id="navTrain">الدورات</span>
                     </a>
                     <a href="#tech" class="nav-item" data-section="tech">
-                        <i class="fas fa-code"></i>
+                        <i class="fas fa-desktop"></i>
                         <span id="navTech">التقنية</span>
                     </a>
                     <a href="#portfolio" class="nav-item" data-section="portfolio">
@@ -1048,21 +1050,21 @@
             <div class="card">
                 <div class="skills-container">
                     <div class="skill-category">
-                        <h3>المهارات التعليمية</h3>
+                        <h3 id="skillCat1">المهارات التعليمية</h3>
                         <ul class="skill-list">
-                            <li><i class="fas fa-check"></i> إتقان اللغة الإنجليزية تحدثاً وكتابة</li>
-                            <li><i class="fas fa-check"></i> تطوير خطط تدريس محفزة ومبتكرة</li>
-                            <li><i class="fas fa-check"></i> إدارة الصفوف بفاعلية</li>
-                            <li><i class="fas fa-check"></i> تشجيع التعلم الذاتي</li>
+                            <li><i class="fas fa-check"></i> <span id="skill1">إتقان اللغة الإنجليزية تحدثاً وكتابة</span></li>
+                            <li><i class="fas fa-check"></i> <span id="skill2">تطوير خطط تدريس محفزة ومبتكرة</span></li>
+                            <li><i class="fas fa-check"></i> <span id="skill3">إدارة الصفوف بفاعلية</span></li>
+                            <li><i class="fas fa-check"></i> <span id="skill4">تشجيع التعلم الذاتي</span></li>
                         </ul>
                     </div>
                     <div class="skill-category">
-                        <h3>المهارات التقنية</h3>
+                        <h3 id="skillCat2">المهارات التقنية</h3>
                         <ul class="skill-list">
-                            <li><i class="fas fa-check"></i> استخدام أدوات القياس والتقويم الإلكترونية</li>
-                            <li><i class="fas fa-check"></i> دمج التقنية في التعليم</li>
-                            <li><i class="fas fa-check"></i> تصميم أنشطة تفاعلية</li>
-                            <li><i class="fas fa-check"></i> تطوير اختبارات إلكترونية</li>
+                            <li><i class="fas fa-check"></i> <span id="skill5">استخدام أدوات القياس والتقويم الإلكترونية</span></li>
+                            <li><i class="fas fa-check"></i> <span id="skill6">دمج التقنية في التعليم</span></li>
+                            <li><i class="fas fa-check"></i> <span id="skill7">تصميم أنشطة تفاعلية</span></li>
+                            <li><i class="fas fa-check"></i> <span id="skill8">تطوير اختبارات إلكترونية</span></li>
                         </ul>
                     </div>
                 </div>
@@ -1071,18 +1073,24 @@
 
         <!-- Training Section -->
         <section id="training">
-            <h2 class="section-title" id="trainingTitle">الدورات التدريبية</h2>
+            <h2 class="section-title" id="trainingTitle">الدورات التالية</h2>
             <div class="card">
                 <div class="training-card">
                     <ul class="training-list" id="trainingList">
-                        <li><i class="fas fa-certificate"></i> التفكير الناقد والإبداعي ودمجه في المواد الدراسية</li>
-                        <li><i class="fas fa-certificate"></i> القياس والتقويم التربوي</li>
-                        <li><i class="fas fa-certificate"></i> الاستراتيجية الحديثة في تدريس أساسيات اللغة الإنجليزية</li>
-                        <li><i class="fas fa-certificate"></i> البيئة الصفية الجاذبة</li>
-                        <li><i class="fas fa-certificate"></i> تحليل أداء الطلاب وتقديم التغذية الراجعة</li>
-                        <li><i class="fas fa-certificate"></i> أساسيات الترجمة</li>
-                        <li><i class="fas fa-certificate"></i> مهارات التعامل مع أدوات القياس والتقويم الإلكترونية</li>
-                        <li><i class="fas fa-certificate"></i> التنمية المهنية لمعلمي اللغة الإنجليزية - المستوى الثالث</li>
+                        <li><i class="fas fa-certificate"></i> <span id="course1">التفكير الناقد والإبداعي ودمجه في المواد الدراسية</span></li>
+                        <li><i class="fas fa-certificate"></i> <span id="course2">القياس والتقويم التربوي</span></li>
+                        <li><i class="fas fa-certificate"></i> <span id="course3">الاستراتيجية الحديثة في تدريس أساسيات اللغة الإنجليزية</span></li>
+                        <li><i class="fas fa-certificate"></i> <span id="course4">البيئة الصفية الجاذبة</span></li>
+                        <li><i class="fas fa-certificate"></i> <span id="course5">تحليل أداء الطلاب وتقديم التغذية الراجعة</span></li>
+                        <li><i class="fas fa-certificate"></i> <span id="course6">أساسيات الترجمة</span></li>
+                        <li><i class="fas fa-certificate"></i> <span id="course7">مهارات التعامل مع أدوات القياس والتقويم الإلكترونية</span></li>
+                        <li><i class="fas fa-certificate"></i> <span id="course8">التنمية المهنية لمعلمي اللغة الإنجليزية - المستوى الثالث</span></li>
+                        <li><i class="fas fa-certificate"></i> <span id="course9">العبقرية في العملية التعليمية</span></li>
+                        <li><i class="fas fa-certificate"></i> <span id="course10">بناء الاختيار الجيد</span></li>
+                        <li><i class="fas fa-certificate"></i> <span id="course11">توظيف استراتيجيات التعليم في البيئة التدريبية الجاذبة</span></li>
+                        <li><i class="fas fa-certificate"></i> <span id="course12">تدريس مهارتي التحدث والاستماع</span></li>
+                        <li><i class="fas fa-certificate"></i> <span id="course13">التوعية بقواعد السلوك والمواظبة المحدثة</span></li>
+                        <li><i class="fas fa-certificate"></i> <span id="course14">اللقاءات التخصصية لمادة اللغة الإنجليزية</span></li>
                     </ul>
                 </div>
             </div>
@@ -1095,25 +1103,31 @@
                 <div class="portfolio-grid">
                     <!-- مشروع اختبار الرخصة المهنية التفاعلي -->
                     <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/300x180/3B82F6/FFFFFF?text=اختبار+الرخصة+المهنية" alt="اختبار الرخصة المهنية التفاعلي">
+                        <img src="https://i.ibb.co/h12KB7Gv/Professional-License-Exam.png" alt="اختبار الرخصة المهنية التفاعلي">
                         <div class="portfolio-content">
-                            <h3>مشروع: اختبار الرخصة المهنية التفاعلي</h3>
-                            <p>مشروع تعليمي رقمي يهدف إلى محاكاة اختبار الرخصة المهنية للمعلمين، من خلال تقديم أسئلة تفاعلية مبنية على المعايير المعتمدة، مع تغذية راجعة فورية توضح السبب العلمي لكل إجابة صحيحة أو خاطئة، بما يسهم في رفع كفاءة المتدربين وتعزيز جاهزيتهم للاختبار الرسمي.</p>
-                            <a href="https://visionof2030-pixel.github.io/Professional-License-Exam/" class="project-link" target="_blank">عرض المشروع <i class="fas fa-external-link-alt"></i></a>
+                            <h3 id="project1Title">مشروع: اختبار الرخصة المهنية التفاعلي</h3>
+                            <p id="project1Desc">مشروع تعليمي رقمي يهدف إلى محاكاة اختبار الرخصة المهنية للمعلمين، من خلال تقديم أسئلة تفاعلية مبنية على المعايير المعتمدة، مع تغذية راجعة فورية توضح السبب العلمي لكل إجابة صحيحة أو خاطئة، بما يسهم في رفع كفاءة المتدربين وتعزيز جاهزيتهم للاختبار الرسمي.</p>
+                            <a href="https://visionof2030-pixel.github.io/Professional-License-Exam/" class="project-link" target="_blank"><span id="project1Link">عرض المشروع</span> <i class="fas fa-external-link-alt"></i></a>
                         </div>
                     </div>
+                    
+                    <!-- مشروع تطبيق الاستراتيجيات الحديثة في التعليم -->
                     <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/300x180/10B981/FFFFFF?text=مواد+تعليمية" alt="مواد تعليمية">
+                        <img src="https://i.ibb.co/xSzz0fyh/teaching-strategies.png" alt="تطبيق الاستراتيجيات الحديثة في التعليم">
                         <div class="portfolio-content">
-                            <h3>مواد تعليمية</h3>
-                            <p>تطوير محتوى تعليمي متميز ومتوافق مع المناهج</p>
+                            <h3 id="project2Title">تطبيق الاستراتيجيات الحديثة في التعليم</h3>
+                            <p id="project2Desc1">تُعدّ الاستراتيجيات الحديثة جزءًا أساسيًا من تطوير العملية التعليمية ورفع مستوى مشاركة الطلاب داخل الصف. وفي هذه الأمثلة الثلاثة يظهر جانب بسيط من الأساليب المتنوعة التي أطبقها داخل الحصة؛ حيث حرصت على دمج التقنيات التفاعلية والتعلم التعاوني والتحفيزي لجعل الدرس أكثر متعة وفعالية.</p>
+                            <p id="project2Desc2">في الصورة الأولى يظهر التعلم بالألعاب الذي يهدف إلى تنشيط دافعية الطلاب وإثارة روح التحدي الإيجابي لديهم، مما يسهم في ترسيخ المفاهيم بطريقة ممتعة. أما الصورة الثانية فتجسّد التعلم التعاوني حيث يعمل الطلاب في مجموعات صغيرة، يتبادلون الآراء ويحلّلون المعلومات معًا، وهي استراتيجية فعّالة لبناء مهارات التواصل والعمل الجماعي. وفي الصورة الثالثة يتضح استخدام السبورة التفاعلية التي تساعد في عرض المحتوى بصورة واضحة وجاذبة، وتتيح مشاركة جميع الطلاب في مناقشة الأفكار وتصحيح الإجابات بشكل مباشر.</p>
+                            <p id="project2Desc3">هذه الأمثلة ليست إلا نماذج بسيطة من العديد من الاستراتيجيات الأخرى التي أحرص على توظيفها داخل الدرس، بما يضمن تنويع طرق التدريس وتلبية احتياجات جميع الطلاب، وصولًا إلى بيئة تعليمية أكثر حيوية وفاعلية.</p>
                         </div>
                     </div>
+                    
+                    <!-- مشروع عروض تقديمية -->
                     <div class="portfolio-item">
                         <img src="https://via.placeholder.com/300x180/8B5CF6/FFFFFF?text=عروض+تقديمية" alt="عروض تقديمية">
                         <div class="portfolio-content">
-                            <h3>عروض تقديمية</h3>
-                            <p>تصميم عروض تفاعلية جذابة للطلاب</p>
+                            <h3 id="project3Title">عروض تقديمية</h3>
+                            <p id="project3Desc">تصميم عروض تفاعلية جذابة للطلاب</p>
                         </div>
                     </div>
                 </div>
@@ -1127,29 +1141,29 @@
                 <div class="testimonials-container">
                     <div class="testimonial-item">
                         <div class="testimonial-content">
-                            <p>"المعلم فهد يتميز بالإبداع والابتكار في أساليب التدريس، وقد قدم إضافة حقيقية لفريق العمل"</p>
+                            <p id="testimonial1Text">"المعلم فهد يتميز بالإبداع والابتكار في أساليب التدريس، وقد قدم إضافة حقيقية لفريق العمل"</p>
                         </div>
                         <div class="testimonial-author">
-                            <strong>مدير المدرسة</strong>
-                            <span>مدرسة سعيد بن العاص</span>
+                            <strong id="testimonial1Author">مدير المدرسة</strong>
+                            <span id="testimonial1Position">مدرسة سعيد بن العاص</span>
                         </div>
                     </div>
                     <div class="testimonial-item">
                         <div class="testimonial-content">
-                            <p>"لقد أحدثت استراتيجياته التعليمية فرقاً ملحوظاً في أداء الطلاب وحبهم للغة الإنجليزية"</p>
+                            <p id="testimonial2Text">"لقد أحدثت استراتيجياته التعليمية فرقاً ملحوظاً في أداء الطلاب وحبهم للغة الإنجليزية"</p>
                         </div>
                         <div class="testimonial-author">
-                            <strong>منسق اللغة الإنجليزية</strong>
-                            <span>إدارة التعليم</span>
+                            <strong id="testimonial2Author">منسق اللغة الإنجليزية</strong>
+                            <span id="testimonial2Position">إدارة التعليم</span>
                         </div>
                     </div>
                     <div class="testimonial-item">
                         <div class="testimonial-content">
-                            <p>"تميزه في استخدام التقنية جعل عملية التعلم أكثر متعة وفعالية للطلاب"</p>
+                            <p id="testimonial3Text">"تميزه في استخدام التقنية جعل عملية التعلم أكثر متعة وفعالية للطلاب"</p>
                         </div>
                         <div class="testimonial-author">
-                            <strong>زملاء العمل</strong>
-                            <span>فريق اللغة الإنجليزية</span>
+                            <strong id="testimonial3Author">زملاء العمل</strong>
+                            <span id="testimonial3Position">فريق اللغة الإنجليزية</span>
                         </div>
                     </div>
                 </div>
@@ -1173,10 +1187,10 @@
             <h2 class="section-title" id="contactTitle">تواصل معي</h2>
             <div class="card">
                 <div style="text-align: center; padding: 25px;">
-                    <h3 style="color: var(--primary); margin-bottom: 15px;">للتواصل</h3>
+                    <h3 style="color: var(--primary); margin-bottom: 15px;" id="contactSubtitle">للتواصل</h3>
                     <div style="font-size: 1rem; line-height: 2; color: var(--text);">
-                        <p><i class="fas fa-envelope" style="color: var(--accent);"></i> iFahadenglish@gmail.com</p>
-                        <p><i class="fas fa-phone" style="color: var(--accent);"></i> +9665554449824</p>
+                        <p><i class="fas fa-envelope" style="color: var(--accent);"></i> <span id="contactEmail">iFahadenglish@gmail.com</span></p>
+                        <p><i class="fas fa-phone" style="color: var(--accent);"></i> <span id="contactPhone">+9665554449824</span></p>
                     </div>
                 </div>
             </div>
@@ -1185,8 +1199,8 @@
 
     <footer>
         <div class="footer-content">
-            <h3>فهد الخالدي</h3>
-            <p>معلم متخصص في اللغة الإنجليزية - تطوير التعليم من خلال التقنية والابتكار</p>
+            <h3 id="footerName">فهد الخالدي</h3>
+            <p id="footerDesc">معلم متخصص في اللغة الإنجليزية - تطوير التعليم من خلال التقنية والابتكار</p>
             
             <!-- تم إزالة روابط الفوتر -->
             
@@ -1210,7 +1224,7 @@
                 experienceTitle: "الخبرات المهنية",
                 achievementsTitle: "الإنجازات",
                 skillsTitle: "المهارات والكفاءات",
-                trainingTitle: "الدورات التدريبية",
+                trainingTitle: "الدورات التالية",
                 portfolioTitle: "معرض الأعمال",
                 testimonialsTitle: "التوصيات",
                 techTitle: "التقنية",
@@ -1233,7 +1247,60 @@
                 navTrain: "الدورات",
                 navTech: "التقنية",
                 navPortfolio: "معرض الأعمال",
-                navContact: "بيانات التواصل"
+                navContact: "بيانات التواصل",
+                // ترجمة المهارات
+                skillCat1: "المهارات التعليمية",
+                skillCat2: "المهارات التقنية",
+                skill1: "إتقان اللغة الإنجليزية تحدثاً وكتابة",
+                skill2: "تطوير خطط تدريس محفزة ومبتكرة",
+                skill3: "إدارة الصفوف بفاعلية",
+                skill4: "تشجيع التعلم الذاتي",
+                skill5: "استخدام أدوات القياس والتقويم الإلكترونية",
+                skill6: "دمج التقنية في التعليم",
+                skill7: "تصميم أنشطة تفاعلية",
+                skill8: "تطوير اختبارات إلكترونية",
+                // ترجمة الدورات
+                course1: "التفكير الناقد والإبداعي ودمجه في المواد الدراسية",
+                course2: "القياس والتقويم التربوي",
+                course3: "الاستراتيجية الحديثة في تدريس أساسيات اللغة الإنجليزية",
+                course4: "البيئة الصفية الجاذبة",
+                course5: "تحليل أداء الطلاب وتقديم التغذية الراجعة",
+                course6: "أساسيات الترجمة",
+                course7: "مهارات التعامل مع أدوات القياس والتقويم الإلكترونية",
+                course8: "التنمية المهنية لمعلمي اللغة الإنجليزية - المستوى الثالث",
+                course9: "العبقرية في العملية التعليمية",
+                course10: "بناء الاختيار الجيد",
+                course11: "توظيف استراتيجيات التعليم في البيئة التدريبية الجاذبة",
+                course12: "تدريس مهارتي التحدث والاستماع",
+                course13: "التوعية بقواعد السلوك والمواظبة المحدثة",
+                course14: "اللقاءات التخصصية لمادة اللغة الإنجليزية",
+                // ترجمة المشاريع
+                project1Title: "مشروع: اختبار الرخصة المهنية التفاعلي",
+                project1Desc: "مشروع تعليمي رقمي يهدف إلى محاكاة اختبار الرخصة المهنية للمعلمين، من خلال تقديم أسئلة تفاعلية مبنية على المعايير المعتمدة، مع تغذية راجعة فورية توضح السبب العلمي لكل إجابة صحيحة أو خاطئة، بما يسهم في رفع كفاءة المتدربين وتعزيز جاهزيتهم للاختبار الرسمي.",
+                project1Link: "عرض المشروع",
+                project2Title: "تطبيق الاستراتيجيات الحديثة في التعليم",
+                project2Desc1: "تُعدّ الاستراتيجيات الحديثة جزءًا أساسيًا من تطوير العملية التعليمية ورفع مستوى مشاركة الطلاب داخل الصف. وفي هذه الأمثلة الثلاثة يظهر جانب بسيط من الأساليب المتنوعة التي أطبقها داخل الحصة؛ حيث حرصت على دمج التقنيات التفاعلية والتعلم التعاوني والتحفيزي لجعل الدرس أكثر متعة وفعالية.",
+                project2Desc2: "في الصورة الأولى يظهر التعلم بالألعاب الذي يهدف إلى تنشيط دافعية الطلاب وإثارة روح التحدي الإيجابي لديهم، مما يسهم في ترسيخ المفاهيم بطريقة ممتعة. أما الصورة الثانية فتجسّد التعلم التعاوني حيث يعمل الطلاب في مجموعات صغيرة، يتبادلون الآراء ويحلّلون المعلومات معًا، وهي استراتيجية فعّالة لبناء مهارات التواصل والعمل الجماعي. وفي الصورة الثالثة يتضح استخدام السبورة التفاعلية التي تساعد في عرض المحتوى بصورة واضحة وجاذبة، وتتيح مشاركة جميع الطلاب في مناقشة الأفكار وتصحيح الإجابات بشكل مباشر.",
+                project2Desc3: "هذه الأمثلة ليست إلا نماذج بسيطة من العديد من الاستراتيجيات الأخرى التي أحرص على توظيفها داخل الدرس، بما يضمن تنويع طرق التدريس وتلبية احتياجات جميع الطلاب، وصولًا إلى بيئة تعليمية أكثر حيوية وفاعلية.",
+                project3Title: "عروض تقديمية",
+                project3Desc: "تصميم عروض تفاعلية جذابة للطلاب",
+                // ترجمة التوصيات
+                testimonial1Text: "\"المعلم فهد يتميز بالإبداع والابتكار في أساليب التدريس، وقد قدم إضافة حقيقية لفريق العمل\"",
+                testimonial1Author: "مدير المدرسة",
+                testimonial1Position: "مدرسة سعيد بن العاص",
+                testimonial2Text: "\"لقد أحدثت استراتيجياته التعليمية فرقاً ملحوظاً في أداء الطلاب وحبهم للغة الإنجليزية\"",
+                testimonial2Author: "منسق اللغة الإنجليزية",
+                testimonial2Position: "إدارة التعليم",
+                testimonial3Text: "\"تميزه في استخدام التقنية جعل عملية التعلم أكثر متعة وفعالية للطلاب\"",
+                testimonial3Author: "زملاء العمل",
+                testimonial3Position: "فريق اللغة الإنجليزية",
+                // ترجمة الاتصال
+                contactSubtitle: "للتواصل",
+                contactEmail: "iFahadenglish@gmail.com",
+                contactPhone: "+9665554449824",
+                // ترجمة الفوتر
+                footerName: "فهد الخالدي",
+                footerDesc: "معلم متخصص في اللغة الإنجليزية - تطوير التعليم من خلال التقنية والابتكار"
             },
             en: {
                 pageTitle: "Fahad AlKhaldi",
@@ -1269,7 +1336,60 @@
                 navTrain: "Training",
                 navTech: "Technology",
                 navPortfolio: "Portfolio",
-                navContact: "Contact Info"
+                navContact: "Contact Info",
+                // ترجمة المهارات
+                skillCat1: "Teaching Skills",
+                skillCat2: "Technical Skills",
+                skill1: "Proficiency in spoken and written English",
+                skill2: "Developing stimulating and innovative teaching plans",
+                skill3: "Effective classroom management",
+                skill4: "Encouraging self-learning",
+                skill5: "Using electronic measurement and assessment tools",
+                skill6: "Integrating technology into education",
+                skill7: "Designing interactive activities",
+                skill8: "Developing electronic tests",
+                // ترجمة الدورات
+                course1: "Critical and Creative Thinking and its Integration into Academic Subjects",
+                course2: "Educational Measurement and Evaluation",
+                course3: "Modern Strategy in Teaching English Language Basics",
+                course4: "Attractive Classroom Environment",
+                course5: "Analyzing Student Performance and Providing Feedback",
+                course6: "Translation Fundamentals",
+                course7: "Skills for Dealing with Electronic Measurement and Assessment Tools",
+                course8: "Professional Development for English Teachers - Level Three",
+                course9: "Genius in the Educational Process",
+                course10: "Building Good Choices",
+                course11: "Employing Teaching Strategies in an Attractive Training Environment",
+                course12: "Teaching Speaking and Listening Skills",
+                course13: "Awareness of Updated Behavior and Attendance Rules",
+                course14: "Specialized Meetings for English Language Subject",
+                // ترجمة المشاريع
+                project1Title: "Project: Interactive Professional License Exam",
+                project1Desc: "A digital educational project that aims to simulate the professional license exam for teachers, by providing interactive questions based on approved standards, with immediate feedback that explains the scientific reason for each correct or incorrect answer, which helps raise the efficiency of trainees and enhance their readiness for the official exam.",
+                project1Link: "View Project",
+                project2Title: "Applying Modern Strategies in Education",
+                project2Desc1: "Modern strategies are an essential part of developing the educational process and raising the level of student engagement in the classroom. In these three examples, a small aspect of the diverse methods I apply during classes is shown; where I have focused on integrating interactive technologies, cooperative learning, and motivational techniques to make the lesson more enjoyable and effective.",
+                project2Desc2: "In the first image, game-based learning is shown, which aims to activate student motivation and stimulate positive competitive spirit, thus helping to consolidate concepts in an enjoyable way. The second image embodies cooperative learning where students work in small groups, exchange opinions and analyze information together, which is an effective strategy for building communication and teamwork skills. In the third image, the use of interactive whiteboards is evident, which helps in presenting content clearly and attractively, and allows all students to participate in discussing ideas and correcting answers directly.",
+                project2Desc3: "These examples are only simple models of the many other strategies that I am keen to employ during lessons, ensuring the diversification of teaching methods and meeting the needs of all students, leading to a more vibrant and effective educational environment.",
+                project3Title: "Presentations",
+                project3Desc: "Designing interactive and engaging presentations for students",
+                // ترجمة التوصيات
+                testimonial1Text: "\"Teacher Fahad is distinguished by creativity and innovation in teaching methods, and has made a real addition to the work team\"",
+                testimonial1Author: "School Principal",
+                testimonial1Position: "Saeed bin Al-Aas School",
+                testimonial2Text: "\"His educational strategies have made a noticeable difference in students' performance and their love for the English language\"",
+                testimonial2Author: "English Language Coordinator",
+                testimonial2Position: "Education Department",
+                testimonial3Text: "\"His excellence in using technology has made the learning process more enjoyable and effective for students\"",
+                testimonial3Author: "Colleagues",
+                testimonial3Position: "English Language Team",
+                // ترجمة الاتصال
+                contactSubtitle: "For Contact",
+                contactEmail: "iFahadenglish@gmail.com",
+                contactPhone: "+9665554449824",
+                // ترجمة الفوتر
+                footerName: "Fahad AlKhaldi",
+                footerDesc: "English Language Specialist - Developing Education Through Technology and Innovation"
             }
         };
 
@@ -1316,6 +1436,65 @@
         const navPortfolio = document.getElementById('navPortfolio');
         const navContact = document.getElementById('navContact');
 
+        // عناصر المهارات
+        const skillCat1 = document.getElementById('skillCat1');
+        const skillCat2 = document.getElementById('skillCat2');
+        const skill1 = document.getElementById('skill1');
+        const skill2 = document.getElementById('skill2');
+        const skill3 = document.getElementById('skill3');
+        const skill4 = document.getElementById('skill4');
+        const skill5 = document.getElementById('skill5');
+        const skill6 = document.getElementById('skill6');
+        const skill7 = document.getElementById('skill7');
+        const skill8 = document.getElementById('skill8');
+
+        // عناصر الدورات
+        const course1 = document.getElementById('course1');
+        const course2 = document.getElementById('course2');
+        const course3 = document.getElementById('course3');
+        const course4 = document.getElementById('course4');
+        const course5 = document.getElementById('course5');
+        const course6 = document.getElementById('course6');
+        const course7 = document.getElementById('course7');
+        const course8 = document.getElementById('course8');
+        const course9 = document.getElementById('course9');
+        const course10 = document.getElementById('course10');
+        const course11 = document.getElementById('course11');
+        const course12 = document.getElementById('course12');
+        const course13 = document.getElementById('course13');
+        const course14 = document.getElementById('course14');
+
+        // عناصر المشاريع
+        const project1Title = document.getElementById('project1Title');
+        const project1Desc = document.getElementById('project1Desc');
+        const project1Link = document.getElementById('project1Link');
+        const project2Title = document.getElementById('project2Title');
+        const project2Desc1 = document.getElementById('project2Desc1');
+        const project2Desc2 = document.getElementById('project2Desc2');
+        const project2Desc3 = document.getElementById('project2Desc3');
+        const project3Title = document.getElementById('project3Title');
+        const project3Desc = document.getElementById('project3Desc');
+
+        // عناصر التوصيات
+        const testimonial1Text = document.getElementById('testimonial1Text');
+        const testimonial1Author = document.getElementById('testimonial1Author');
+        const testimonial1Position = document.getElementById('testimonial1Position');
+        const testimonial2Text = document.getElementById('testimonial2Text');
+        const testimonial2Author = document.getElementById('testimonial2Author');
+        const testimonial2Position = document.getElementById('testimonial2Position');
+        const testimonial3Text = document.getElementById('testimonial3Text');
+        const testimonial3Author = document.getElementById('testimonial3Author');
+        const testimonial3Position = document.getElementById('testimonial3Position');
+
+        // عناصر الاتصال
+        const contactSubtitle = document.getElementById('contactSubtitle');
+        const contactEmail = document.getElementById('contactEmail');
+        const contactPhone = document.getElementById('contactPhone');
+
+        // عناصر الفوتر
+        const footerName = document.getElementById('footerName');
+        const footerDesc = document.getElementById('footerDesc');
+
         // وظيفة لتحميل اللغة
         function loadLanguage(lang) {
             const t = translations[lang];
@@ -1356,6 +1535,65 @@
             navTech.textContent = t.navTech;
             navPortfolio.textContent = t.navPortfolio;
             navContact.textContent = t.navContact;
+            
+            // تحديث المهارات
+            skillCat1.textContent = t.skillCat1;
+            skillCat2.textContent = t.skillCat2;
+            skill1.textContent = t.skill1;
+            skill2.textContent = t.skill2;
+            skill3.textContent = t.skill3;
+            skill4.textContent = t.skill4;
+            skill5.textContent = t.skill5;
+            skill6.textContent = t.skill6;
+            skill7.textContent = t.skill7;
+            skill8.textContent = t.skill8;
+            
+            // تحديث الدورات
+            course1.textContent = t.course1;
+            course2.textContent = t.course2;
+            course3.textContent = t.course3;
+            course4.textContent = t.course4;
+            course5.textContent = t.course5;
+            course6.textContent = t.course6;
+            course7.textContent = t.course7;
+            course8.textContent = t.course8;
+            course9.textContent = t.course9;
+            course10.textContent = t.course10;
+            course11.textContent = t.course11;
+            course12.textContent = t.course12;
+            course13.textContent = t.course13;
+            course14.textContent = t.course14;
+            
+            // تحديث المشاريع
+            project1Title.textContent = t.project1Title;
+            project1Desc.textContent = t.project1Desc;
+            project1Link.textContent = t.project1Link;
+            project2Title.textContent = t.project2Title;
+            project2Desc1.textContent = t.project2Desc1;
+            project2Desc2.textContent = t.project2Desc2;
+            project2Desc3.textContent = t.project2Desc3;
+            project3Title.textContent = t.project3Title;
+            project3Desc.textContent = t.project3Desc;
+            
+            // تحديث التوصيات
+            testimonial1Text.textContent = t.testimonial1Text;
+            testimonial1Author.textContent = t.testimonial1Author;
+            testimonial1Position.textContent = t.testimonial1Position;
+            testimonial2Text.textContent = t.testimonial2Text;
+            testimonial2Author.textContent = t.testimonial2Author;
+            testimonial2Position.textContent = t.testimonial2Position;
+            testimonial3Text.textContent = t.testimonial3Text;
+            testimonial3Author.textContent = t.testimonial3Author;
+            testimonial3Position.textContent = t.testimonial3Position;
+            
+            // تحديث الاتصال
+            contactSubtitle.textContent = t.contactSubtitle;
+            contactEmail.textContent = t.contactEmail;
+            contactPhone.textContent = t.contactPhone;
+            
+            // تحديث الفوتر
+            footerName.textContent = t.footerName;
+            footerDesc.textContent = t.footerDesc;
             
             // تحديث اتجاه النص
             document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
