@@ -2,26 +2,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الملف المهني | فهد الخالدي</title>
+    <title>الملف المهني | فهد الخالدي - معلم متخصص في اللغة الإنجليزية</title>
+    <meta name="description" content="فهد الخالدي - معلم متخصص في اللغة الإنجليزية مع 14+ سنة خبرة في تطوير أساليب التعليم الحديثة. اكتشف ملفي المهني وإنجازاتي التعليمية.">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary: #1a365d;
-            --primary-dark: #0f1f3d;
-            --primary-light: #2d4a7f;
-            --accent: #d4af37;
-            --accent-dark: #b8941f;
-            --accent-light: #e6c967;
-            --bg: #f8f9fa;
-            --card-bg: #ffffff;
-            --text: #2d3748;
-            --light-text: #718096;
-            --border: #e2e8f0;
+            /* الألوان المحدثة لتتناسب مع طقم النصر */
+            --primary: #1A3A5F; /* أزرق كحلي بدلاً من الأزرق النصراوي */
+            --primary-dark: #0F2A47;
+            --primary-light: #2A4F7A;
+            --accent: #F5D76E; /* أصفر باهت بدلاً من الأصفر النصراوي */
+            --accent-dark: #E6C860;
+            --accent-light: #FFE89D;
+            --bg: #FFFFFF; /* خلفية بيضاء */
+            --card-bg: #FFFFFF;
+            --text: #1A1A1A;
+            --light-text: #666666;
+            --border: #E6E6E6;
             --shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
             --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.1);
-            --gold-gradient: linear-gradient(135deg, #d4af37, #f7ef8a);
-            --blue-gradient: linear-gradient(135deg, #1a365d, #2d4a7f);
+            /* تحديث التدرجات اللونية */
+            --gradient: linear-gradient(135deg, #1A3A5F, #F5D76E);
+            --gradient-dark: linear-gradient(135deg, #0F2A47, #E6C860);
+            --gradient-light: linear-gradient(135deg, #2A4F7A, #FFE89D);
+            --yellow-gradient: linear-gradient(135deg, #F5D76E, #FFE89D);
+            --blue-gradient: linear-gradient(135deg, #1A3A5F, #2A4F7A);
+        }
+
+        /* أنماط الوضع الليلي */
+        :root[data-theme="dark"] {
+            --bg: #0A0A0A;
+            --card-bg: #1A1A1A;
+            --text: #F5F5F5;
+            --light-text: #A0A0A0;
+            --border: #333333;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            --shadow-hover: 0 10px 15px rgba(0, 0, 0, 0.4);
         }
 
         * {
@@ -37,6 +54,7 @@
             line-height: 1.7;
             overflow-x: hidden;
             padding-top: 87px;
+            transition: background 0.3s ease, color 0.3s ease;
         }
 
         /* ========== HEADER REDESIGN ========== */
@@ -87,20 +105,22 @@
             font-size: 1.5rem;
             font-weight: 800;
             margin: 0;
-            background: var(--gold-gradient);
+            background: var(--yellow-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
-        /* زر الترجمة في أقصى الزاوية اليسرى العلوية */
+        /* زر الترجمة والوضع الليلي في أقصى الزاوية اليمنى العلوية */
         .header-actions {
             position: absolute;
-            left: 15px;
+            right: 15px;
             top: 10px;
+            display: flex;
+            gap: 10px;
         }
 
-        .lang-btn {
+        .lang-btn, .theme-btn {
             background: rgba(255, 255, 255, 0.15);
             color: white;
             border: 1px solid rgba(255, 255, 255, 0.2);
@@ -116,7 +136,7 @@
             font-size: 0.75rem;
         }
 
-        .lang-btn:hover {
+        .lang-btn:hover, .theme-btn:hover {
             background: rgba(255, 255, 255, 0.25);
             transform: translateY(-2px);
         }
@@ -125,14 +145,17 @@
         .nav-container {
             position: relative;
             overflow: hidden;
-            background: rgba(0, 0, 0, 0.1);
+            background: linear-gradient(90deg, rgba(26, 58, 95, 0.9), rgba(42, 79, 122, 0.9));
+            backdrop-filter: blur(10px);
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             height: 40px;
         }
 
         .nav-scroll {
             display: flex;
             gap: 0;
-            padding: 0 10px;
+            padding: 0 15px;
             overflow-x: auto;
             scroll-behavior: smooth;
             -webkit-overflow-scrolling: touch;
@@ -159,12 +182,20 @@
             align-items: center;
             gap: 4px;
             min-width: 60px;
-            border-left: 1px solid rgba(255, 255, 255, 0.1);
+            border-left: 1px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px 8px 0 0;
+            margin: 0 2px;
             height: 100%;
             justify-content: center;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .nav-item:first-child {
+            border-radius: 0 8px 0 0;
         }
 
         .nav-item:last-child {
+            border-radius: 8px 0 0 0;
             border-left: none;
         }
 
@@ -175,6 +206,7 @@
 
         .nav-item:hover {
             background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
         }
 
         .nav-item:hover i {
@@ -182,9 +214,10 @@
         }
 
         .nav-item.active {
-            background: var(--gold-gradient);
+            background: var(--yellow-gradient);
             color: var(--primary-dark);
-            box-shadow: 0 -3px 10px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 -4px 8px rgba(245, 215, 110, 0.3);
+            transform: translateY(-2px);
         }
 
         .nav-item.active::before {
@@ -193,9 +226,9 @@
             bottom: 0;
             right: 50%;
             transform: translateX(50%);
-            width: 25px;
-            height: 2px;
-            background: var(--accent-dark);
+            width: 30px;
+            height: 3px;
+            background: var(--primary-dark);
             border-radius: 2px;
         }
 
@@ -207,15 +240,17 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
             cursor: pointer;
             z-index: 2;
             transition: all 0.3s ease;
             opacity: 0;
+            border-radius: 0 0 8px 8px;
         }
 
         .nav-scroll-controls:hover {
-            background: rgba(0, 0, 0, 0.5);
+            background: rgba(255, 255, 255, 0.3);
         }
 
         .nav-container:hover .nav-scroll-controls {
@@ -274,7 +309,7 @@
             font-size: 2rem;
             font-weight: 800;
             margin-bottom: 12px;
-            background: var(--gold-gradient);
+            background: var(--yellow-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -287,6 +322,49 @@
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+        }
+
+        .hero-actions {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary {
+            background: var(--yellow-gradient);
+            color: var(--primary-dark);
+            box-shadow: 0 4px 10px rgba(245, 215, 110, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(245, 215, 110, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-3px);
         }
 
         .hero-stats {
@@ -304,7 +382,7 @@
             font-size: 1.6rem;
             font-weight: 800;
             display: block;
-            background: var(--gold-gradient);
+            background: var(--yellow-gradient);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -343,8 +421,20 @@
             transform: translateX(50%);
             width: 70px;
             height: 3px;
-            background: var(--gold-gradient);
+            background: var(--yellow-gradient);
             border-radius: 2px;
+        }
+
+        /* تأثيرات الظهور عند التمرير */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+
+        .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         /* Cards */
@@ -356,6 +446,7 @@
             box-shadow: var(--shadow);
             transition: all 0.3s ease;
             border-right: 4px solid transparent;
+            border: 1px solid var(--border);
         }
 
         .card:hover {
@@ -377,7 +468,7 @@
             border-radius: 50%;
             overflow: hidden;
             border: 3px solid var(--accent);
-            box-shadow: 0 6px 15px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 6px 15px rgba(245, 215, 110, 0.3);
         }
 
         .profile-img img {
@@ -409,13 +500,13 @@
 
         .badge {
             display: inline-block;
-            background: var(--gold-gradient);
+            background: var(--yellow-gradient);
             color: var(--primary-dark);
             padding: 8px 16px;
             border-radius: 20px;
             font-weight: 700;
             margin: 12px 0;
-            box-shadow: 0 3px 8px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 3px 8px rgba(245, 215, 110, 0.3);
             font-size: 0.85rem;
         }
 
@@ -428,12 +519,13 @@
         }
 
         .stat-card {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            background: linear-gradient(135deg, var(--card-bg), var(--bg));
             padding: 15px;
             border-radius: 10px;
             text-align: center;
             transition: all 0.3s ease;
             border-top: 3px solid var(--accent);
+            border: 1px solid var(--border);
         }
 
         .stat-card:hover {
@@ -455,6 +547,45 @@
             font-weight: 600;
         }
 
+        /* Vision Section */
+        .vision-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .vision-item {
+            background: linear-gradient(135deg, var(--card-bg), var(--bg));
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border-top: 4px solid var(--accent);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border);
+        }
+
+        .vision-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .vision-item i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        .vision-item h3 {
+            color: var(--primary);
+            margin-bottom: 12px;
+            font-size: 1.2rem;
+        }
+
+        .vision-item p {
+            color: var(--text);
+            line-height: 1.6;
+        }
+
         /* Timeline */
         .timeline {
             position: relative;
@@ -468,7 +599,7 @@
             top: 0;
             bottom: 0;
             width: 2px;
-            background: var(--gold-gradient);
+            background: var(--yellow-gradient);
             border-radius: 2px;
         }
 
@@ -480,6 +611,7 @@
             position: relative;
             box-shadow: var(--shadow);
             border-right: 2px solid var(--accent);
+            border: 1px solid var(--border);
         }
 
         .timeline-item::before {
@@ -491,7 +623,7 @@
             height: 10px;
             background: var(--accent);
             border-radius: 50%;
-            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+            box-shadow: 0 0 0 3px rgba(245, 215, 110, 0.2);
         }
 
         .timeline-date {
@@ -520,10 +652,11 @@
         }
 
         .skill-category {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            background: linear-gradient(135deg, var(--card-bg), var(--bg));
             padding: 20px;
             border-radius: 10px;
             border-top: 3px solid var(--accent);
+            border: 1px solid var(--border);
         }
 
         .skill-category h3 {
@@ -557,7 +690,7 @@
 
         /* Achievements Section */
         .achievement-card {
-            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            background: linear-gradient(135deg, var(--card-bg), var(--bg));
             border-right: 4px solid var(--accent);
             padding: 25px;
             border-radius: 12px;
@@ -565,18 +698,19 @@
             position: relative;
             overflow: hidden;
             box-shadow: var(--shadow);
+            border: 1px solid var(--border);
         }
 
         .achievement-year {
             background: var(--accent);
-            color: white;
+            color: var(--primary-dark);
             padding: 8px 16px;
             border-radius: 20px;
             font-weight: 700;
             display: inline-block;
             margin-bottom: 15px;
             font-size: 0.8rem;
-            box-shadow: 0 3px 8px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 3px 8px rgba(245, 215, 110, 0.3);
         }
 
         .achievement-content p {
@@ -589,12 +723,13 @@
 
         /* Training Section */
         .training-card {
-            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            background: linear-gradient(135deg, var(--card-bg), var(--bg));
             border-right: 4px solid var(--accent);
             padding: 25px;
             border-radius: 12px;
             margin-bottom: 20px;
             box-shadow: var(--shadow);
+            border: 1px solid var(--border);
         }
 
         .training-list {
@@ -622,15 +757,41 @@
 
         /* Tech Section */
         .tech-card {
-            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            background: linear-gradient(135deg, var(--card-bg), var(--bg));
             border-right: 4px solid var(--accent);
             padding: 25px;
             border-radius: 12px;
             margin-bottom: 20px;
             box-shadow: var(--shadow);
+            border: 1px solid var(--border);
         }
 
         /* Portfolio Section */
+        .portfolio-filters {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            padding: 8px 16px;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: var(--yellow-gradient);
+            color: var(--primary-dark);
+            border-color: var(--accent);
+        }
+
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -638,11 +799,12 @@
         }
 
         .portfolio-item {
-            background: white;
+            background: var(--card-bg);
             border-radius: 10px;
             overflow: hidden;
             box-shadow: var(--shadow);
             transition: all 0.3s ease;
+            border: 1px solid var(--border);
         }
 
         .portfolio-item:hover {
@@ -654,6 +816,11 @@
             width: 100%;
             height: 180px;
             object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1.05);
         }
 
         .portfolio-content {
@@ -695,12 +862,26 @@
             gap: 15px;
         }
 
-        .testimonial-item {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+        .testimonial-slider {
+            position: relative;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+        }
+
+        .testimonial-slides {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+
+        .testimonial-slide {
+            min-width: 100%;
             padding: 20px;
-            border-radius: 10px;
+            background: linear-gradient(135deg, var(--card-bg), var(--bg));
             border-top: 3px solid var(--accent);
             box-shadow: var(--shadow);
+            border-radius: 10px;
+            border: 1px solid var(--border);
         }
 
         .testimonial-content {
@@ -729,6 +910,58 @@
             color: var(--light-text);
         }
 
+        .testimonial-controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .testimonial-control {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-control:hover {
+            background: var(--yellow-gradient);
+            color: var(--primary-dark);
+        }
+
+        /* Contact Form */
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: var(--card-bg);
+            color: var(--text);
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(245, 215, 110, 0.2);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
         /* Footer */
         footer {
             background: var(--blue-gradient);
@@ -753,18 +986,6 @@
             font-size: 0.85rem;
         }
 
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
         /* أنماط إضافية للمعرض التفاعلي */
         .gallery-container {
             position: relative;
@@ -783,7 +1004,7 @@
             overflow-y: auto;
             scroll-behavior: smooth;
             padding: 10px;
-            background: #f8f9fa;
+            background: var(--card-bg);
             border-radius: 12px;
         }
 
@@ -792,7 +1013,7 @@
         }
 
         .gallery-scroll::-webkit-scrollbar-track {
-            background: #f1f1f1;
+            background: var(--border);
             border-radius: 10px;
         }
 
@@ -808,11 +1029,12 @@
         .gallery-item {
             margin-bottom: 20px;
             text-align: center;
-            background: white;
+            background: var(--card-bg);
             border-radius: 10px;
             padding: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease;
+            border: 1px solid var(--border);
         }
 
         .gallery-item:hover {
@@ -841,7 +1063,7 @@
         }
 
         .gallery-btn {
-            background: var(--gold-gradient);
+            background: var(--yellow-gradient);
             color: var(--primary-dark);
             border: none;
             padding: 10px 20px;
@@ -849,7 +1071,7 @@
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(212, 175, 55, 0.3);
+            box-shadow: 0 4px 8px rgba(245, 215, 110, 0.3);
             display: flex;
             align-items: center;
             gap: 8px;
@@ -857,7 +1079,7 @@
 
         .gallery-btn:hover {
             transform: translateY(-3px);
-            box-shadow: 0 6px 12px rgba(212, 175, 55, 0.4);
+            box-shadow: 0 6px 12px rgba(245, 215, 110, 0.4);
         }
 
         .gallery-btn:disabled {
@@ -885,62 +1107,6 @@
         .indicator-dot.active {
             background: var(--accent);
             transform: scale(1.2);
-        }
-
-        /* تحسينات شريط التنقل */
-        .nav-container {
-            background: linear-gradient(90deg, rgba(26, 54, 93, 0.9), rgba(45, 74, 127, 0.9));
-            backdrop-filter: blur(10px);
-            border-radius: 0 0 12px 12px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .nav-scroll {
-            padding: 0 15px;
-        }
-
-        .nav-item {
-            border-left: 1px solid rgba(255, 255, 255, 0.15);
-            border-radius: 8px 8px 0 0;
-            margin: 0 2px;
-            transition: all 0.3s ease;
-            background: rgba(255, 255, 255, 0.05);
-        }
-
-        .nav-item:first-child {
-            border-radius: 0 8px 0 0;
-        }
-
-        .nav-item:last-child {
-            border-radius: 8px 0 0 0;
-        }
-
-        .nav-item:hover {
-            background: rgba(255, 255, 255, 0.1);
-            transform: translateY(-2px);
-        }
-
-        .nav-item.active {
-            background: var(--gold-gradient);
-            color: var(--primary-dark);
-            box-shadow: 0 -4px 8px rgba(212, 175, 55, 0.3);
-            transform: translateY(-2px);
-        }
-
-        .nav-item.active::before {
-            width: 30px;
-            height: 3px;
-            background: var(--primary-dark);
-        }
-
-        .nav-scroll-controls {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(5px);
-            border-radius: 0 0 8px 8px;
-        }
-
-        .nav-scroll-controls:hover {
-            background: rgba(255, 255, 255, 0.3);
         }
 
         /* Responsive Design */
@@ -980,6 +1146,17 @@
                 font-size: 0.9rem;
             }
             
+            .hero-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 250px;
+                justify-content: center;
+            }
+            
             .hero-stats {
                 gap: 12px;
             }
@@ -1001,7 +1178,7 @@
             }
             
             .header-actions {
-                left: 10px;
+                right: 10px;
                 top: 8px;
             }
             
@@ -1045,6 +1222,18 @@
                 font-size: 0.8rem;
             }
         }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
     </style>
 </head>
 
@@ -1053,11 +1242,14 @@
     <header>
         <div class="header-container">
             <div class="header-top">
-                <!-- زر الترجمة في أقصى الزاوية اليسرى العلوية -->
+                <!-- زر الترجمة والوضع الليلي في أقصى الزاوية اليمنى العلوية -->
                 <div class="header-actions">
                     <button class="lang-btn" id="langBtn">
                         <i class="fas fa-language"></i>
                         <span>EN</span>
+                    </button>
+                    <button class="theme-btn" id="themeBtn">
+                        <i class="fas fa-moon"></i>
                     </button>
                 </div>
                 
@@ -1079,6 +1271,10 @@
                     <a href="#about" class="nav-item active" data-section="about">
                         <i class="fas fa-user"></i>
                         <span id="navAbout">نبذة عني</span>
+                    </a>
+                    <a href="#vision" class="nav-item" data-section="vision">
+                        <i class="fas fa-eye"></i>
+                        <span id="navVision">الرؤية التعليمية</span>
                     </a>
                     <a href="#experience" class="nav-item" data-section="experience">
                         <i class="fas fa-briefcase"></i>
@@ -1104,6 +1300,10 @@
                         <i class="fas fa-laptop-code"></i>
                         <span id="navPortfolio">معرض الأعمال</span>
                     </a>
+                    <a href="#testimonials" class="nav-item" data-section="testimonials">
+                        <i class="fas fa-comments"></i>
+                        <span id="navTestimonials">التوصيات</span>
+                    </a>
                     <a href="#contact" class="nav-item" data-section="contact">
                         <i class="fas fa-envelope"></i>
                         <span id="navContact">بيانات التواصل</span>
@@ -1125,6 +1325,17 @@
                 <h1 class="hero-title" id="heroTitle">الملف المهني للمعلم فهد الخالدي</h1>
                 <p class="hero-subtitle" id="heroSubtitle">معلم متخصص في اللغة الإنجليزية مع 14+ سنة خبرة في تطوير أساليب التعليم الحديثة</p>
                 
+                <div class="hero-actions">
+                    <a href="#portfolio" class="btn btn-primary">
+                        <i class="fas fa-laptop-code"></i>
+                        <span id="viewWorkBtn">استعرض أعمالي</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        <span id="contactBtn">تواصل معي</span>
+                    </a>
+                </div>
+                
                 <div class="hero-stats">
                     <div class="hero-stat">
                         <span class="number">14+</span>
@@ -1145,7 +1356,7 @@
         <!-- About Section -->
         <section id="about" class="active">
             <h2 class="section-title" id="aboutTitle">نبذة عني</h2>
-            <div class="card">
+            <div class="card fade-in-up">
                 <div class="profile-header">
                     <div class="profile-img">
                         <img src="https://i.ibb.co/k66psVmZ/20220817-151032.jpg" alt="صورة فهد الخالدي">
@@ -1179,10 +1390,39 @@
             </div>
         </section>
 
+        <!-- Vision Section -->
+        <section id="vision">
+            <h2 class="section-title" id="visionTitle">الرؤية التعليمية</h2>
+            <div class="card fade-in-up">
+                <div class="vision-content">
+                    <div class="vision-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3 id="visionItem1Title">التعليم المتمركز حول الطالب</h3>
+                        <p id="visionItem1Desc">أؤمن بأن كل طالب فريد ويحتاج إلى أساليب تعلم مخصصة تناسب احتياجاته وقدراته.</p>
+                    </div>
+                    <div class="vision-item">
+                        <i class="fas fa-handshake"></i>
+                        <h3 id="visionItem2Title">الشراكة مع أولياء الأمور</h3>
+                        <p id="visionItem2Desc">التعاون مع الأسر أساسي لتحقيق النجاح التعليمي المستدام.</p>
+                    </div>
+                    <div class="vision-item">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3 id="visionItem3Title">التعليم القائم على المشاريع</h3>
+                        <p id="visionItem3Desc">أدمج التعلم القائم على المشاريع لتعزيز التفكير النقدي وحل المشكلات.</p>
+                    </div>
+                    <div class="vision-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3 id="visionItem4Title">التعلم المستمر</h3>
+                        <p id="visionItem4Desc">أؤمن بأن المعلم المتعلم باستمرار هو الأكثر قدرة على إلهام طلابه.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Experience Section -->
         <section id="experience">
             <h2 class="section-title" id="experienceTitle">الخبرات المهنية</h2>
-            <div class="card">
+            <div class="card fade-in-up">
                 <div class="timeline">
                     <div class="timeline-item">
                         <div class="timeline-date">2017 - الآن</div>
@@ -1219,7 +1459,7 @@
         <!-- Achievements Section -->
         <section id="achievements">
             <h2 class="section-title" id="achievementsTitle">الإنجازات</h2>
-            <div class="card">
+            <div class="card fade-in-up">
                 <div class="achievement-card">
                     <div class="achievement-year">2022</div>
                     <div class="achievement-content">
@@ -1238,7 +1478,7 @@
         <!-- Skills Section -->
         <section id="skills">
             <h2 class="section-title" id="skillsTitle">المهارات والكفاءات</h2>
-            <div class="card">
+            <div class="card fade-in-up">
                 <div class="skills-container">
                     <div class="skill-category">
                         <h3 id="skillCat1">المهارات التعليمية</h3>
@@ -1265,7 +1505,7 @@
         <!-- Training Section -->
         <section id="training">
             <h2 class="section-title" id="trainingTitle">الدورات التالية</h2>
-            <div class="card">
+            <div class="card fade-in-up">
                 <div class="training-card">
                     <ul class="training-list" id="trainingList">
                         <li><i class="fas fa-certificate"></i> <span id="course1">التفكير الناقد والإبداعي ودمجه في المواد الدراسية</span></li>
@@ -1287,13 +1527,33 @@
             </div>
         </section>
 
+        <!-- Tech Section -->
+        <section id="tech">
+            <h2 class="section-title" id="techTitle">التقنية</h2>
+            <div class="card fade-in-up">
+                <div class="tech-card">
+                    <p id="techText">
+                        أتمتع بشغف كبير تجاه التقنية والتعليم الرقمي، وأواكب أحدث التطورات في مجال الذكاء الاصطناعي وتطبيقاته التعليمية. أمتلك خبرة عملية في تصميم وتطوير أنشطة تفاعلية واختبارات إلكترونية باستخدام HTML وCSS وJavaScript، مما يثري تجربة التعلم ويجعلها أكثر تفاعلية وجاذبية للطلاب. أستخدم أدوات الذكاء الاصطناعي في تحليل أداء الطلاب وتصميم خطط تعليمية مخصصة، كما أصمم محتوى رقميًا مبتكرًا يتناسب مع احتياجات التعلم الحديثة. أسعى دائمًا لدمج التقنية في العملية التعليمية بطرق إبداعية تواكب متطلبات العصر الرقمي وتخدم أهداف رؤية المملكة 2030.
+                    </p>
+                </div>
+            </div>
+        </section>
+
         <!-- Portfolio Section -->
         <section id="portfolio">
             <h2 class="section-title" id="portfolioTitle">معرض الأعمال</h2>
-            <div class="card">
+            <div class="card fade-in-up">
+                <!-- أزرار التصفية -->
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all" id="filterAll">الكل</button>
+                    <button class="filter-btn" data-filter="interactive" id="filterInteractive">تفاعلية</button>
+                    <button class="filter-btn" data-filter="strategies" id="filterStrategies">استراتيجيات</button>
+                    <button class="filter-btn" data-filter="presentations" id="filterPresentations">عروض</button>
+                </div>
+                
                 <div class="portfolio-grid">
                     <!-- مشروع اختبار الرخصة المهنية التفاعلي -->
-                    <div class="portfolio-item">
+                    <div class="portfolio-item" data-category="interactive">
                         <img src="https://i.ibb.co/h12KB7Gv/Professional-License-Exam.png" alt="اختبار الرخصة المهنية التفاعلي">
                         <div class="portfolio-content">
                             <h3 id="project1Title">مشروع: اختبار الرخصة المهنية التفاعلي</h3>
@@ -1303,7 +1563,7 @@
                     </div>
                     
                     <!-- مشروع تطبيق الاستراتيجيات الحديثة في التعليم -->
-                    <div class="portfolio-item">
+                    <div class="portfolio-item" data-category="strategies">
                         <div class="portfolio-content">
                             <h3 id="project2Title">تطبيق الاستراتيجيات الحديثة في التعليم</h3>
                             <p id="project2Desc1" style="margin-bottom: 20px;">
@@ -1368,8 +1628,8 @@
                     </div>
                     
                     <!-- مشروع عروض تقديمية -->
-                    <div class="portfolio-item">
-                        <img src="https://via.placeholder.com/300x180/8B5CF6/FFFFFF?text=عروض+تقديمية" alt="عروض تقديمية">
+                    <div class="portfolio-item" data-category="presentations">
+                        <img src="https://via.placeholder.com/300x180/1A3A5F/FFFFFF?text=عروض+تقديمية" alt="عروض تقديمية">
                         <div class="portfolio-content">
                             <h3 id="project3Title">عروض تقديمية تفاعلية</h3>
                             <p id="project3Desc">تصميم عروض تفاعلية جذابة للطلاب باستخدام أحدث الأدوات والتقنيات التعليمية. تتضمن هذه العروض أنشطة تفاعلية، ومقاطع فيديو تعليمية، وأسئلة تقييم فورية لضمان مشاركة فعالة من الطلاب.</p>
@@ -1383,47 +1643,46 @@
         <!-- Testimonials Section -->
         <section id="testimonials">
             <h2 class="section-title" id="testimonialsTitle">التوصيات</h2>
-            <div class="card">
-                <div class="testimonials-container">
-                    <div class="testimonial-item">
-                        <div class="testimonial-content">
-                            <p id="testimonial1Text">"المعلم فهد يتميز بالإبداع والابتكار في أساليب التدريس، وقد قدم إضافة حقيقية لفريق العمل"</p>
+            <div class="card fade-in-up">
+                <div class="testimonial-slider">
+                    <div class="testimonial-slides" id="testimonialSlides">
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <p id="testimonial1Text">"المعلم فهد يتميز بالإبداع والابتكار في أساليب التدريس، وقد قدم إضافة حقيقية لفريق العمل"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <strong id="testimonial1Author">مدير المدرسة</strong>
+                                <span id="testimonial1Position">مدرسة سعيد بن العاص</span>
+                            </div>
                         </div>
-                        <div class="testimonial-author">
-                            <strong id="testimonial1Author">مدير المدرسة</strong>
-                            <span id="testimonial1Position">مدرسة سعيد بن العاص</span>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <p id="testimonial2Text">"لقد أحدثت استراتيجياته التعليمية فرقاً ملحوظاً في أداء الطلاب وحبهم للغة الإنجليزية"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <strong id="testimonial2Author">منسق اللغة الإنجليزية</strong>
+                                <span id="testimonial2Position">إدارة التعليم</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-slide">
+                            <div class="testimonial-content">
+                                <p id="testimonial3Text">"تميزه في استخدام التقنية جعل عملية التعلم أكثر متعة وفعالية للطلاب"</p>
+                            </div>
+                            <div class="testimonial-author">
+                                <strong id="testimonial3Author">زملاء العمل</strong>
+                                <span id="testimonial3Position">فريق اللغة الإنجليزية</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-content">
-                            <p id="testimonial2Text">"لقد أحدثت استراتيجياته التعليمية فرقاً ملحوظاً في أداء الطلاب وحبهم للغة الإنجليزية"</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <strong id="testimonial2Author">منسق اللغة الإنجليزية</strong>
-                            <span id="testimonial2Position">إدارة التعليم</span>
-                        </div>
+                    
+                    <div class="testimonial-controls">
+                        <button class="testimonial-control" id="testimonialPrev">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <button class="testimonial-control" id="testimonialNext">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
                     </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-content">
-                            <p id="testimonial3Text">"تميزه في استخدام التقنية جعل عملية التعلم أكثر متعة وفعالية للطلاب"</p>
-                        </div>
-                        <div class="testimonial-author">
-                            <strong id="testimonial3Author">زملاء العمل</strong>
-                            <span id="testimonial3Position">فريق اللغة الإنجليزية</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Tech Section -->
-        <section id="tech">
-            <h2 class="section-title" id="techTitle">التقنية</h2>
-            <div class="card">
-                <div class="tech-card">
-                    <p id="techText">
-                        أتمتع بشغف كبير تجاه التقنية والتعليم الرقمي، وأواكب أحدث التطورات في مجال الذكاء الاصطناعي وتطبيقاته التعليمية. أمتلك خبرة عملية في تصميم وتطوير أنشطة تفاعلية واختبارات إلكترونية باستخدام HTML وCSS وJavaScript، مما يثري تجربة التعلم ويجعلها أكثر تفاعلية وجاذبية للطلاب. أستخدم أدوات الذكاء الاصطناعي في تحليل أداء الطلاب وتصميم خطط تعليمية مخصصة، كما أصمم محتوى رقميًا مبتكرًا يتناسب مع احتياجات التعلم الحديثة. أسعى دائمًا لدمج التقنية في العملية التعليمية بطرق إبداعية تواكب متطلبات العصر الرقمي وتخدم أهداف رؤية المملكة 2030.
-                    </p>
                 </div>
             </div>
         </section>
@@ -1431,7 +1690,7 @@
         <!-- Contact Section -->
         <section id="contact">
             <h2 class="section-title" id="contactTitle">تواصل معي</h2>
-            <div class="card">
+            <div class="card fade-in-up">
                 <div style="text-align: center; padding: 25px;">
                     <h3 style="color: var(--primary); margin-bottom: 15px;" id="contactSubtitle">للتواصل</h3>
                     <div style="font-size: 1rem; line-height: 2; color: var(--text);">
@@ -1439,6 +1698,26 @@
                         <p><i class="fas fa-phone" style="color: var(--accent);"></i> <span id="contactPhone">+9665554449824</span></p>
                     </div>
                 </div>
+            </div>
+            
+            <!-- نموذج التواصل -->
+            <div class="card fade-in-up">
+                <h3 style="text-align: center; margin-bottom: 20px; color: var(--primary);" id="contactFormTitle">أرسل رسالة</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="contactName" placeholder="الاسم الكامل" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contactEmailInput" placeholder="البريد الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contactMessage" placeholder="رسالتك..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i>
+                        <span id="sendMessageBtn">إرسال الرسالة</span>
+                    </button>
+                </form>
             </div>
         </section>
     </main>
@@ -1454,6 +1733,22 @@
         </div>
     </footer>
 
+    <!-- بيانات Structured Data لتحسين SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "فهد الخالدي",
+        "jobTitle": "معلم متقدم - تخصص اللغة الإنجليزية",
+        "description": "معلم متخصص في اللغة الإنجليزية مع 14+ سنة خبرة في تطوير أساليب التعليم الحديثة",
+        "email": "iFahadenglish@gmail.com",
+        "telephone": "+966554449824",
+        "url": "https://example.com",
+        "knowsAbout": ["التعليم", "اللغة الإنجليزية", "التقنية التعليمية", "التدريس التفاعلي"],
+        "hasCredential": "معلم متقدم"
+    }
+    </script>
+
     <script>
         // بيانات الترجمة
         const translations = {
@@ -1465,6 +1760,7 @@
                 heroStat2: "ساعة تدريب",
                 heroStat3: "مدن تعليمية",
                 aboutTitle: "نبذة عني",
+                visionTitle: "الرؤية التعليمية",
                 experienceTitle: "الخبرات المهنية",
                 achievementsTitle: "الإنجازات",
                 skillsTitle: "المهارات والكفاءات",
@@ -1480,17 +1776,27 @@
                 stat1: "سنوات خبرة",
                 stat2: "ساعات تدريبية",
                 stat3: "مدن تعليمية",
+                visionItem1Title: "التعليم المتمركز حول الطالب",
+                visionItem1Desc: "أؤمن بأن كل طالب فريد ويحتاج إلى أساليب تعلم مخصصة تناسب احتياجاته وقدراته.",
+                visionItem2Title: "الشراكة مع أولياء الأمور",
+                visionItem2Desc: "التعاون مع الأسر أساسي لتحقيق النجاح التعليمي المستدام.",
+                visionItem3Title: "التعليم القائم على المشاريع",
+                visionItem3Desc: "أدمج التعلم القائم على المشاريع لتعزيز التفكير النقدي وحل المشكلات.",
+                visionItem4Title: "التعلم المستمر",
+                visionItem4Desc: "أؤمن بأن المعلم المتعلم باستمرار هو الأكثر قدرة على إلهام طلابه.",
                 achievementText: "في عام 2022 حصلتُ على ترقية إلى رتبة معلم متقدم بعد مسيرة مهنية امتدت لسنوات كمعلم ممارس، قدمت خلالها أداءً متميزًا أسهم في تطوير العملية التعليمية داخل المدرسة. جاءت هذه الترقية تقديرًا لجهودي في توظيف استراتيجيات تدريس حديثة تعزز مهارات التفكير النقدي والإبداعي لدى الطلاب، إضافة إلى قدرتي على تحليل نواتج التعلم وبناء خطط علاجية فردية أثمرت عن تحسين واضح في مستويات الطلاب.<br><br>وقد عكست هذه الترقية ثقة الجهة التعليمية بمهاراتي المهنية، خصوصًا في مجال تصميم أنشطة مبتكرة تُدمج مهارات الفهم العميق، والعمل التعاوني، والتعليم الذاتي داخل البيئة الصفية. كما كانت اعترافًا بدوري في تطوير البرامج التربوية والأنشطة التعليمية قبل عام 2022، ومساهمتي في بناء بيئة صفية محفزة يشعر فيها الطلاب بالأمان والرغبة في المشاركة والتعلم.<br><br>تعد هذه الترقية محطة مهمة في مسيرتي، لأنها لم تكن مجرد انتقال إلى مستوى وظيفي أعلى، بل كانت نتيجة تراكم خبرات وممارسات مهنية أثبتت أثرها على الطلاب وعلى منظومة التعليم داخل المدرسة. واليوم أواصل عملي كمعلم متقدم ملتزم بالتحسين المستمر، وتطبيق أفضل الممارسات التربوية، والمساهمة في رفع جودة التعليم وتحقيق نواتج تعلم أعلى.",
                 techText: "أتمتع بشغف كبير تجاه التقنية والتعليم الرقمي، وأواكب أحدث التطورات في مجال الذكاء الاصطناعي وتطبيقاته التعليمية. أمتلك خبرة عملية في تصميم وتطوير أنشطة تفاعلية واختبارات إلكترونية باستخدام HTML وCSS وJavaScript، مما يثري تجربة التعلم ويجعلها أكثر تفاعلية وجاذبية للطلاب. أستخدم أدوات الذكاء الاصطناعي في تحليل أداء الطلاب وتصميم خطط تعليمية مخصصة، كما أصمم محتوى رقميًا مبتكرًا يتناسب مع احتياجات التعلم الحديثة. أسعى دائمًا لدمج التقنية في العملية التعليمية بطرق إبداعية تواكب متطلبات العصر الرقمي وتخدم أهداف رؤية المملكة 2030.",
                 footerText: "© 2024 جميع الحقوق محفوظة - فهد الخالدي",
                 // إضافة ترجمة نصوص الأيقونات
                 navAbout: "نبذة عني",
+                navVision: "الرؤية التعليمية",
                 navExp: "الخبرات",
                 navAchievements: "الإنجازات",
                 navSkills: "المهارات",
                 navTrain: "الدورات",
                 navTech: "التقنية",
                 navPortfolio: "معرض الأعمال",
+                navTestimonials: "التوصيات",
                 navContact: "بيانات التواصل",
                 // ترجمة المهارات
                 skillCat1: "المهارات التعليمية",
@@ -1540,7 +1846,8 @@
                 // ترجمة الاتصال
                 contactSubtitle: "للتواصل",
                 contactEmail: "iFahadenglish@gmail.com",
-                contactPhone: "+9665554449824",
+                contactPhone: "+966554449824",
+                contactFormTitle: "أرسل رسالة",
                 // ترجمة الفوتر
                 footerName: "فهد الخالدي",
                 footerDesc: "معلم متخصص في اللغة الإنجليزية - تطوير التعليم من خلال التقنية والابتكار",
@@ -1558,7 +1865,16 @@
                 exp3Title: "معلم لغة إنجليزية – سعيد بن زيد",
                 exp3Location: "عفيف",
                 exp4Title: "مترجم – وزارة الحج والعمرة",
-                exp4Location: "مكة المكرمة"
+                exp4Location: "مكة المكرمة",
+                // ترجمة أزرار التصفية
+                filterAll: "الكل",
+                filterInteractive: "تفاعلية",
+                filterStrategies: "استراتيجيات",
+                filterPresentations: "عروض",
+                // ترجمة أزرار CTA
+                viewWorkBtn: "استعرض أعمالي",
+                contactBtn: "تواصل معي",
+                sendMessageBtn: "إرسال الرسالة"
             },
             en: {
                 pageTitle: "Fahad AlKhaldi",
@@ -1568,6 +1884,7 @@
                 heroStat2: "Training Hours",
                 heroStat3: "Education Cities",
                 aboutTitle: "About Me",
+                visionTitle: "Educational Vision",
                 experienceTitle: "Professional Experience",
                 achievementsTitle: "Achievements",
                 skillsTitle: "Skills & Competencies",
@@ -1576,24 +1893,34 @@
                 testimonialsTitle: "Testimonials",
                 techTitle: "Technology",
                 contactTitle: "Contact Me",
-                name: "Fahad Naghimish Humaid AlKhaldi",
-                jobTitle: "Senior English Teacher",
+                name: "Fahad Nughaimesh Humaid AlKhaldi",
+                jobTitle: "Advanced English Teacher",
                 bioText: "I believe that education is not merely about transferring knowledge, but a noble mission to make an impact and build individuals. I aspire to be an active part in developing education in the Kingdom by employing modern technologies, creating stimulating learning environments that enhance critical and creative thinking, and building student confidence. My future vision is based on continuous learning, developing professional skills, and keeping pace with digital transformations that serve educational outcomes and quality within the framework of Saudi Vision 2030.",
                 badge: "🏆 Achieved a score of 95 in specialization",
                 stat1: "Years of Experience",
                 stat2: "Training Hours",
                 stat3: "Education Cities",
+                visionItem1Title: "Student-Centered Education",
+                visionItem1Desc: "I believe that every student is unique and needs customized learning methods that suit their needs and abilities.",
+                visionItem2Title: "Partnership with Parents",
+                visionItem2Desc: "Cooperation with families is essential to achieving sustainable educational success.",
+                visionItem3Title: "Project-Based Learning",
+                visionItem3Desc: "I integrate project-based learning to enhance critical thinking and problem-solving.",
+                visionItem4Title: "Continuous Learning",
+                visionItem4Desc: "I believe that a continuously learning teacher is the most capable of inspiring his students.",
                 achievementText: "In 2022, I was promoted to the rank of Senior Teacher after a professional career spanning years as a practicing teacher, during which I provided outstanding performance that contributed to the development of the educational process within the school. This promotion came in recognition of my efforts in employing modern teaching strategies that enhance students' critical and creative thinking skills, in addition to my ability to analyze learning outcomes and build individual remedial plans that resulted in a clear improvement in student levels.<br><br>This promotion reflected the educational authority's confidence in my professional skills, especially in designing innovative activities that integrate deep understanding skills, collaborative work, and self-learning within the classroom environment. It was also an acknowledgment of my role in developing educational programs and activities before 2022, and my contribution to building a stimulating classroom environment where students feel safe and eager to participate and learn.<br><br>This promotion is an important milestone in my career, as it was not just a transition to a higher functional level, but rather the result of accumulated experiences and professional practices that proved their impact on students and the educational system within the school. Today, I continue my work as a senior teacher committed to continuous improvement, applying the best educational practices, and contributing to raising the quality of education and achieving higher learning outcomes.",
                 techText: "I have a great passion for technology and digital education, and I keep up with the latest developments in the field of artificial intelligence and its educational applications. I have practical experience in designing and developing interactive activities and electronic tests using HTML, CSS, and JavaScript, which enriches the learning experience and makes it more interactive and attractive for students. I use AI tools to analyze student performance and design customized educational plans, and I also design innovative digital content that suits modern learning needs. I always strive to integrate technology into the educational process in creative ways that keep pace with the requirements of the digital age and serve the goals of Saudi Vision 2030.",
                 footerText: "© 2024 All Rights Reserved - Fahad AlKhaldi",
                 // إضافة ترجمة نصوص الأيقونات
                 navAbout: "About Me",
+                navVision: "Educational Vision",
                 navExp: "Experience",
                 navAchievements: "Achievements",
                 navSkills: "Skills",
                 navTrain: "Training",
                 navTech: "Technology",
                 navPortfolio: "Portfolio",
+                navTestimonials: "Testimonials",
                 navContact: "Contact Info",
                 // ترجمة المهارات
                 skillCat1: "Teaching Skills",
@@ -1644,6 +1971,7 @@
                 contactSubtitle: "For Contact",
                 contactEmail: "iFahadenglish@gmail.com",
                 contactPhone: "+966554449824",
+                contactFormTitle: "Send a Message",
                 // ترجمة الفوتر
                 footerName: "Fahad AlKhaldi",
                 footerDesc: "English Language Specialist - Developing Education Through Technology and Innovation",
@@ -1661,14 +1989,28 @@
                 exp3Title: "English Teacher – Saeed bin Zaid",
                 exp3Location: "Afif",
                 exp4Title: "Translator – Ministry of Hajj and Umrah",
-                exp4Location: "Makkah"
+                exp4Location: "Makkah",
+                // ترجمة أزرار التصفية
+                filterAll: "All",
+                filterInteractive: "Interactive",
+                filterStrategies: "Strategies",
+                filterPresentations: "Presentations",
+                // ترجمة أزرار CTA
+                viewWorkBtn: "View My Work",
+                contactBtn: "Contact Me",
+                sendMessageBtn: "Send Message"
             }
         };
 
         let currentLang = 'ar';
+        let currentTheme = localStorage.getItem('theme') || 'light';
+
+        // تعيين الوضع الافتراضي
+        document.documentElement.setAttribute('data-theme', currentTheme);
 
         // عناصر DOM
         const langBtn = document.getElementById('langBtn');
+        const themeBtn = document.getElementById('themeBtn');
         const pageTitle = document.getElementById('pageTitle');
         const heroTitle = document.getElementById('heroTitle');
         const heroSubtitle = document.getElementById('heroSubtitle');
@@ -1676,6 +2018,7 @@
         const heroStat2 = document.getElementById('heroStat2');
         const heroStat3 = document.getElementById('heroStat3');
         const aboutTitle = document.getElementById('aboutTitle');
+        const visionTitle = document.getElementById('visionTitle');
         const experienceTitle = document.getElementById('experienceTitle');
         const achievementsTitle = document.getElementById('achievementsTitle');
         const skillsTitle = document.getElementById('skillsTitle');
@@ -1691,6 +2034,14 @@
         const stat1 = document.getElementById('stat1');
         const stat2 = document.getElementById('stat2');
         const stat3 = document.getElementById('stat3');
+        const visionItem1Title = document.getElementById('visionItem1Title');
+        const visionItem1Desc = document.getElementById('visionItem1Desc');
+        const visionItem2Title = document.getElementById('visionItem2Title');
+        const visionItem2Desc = document.getElementById('visionItem2Desc');
+        const visionItem3Title = document.getElementById('visionItem3Title');
+        const visionItem3Desc = document.getElementById('visionItem3Desc');
+        const visionItem4Title = document.getElementById('visionItem4Title');
+        const visionItem4Desc = document.getElementById('visionItem4Desc');
         const achievementText = document.getElementById('achievementText');
         const techText = document.getElementById('techText');
         const footerText = document.getElementById('footerText');
@@ -1700,12 +2051,14 @@
         
         // عناصر نصوص الأيقونات
         const navAbout = document.getElementById('navAbout');
+        const navVision = document.getElementById('navVision');
         const navExp = document.getElementById('navExp');
         const navAchievements = document.getElementById('navAchievements');
         const navSkills = document.getElementById('navSkills');
         const navTrain = document.getElementById('navTrain');
         const navTech = document.getElementById('navTech');
         const navPortfolio = document.getElementById('navPortfolio');
+        const navTestimonials = document.getElementById('navTestimonials');
         const navContact = document.getElementById('navContact');
 
         // عناصر المهارات
@@ -1761,6 +2114,8 @@
         const contactSubtitle = document.getElementById('contactSubtitle');
         const contactEmail = document.getElementById('contactEmail');
         const contactPhone = document.getElementById('contactPhone');
+        const contactFormTitle = document.getElementById('contactFormTitle');
+        const sendMessageBtn = document.getElementById('sendMessageBtn');
 
         // عناصر الفوتر
         const footerName = document.getElementById('footerName');
@@ -1783,6 +2138,23 @@
         const exp4Title = document.getElementById('exp4Title');
         const exp4Location = document.getElementById('exp4Location');
 
+        // عناصر التصفية
+        const filterAll = document.getElementById('filterAll');
+        const filterInteractive = document.getElementById('filterInteractive');
+        const filterStrategies = document.getElementById('filterStrategies');
+        const filterPresentations = document.getElementById('filterPresentations');
+
+        // عناصر CTA
+        const viewWorkBtn = document.getElementById('viewWorkBtn');
+        const contactBtn = document.getElementById('contactBtn');
+
+        // تحديث أيقونة الوضع الليلي
+        function updateThemeIcon() {
+            themeBtn.innerHTML = currentTheme === 'light' ? 
+                '<i class="fas fa-moon"></i>' : 
+                '<i class="fas fa-sun"></i>';
+        }
+
         // وظيفة لتحميل اللغة
         function loadLanguage(lang) {
             const t = translations[lang];
@@ -1795,6 +2167,7 @@
             heroStat2.textContent = t.heroStat2;
             heroStat3.textContent = t.heroStat3;
             aboutTitle.textContent = t.aboutTitle;
+            visionTitle.textContent = t.visionTitle;
             experienceTitle.textContent = t.experienceTitle;
             achievementsTitle.textContent = t.achievementsTitle;
             skillsTitle.textContent = t.skillsTitle;
@@ -1810,18 +2183,28 @@
             stat1.textContent = t.stat1;
             stat2.textContent = t.stat2;
             stat3.textContent = t.stat3;
+            visionItem1Title.textContent = t.visionItem1Title;
+            visionItem1Desc.textContent = t.visionItem1Desc;
+            visionItem2Title.textContent = t.visionItem2Title;
+            visionItem2Desc.textContent = t.visionItem2Desc;
+            visionItem3Title.textContent = t.visionItem3Title;
+            visionItem3Desc.textContent = t.visionItem3Desc;
+            visionItem4Title.textContent = t.visionItem4Title;
+            visionItem4Desc.textContent = t.visionItem4Desc;
             achievementText.innerHTML = t.achievementText;
             techText.textContent = t.techText;
             footerText.textContent = t.footerText;
             
             // تحديث نصوص الأيقونات
             navAbout.textContent = t.navAbout;
+            navVision.textContent = t.navVision;
             navExp.textContent = t.navExp;
             navAchievements.textContent = t.navAchievements;
             navSkills.textContent = t.navSkills;
             navTrain.textContent = t.navTrain;
             navTech.textContent = t.navTech;
             navPortfolio.textContent = t.navPortfolio;
+            navTestimonials.textContent = t.navTestimonials;
             navContact.textContent = t.navContact;
             
             // تحديث المهارات
@@ -1877,6 +2260,8 @@
             contactSubtitle.textContent = t.contactSubtitle;
             contactEmail.textContent = t.contactEmail;
             contactPhone.textContent = t.contactPhone;
+            contactFormTitle.textContent = t.contactFormTitle;
+            sendMessageBtn.textContent = t.sendMessageBtn;
             
             // تحديث الفوتر
             footerName.textContent = t.footerName;
@@ -1899,6 +2284,16 @@
             exp4Title.textContent = t.exp4Title;
             exp4Location.textContent = t.exp4Location;
             
+            // تحديث أزرار التصفية
+            filterAll.textContent = t.filterAll;
+            filterInteractive.textContent = t.filterInteractive;
+            filterStrategies.textContent = t.filterStrategies;
+            filterPresentations.textContent = t.filterPresentations;
+            
+            // تحديث أزرار CTA
+            viewWorkBtn.textContent = t.viewWorkBtn;
+            contactBtn.textContent = t.contactBtn;
+            
             // تحديث اتجاه النص
             document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
             document.documentElement.lang = lang;
@@ -1912,6 +2307,19 @@
                 '<i class="fas fa-language"></i><span>EN</span>' : 
                 '<i class="fas fa-language"></i><span>AR</span>';
         });
+
+        // حدث تبديل الوضع الليلي
+        themeBtn.addEventListener('click', () => {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            updateThemeIcon();
+            
+            // تخزين التفضيل في localStorage
+            localStorage.setItem('theme', currentTheme);
+        });
+
+        // تحديث أيقونة الوضع الليلي عند التحميل
+        updateThemeIcon();
 
         // التنقل بين الأقسام
         document.querySelectorAll(".nav-item").forEach(link => {
@@ -2039,12 +2447,138 @@
             });
         }
 
+        // وظيفة تصفية المشاريع
+        function initPortfolioFilter() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const portfolioItems = document.querySelectorAll('.portfolio-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // إزالة النشط من جميع الأزرار
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // إضافة النشط للزر المحدد
+                    btn.classList.add('active');
+                    
+                    const filterValue = btn.getAttribute('data-filter');
+                    
+                    portfolioItems.forEach(item => {
+                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'translateY(20px)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+        }
+
+        // وظيفة شريط التوصيات
+        function initTestimonialSlider() {
+            const testimonialSlides = document.getElementById('testimonialSlides');
+            const testimonialPrev = document.getElementById('testimonialPrev');
+            const testimonialNext = document.getElementById('testimonialNext');
+            let currentSlide = 0;
+            const totalSlides = testimonialSlides.children.length;
+            
+            function updateSlider() {
+                testimonialSlides.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+            
+            testimonialNext.addEventListener('click', () => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateSlider();
+            });
+            
+            testimonialPrev.addEventListener('click', () => {
+                currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+                updateSlider();
+            });
+            
+            // تبديل تلقائي كل 5 ثواني
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % totalSlides;
+                updateSlider();
+            }, 5000);
+        }
+
+        // وظيفة تأثيرات الظهور عند التمرير
+        function initScrollAnimations() {
+            const fadeElements = document.querySelectorAll('.fade-in-up');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(el => observer.observe(el));
+        }
+
+        // وظيفة نموذج التواصل
+        function initContactForm() {
+            const contactForm = document.getElementById('contactForm');
+            
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                
+                const name = document.getElementById('contactName').value;
+                const email = document.getElementById('contactEmailInput').value;
+                const message = document.getElementById('contactMessage').value;
+                
+                // هنا يمكنك إضافة كود إرسال النموذج إلى الخادم
+                // لأغراض العرض، سنعرض رسالة نجاح فقط
+                
+                alert(currentLang === 'ar' ? 
+                    `شكراً ${name}، تم استلام رسالتك بنجاح! سأتواصل معك قريباً.` : 
+                    `Thank you ${name}, your message has been received! I will contact you soon.`);
+                
+                // إعادة تعيين النموذج
+                contactForm.reset();
+            });
+        }
+
         // التحميل الأولي
         loadLanguage(currentLang);
         
-        // تهيئة المعرض عند تحميل الصفحة
+        // تهيئة جميع المكونات عند تحميل الصفحة
         document.addEventListener('DOMContentLoaded', () => {
             initGallery();
+            initPortfolioFilter();
+            initTestimonialSlider();
+            initScrollAnimations();
+            initContactForm();
+        });
+
+        // تحميل الصور بشكل كسول (Lazy Loading)
+        document.addEventListener('DOMContentLoaded', function() {
+            const lazyImages = [].slice.call(document.querySelectorAll('img[data-src]'));
+            
+            if ('IntersectionObserver' in window) {
+                const lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+                    entries.forEach(function(entry) {
+                        if (entry.isIntersecting) {
+                            const lazyImage = entry.target;
+                            lazyImage.src = lazyImage.dataset.src;
+                            lazyImage.classList.remove('lazy');
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+                
+                lazyImages.forEach(function(lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            }
         });
     </script>
 </body>
