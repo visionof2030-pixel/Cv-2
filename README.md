@@ -70,7 +70,7 @@
             color: var(--text);
             line-height: 1.7;
             overflow-x: hidden;
-            padding-top: 87px;
+            padding-top: 100px;
             transition: background 0.3s ease, color 0.3s ease;
         }
 
@@ -88,12 +88,12 @@
         }
 
         .header-container {
-            max-width: 150%;
+            max-width: 100%;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             padding: 0;
-            height: 900%;
+            height: 100%;
         }
 
         .header-top {
