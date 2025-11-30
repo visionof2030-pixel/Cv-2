@@ -1,20 +1,19 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>الملف المهني | فهد الخالدي - معلم متخصص في اللغة الإنجليزية</title>
-    <meta name="description" content="فهد الخالدي - معلم متخصص في اللغة الإنجليزية مع 14+ سنة خبرة في تطوير أساليب التعليم الحديثة. اكتشف ملفي المهني وإنجازاتي التعليمية.">
+    <meta name="description" content="فهد الخالدي - معلم متخصص في اللغة الإنجليزية مع 13+ سنة خبرة في تطوير أساليب التعليم الحديثة. اكتشف ملفي المهني وإنجازاتي التعليمية.">
     
     <!-- تحسينات SEO -->
     <meta property="og:title" content="فهد الخالدي - معلم متخصص في اللغة الإنجليزية">
-    <meta property="og:description" content="معلم متخصص في اللغة الإنجليزية مع 14+ سنة خبرة في تطوير أساليب التعليم الحديثة">
+    <meta property="og:description" content="معلم متخصص في اللغة الإنجليزية مع 13+ سنة خبرة في تطوير أساليب التعليم الحديثة">
     <meta property="og:image" content="https://i.ibb.co/k66psVmZ/20220817-151032.jpg">
     <meta property="og:url" content="https://fahad-alkhaldi.com">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="فهد الخالدي - معلم متخصص في اللغة الإنجليزية">
-    <meta name="twitter:description" content="معلم متخصص في اللغة الإنجليزية مع 14+ سنة خبرة في تطوير أساليب التعليم الحديثة">
+    <meta name="twitter:description" content="معلم متخصص في اللغة الإنجليزية مع 13+ سنة خبرة في تطوير أساليب التعليم الحديثة">
     <meta name="twitter:image" content="https://i.ibb.co/k66psVmZ/20220817-151032.jpg">
     
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
@@ -85,16 +84,16 @@
             z-index: 1000;
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
             border-bottom: 3px solid var(--accent);
-            height: 87px;
+            height: 100px;
         }
 
         .header-container {
-            max-width: 100%;
+            max-width: 150%;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             padding: 0;
-            height: 100%;
+            height: 900%;
         }
 
         .header-top {
@@ -451,6 +450,12 @@
         }
 
         .fade-in-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* إزالة تأثيرات الظهور من قسم الدورات */
+        #training .fade-in-up {
             opacity: 1;
             transform: translateY(0);
         }
@@ -1259,99 +1264,6 @@
             background: linear-gradient(135deg, #1E1E1E, #2A2A2A);
         }
 
-        /* ========== قسم الدورات التدريبية ========== */
-        .certificates-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 25px;
-        }
-
-        .certificate-item {
-            background: var(--card-bg);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: var(--shadow);
-            transition: all 0.3s ease;
-            border: 1px solid var(--border);
-            display: flex;
-            flex-direction: column;
-        }
-
-        .certificate-item:hover {
-            transform: translateY(-5px);
-            box-shadow: var(--shadow-hover);
-        }
-
-        .certificate-img {
-            height: 200px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .certificate-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s ease;
-        }
-
-        .certificate-item:hover .certificate-img img {
-            transform: scale(1.05);
-        }
-
-        .certificate-content {
-            padding: 20px;
-            flex-grow: 1;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .certificate-content h3 {
-            color: var(--primary);
-            margin-bottom: 10px;
-            font-size: 1.1rem;
-        }
-
-        .certificate-content p {
-            color: var(--light-text);
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin-bottom: 15px;
-            flex-grow: 1;
-        }
-
-        .download-btn {
-            margin-top: auto;
-            text-align: center;
-            padding: 10px 15px;
-            font-size: 0.85rem;
-        }
-
-        /* معرض المشاركات */
-        .participation-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .participation-img {
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .participation-img img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-
-        .participation-img:hover img {
-            transform: scale(1.03);
-        }
-
         /* تحسينات للتنقل على الجوال */
         @media (max-width: 768px) {
             body {
@@ -1445,10 +1357,6 @@
             .nav-item span {
                 font-size: 0.5rem;
             }
-            
-            .certificates-grid {
-                grid-template-columns: 1fr;
-            }
         }
 
         @media (max-width: 480px) {
@@ -1492,10 +1400,6 @@
                 width: 40px;
                 height: 40px;
             }
-            
-            .participation-gallery {
-                grid-template-columns: 1fr;
-            }
         }
 
         /* Animations */
@@ -1510,57 +1414,127 @@
             }
         }
 
-        /* تحسينات لقسم الدورات */
-        .course-item {
-            background: var(--card-bg);
-            border-radius: 12px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: var(--shadow);
-            border-right: 4px solid var(--accent);
-            border: 1px solid var(--border);
-            transition: all 0.3s ease;
+        /* أنماط إضافية للدورات التدريبية */
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
         }
 
-        .course-item:hover {
-            transform: translateY(-3px);
+        .certificate-item {
+            background: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: all 0.3s ease;
+            border: 1px solid var(--border);
+        }
+
+        .certificate-item:hover {
+            transform: translateY(-5px);
             box-shadow: var(--shadow-hover);
         }
 
-        .course-title {
-            font-size: 1.1rem;
-            font-weight: 700;
+        .certificate-image {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            background-color: #f9f9f9;
+            padding: 10px;
+            /* إزالة خاصية lazy loading */
+            opacity: 1 !important;
+        }
+
+        .certificate-content {
+            padding: 15px;
+        }
+
+        .certificate-title {
             color: var(--primary);
             margin-bottom: 10px;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .certificate-download {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.85rem;
+            transition: all 0.3s ease;
+            background: var(--yellow-gradient);
+            color: var(--primary-dark);
+            padding: 8px 15px;
+            border-radius: 20px;
+        }
+
+        .certificate-download:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(245, 215, 110, 0.3);
+        }
+
+        /* أنماط إضافية للمشاركات */
+        .participation-images {
             display: flex;
-            align-items: center;
-            gap: 10px;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 15px;
         }
 
-        .course-emoji {
-            font-size: 1.3rem;
-        }
-
-        .course-description {
-            color: var(--text);
-            line-height: 1.7;
-            margin-bottom: 15px;
-        }
-
-        .course-impact {
-            background: rgba(245, 215, 110, 0.1);
-            border-right: 3px solid var(--accent);
-            padding: 12px 15px;
+        .participation-image {
+            max-width: 100%;
+            height: auto;
             border-radius: 8px;
-            font-style: italic;
-            color: var(--light-text);
-            line-height: 1.6;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
-        .course-divider {
-            height: 1px;
-            background: linear-gradient(to right, transparent, var(--accent), transparent);
-            margin: 25px 0;
+        /* أنماط إضافية للتدريب */
+        .training-category {
+            margin-bottom: 30px;
+        }
+
+        .training-category-title {
+            color: var(--primary);
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+            text-align: center;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        /* أنماط إضافية للإنجازات */
+        .achievement-images {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .achievement-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* تحسينات لتحميل الصور بشكل أسرع */
+        .certificate-image,
+        .participation-image,
+        .achievement-image {
+            opacity: 1 !important;
+            transition: transform 0.3s ease;
+        }
+
+        .certificate-image:hover,
+        .participation-image:hover,
+        .achievement-image:hover {
+            transform: scale(1.02);
         }
     </style>
 </head>
@@ -1574,7 +1548,7 @@
                 <div class="header-actions">
                     <button class="lang-btn" id="langBtn">
                         <i class="fas fa-language"></i>
-                        <span id="langText">EN</span>
+                        <span>EN</span>
                     </button>
                     <button class="theme-btn" id="themeBtn">
                         <i class="fas fa-moon"></i>
@@ -1620,10 +1594,6 @@
                         <i class="fas fa-graduation-cap"></i>
                         <span id="navTrain">الدورات</span>
                     </a>
-                    <a href="#certificates" class="nav-item" data-section="certificates">
-                        <i class="fas fa-certificate"></i>
-                        <span id="navCertificates">شهاداتي</span>
-                    </a>
                     <a href="#tech" class="nav-item" data-section="tech">
                         <i class="fas fa-desktop"></i>
                         <span id="navTech">التقنية</span>
@@ -1660,7 +1630,7 @@
         <section class="hero-section">
             <div class="hero-content">
                 <h1 class="hero-title" id="heroTitle">الملف المهني للمعلم فهد الخالدي</h1>
-                <p class="hero-subtitle" id="heroSubtitle">معلم متخصص في اللغة الإنجليزية مع 14+ سنة خبرة في تطوير أساليب التعليم الحديثة</p>
+                <p class="hero-subtitle" id="heroSubtitle">معلم متخصص في اللغة الإنجليزية مع 13+ سنة خبرة في تطوير أساليب التعليم الحديثة</p>
                 
                 <div class="hero-actions">
                     <a href="#portfolio" class="btn btn-primary">
@@ -1675,16 +1645,16 @@
                 
                 <div class="hero-stats">
                     <div class="hero-stat">
-                        <span class="number">14+</span>
+                        <span class="number">13+</span>
                         <span class="label" id="heroStat1">سنوات خبرة</span>
                     </div>
                     <div class="hero-stat">
-                        <span class="number">130+</span>
+                        <span class="number">390+</span>
                         <span class="label" id="heroStat2">ساعة تدريب</span>
                     </div>
                     <div class="hero-stat">
                         <span class="number">105+</span>
-                        <span class="label" id="heroStat3">ساعات تطوع</span>
+                        <span class="label" id="heroStat3">ساعات تطوعية</span>
                     </div>
                 </div>
             </div>
@@ -1696,7 +1666,7 @@
             <div class="card fade-in-up">
                 <div class="profile-header">
                     <div class="profile-img">
-                        <img src="https://i.ibb.co/k66psVmZ/20220817-151032.jpg" alt="صورة فهد الخالدي" class="lazy" data-src="https://i.ibb.co/k66psVmZ/20220817-151032.jpg">
+                        <img src="https://i.ibb.co/k66psVmZ/20220817-151032.jpg" alt="صورة فهد الخالدي">
                     </div>
                     <div class="profile-info">
                         <h2 id="name">فهد نغيمش حميد الخالدي</h2>
@@ -1712,16 +1682,16 @@
 
                 <div class="stats-grid">
                     <div class="stat-card">
-                        <span class="stat-number">14+</span>
+                        <span class="stat-number">13+</span>
                         <span class="stat-label" id="stat1">سنوات خبرة</span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-number">130+</span>
+                        <span class="stat-number">390+</span>
                         <span class="stat-label" id="stat2">ساعات تدريبية</span>
                     </div>
                     <div class="stat-card">
                         <span class="stat-number">105+</span>
-                        <span class="stat-label" id="stat3">ساعات تطوع</span>
+                        <span class="stat-label" id="stat3">ساعات تطوعية</span>
                     </div>
                 </div>
             </div>
@@ -1798,15 +1768,20 @@
             <h2 class="section-title" id="achievementsTitle">الإنجازات</h2>
             <div class="card fade-in-up">
                 <div class="achievement-card">
-                    <div class="achievement-year">2022</div>
+                    <div class="achievement-year">2021</div>
                     <div class="achievement-content">
                         <p id="achievementText">
-                            في عام 2022 حصلتُ على ترقية إلى رتبة معلم متقدم بعد مسيرة مهنية امتدت لسنوات كمعلم ممارس، قدمت خلالها أداءً متميزًا أسهم في تطوير العملية التعليمية داخل المدرسة. جاءت هذه الترقية تقديرًا لجهودي في توظيف استراتيجيات تدريس حديثة تعزز مهارات التفكير النقدي والإبداعي لدى الطلاب، إضافة إلى قدرتي على تحليل نواتج التعلم وبناء خطط علاجية فردية أثمرت عن تحسين واضح في مستويات الطلاب.<br><br>
+                            في عام 2021 حصلتُ على ترقية إلى رتبة معلم متقدم بعد مسيرة مهنية امتدت لسنوات كمعلم ممارس، قدمت خلالها أداءً متميزًا أسهم في تطوير العملية التعليمية داخل المدرسة. جاءت هذه الترقية تقديرًا لجهودي في توظيف استراتيجيات تدريس حديثة تعزز مهارات التفكير النقدي والإبداعي لدى الطلاب، إضافة إلى قدرتي على تحليل نواتج التعلم وبناء خطط علاجية فردية أثمرت عن تحسين واضح في مستويات الطلاب.<br><br>
 
-                            وقد عكست هذه الترقية ثقة الجهة التعليمية بمهاراتي المهنية، خصوصًا في مجال تصميم أنشطة مبتكرة تُدمج مهارات الفهم العميق، والعمل التعاوني، والتعليم الذاتي داخل البيئة الصفية. كما كانت اعترافًا بدوري في تطوير البرامج التربوية والأنشطة التعليمية قبل عام 2022، ومساهمتي في بناء بيئة صفية محفزة يشعر فيها الطلاب بالأمان والرغبة في المشاركة والتعلم.<br><br>
+                            وقد عكست هذه الترقية ثقة الجهة التعليمية بمهاراتي المهنية، خصوصًا في مجال تصميم أنشطة مبتكرة تُدمج مهارات الفهم العميق، والعمل التعاوني، والتعليم الذاتي داخل البيئة الصفية. كما كانت اعترافًا بدوري في تطوير البرامج التربوية والأنشطة التعليمية قبل عام 2021، ومساهمتي في بناء بيئة صفية محفزة يشعر فيها الطلاب بالأمان والرغبة في المشاركة والتعلم.<br><br>
 
                             تعد هذه الترقية محطة مهمة في مسيرتي، لأنها لم تكن مجرد انتقال إلى مستوى وظيفي أعلى، بل كانت نتيجة تراكم خبرات وممارسات مهنية أثبتت أثرها على الطلاب وعلى منظومة التعليم داخل المدرسة. واليوم أواصل عملي كمعلم متقدم ملتزم بالتحسين المستمر، وتطبيق أفضل الممارسات التربوية، والمساهمة في رفع جودة التعليم وتحقيق نواتج تعلم أعلى.
                         </p>
+                        
+                        <div class="achievement-images">
+                            <img src="https://i.ibb.co/hJVKBW78/1c52955c-eaa9-4550-b838-62f29861106d.jpg" alt="إنجاز 2021 - صورة 1" class="achievement-image">
+                            <img src="https://i.ibb.co/d05Gb47j/IMG-1817.jpg" alt="إنجاز 2021 - صورة 2" class="achievement-image">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1841,426 +1816,142 @@
 
         <!-- Training Section -->
         <section id="training">
-            <h2 class="section-title" id="trainingTitle">الدورات التالية</h2>
-            <div class="card fade-in-up">
-                <div class="training-card">
-                    <!-- دورة 1 -->
-                    <div class="course-item">
-                        <div class="course-title">
-                            <span class="course-emoji">1️⃣</span>
-                            <span>التفكير الناقد والإبداعي ودمجه في المواد الدراسية</span>
+            <h2 class="section-title" id="trainingTitle">الدورات التدريبية</h2>
+            <div class="card">
+                <!-- قسم التدريب التربوي -->
+                <div class="training-category">
+                    <h3 class="training-category-title" id="trainingCategory1">تدريب تربوي</h3>
+                    <div class="certificates-grid">
+                        <!-- دورة 1 -->
+                        <div class="certificate-item">
+                            <img src="https://i.ibb.co/HLLRYMBb/Screenshot-2025-11-28-20-39-26-48-f541918c7893c52dbd1ee5d319333948.jpg" alt="شهادة مهارات التفكير الناقد" class="certificate-image">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">مهارات التفكير الناقد</h3>
+                                <a href="https://rb.gy/fo356i" class="certificate-download" target="_blank">تحميل الشهادة</a>
+                            </div>
                         </div>
-                        <div class="course-description">
-                            دورة تهدف إلى تنمية مهارات التفكير العليا لدى المتعلمين من خلال توظيف استراتيجيات تعليمية قائمة على التحليل والاستنتاج والإبداع.
+                        
+                        <!-- دورة 2 -->
+                        <div class="certificate-item">
+                            <img src="https://i.ibb.co/B2PyP3MX/Screenshot-2025-11-28-20-39-52-63-f541918c7893c52dbd1ee5d319333948.jpg" alt="شهادة القياس والتقويم التربوي" class="certificate-image">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">القياس والتقويم التربوي</h3>
+                                <a href="https://rebrand.ly/kfo5ofx" class="certificate-download" target="_blank">تحميل الشهادة</a>
+                            </div>
                         </div>
-                        <div class="course-impact">
-                            وقد أسهمت في تحويل الدروس إلى مواقف تعليمية نشطة قائمة على التفكير بدل التلقين، ورفعت مستوى التفاعل والفهم العميق لدى الطلاب.
+                        
+                        <!-- دورة 3 -->
+                        <div class="certificate-item">
+                            <img src="https://i.ibb.co/WWZ1prn6/Screenshot-2025-11-28-20-40-12-19-f541918c7893c52dbd1ee5d319333948.jpg" alt="شهادة الاستراتيجيات الحديثة في تدريس أساسيات اللغة الإنجليزية" class="certificate-image">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">الاستراتيجيات الحديثة في تدريس أساسيات اللغة الإنجليزية</h3>
+                                <a href="https://rebrand.ly/m3ktvk8" class="certificate-download" target="_blank">تحميل الشهادة</a>
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- دورة 2 -->
-                    <div class="course-item">
-                        <div class="course-title">
-                            <span class="course-emoji">2️⃣</span>
-                            <span>القياس والتقويم التربوي</span>
+                        
+                        <!-- دورة 4 -->
+                        <div class="certificate-item">
+                            <img src="https://i.ibb.co/v6DJ9dWj/Screenshot-2025-11-28-20-40-36-41-f541918c7893c52dbd1ee5d319333948.jpg" alt="شهادة البيئة الصفية الجاذبة" class="certificate-image">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">البيئة الصفية الجاذبة</h3>
+                                <a href="https://rebrand.ly/0hter6k" class="certificate-download" target="_blank">تحميل الشهادة</a>
+                            </div>
                         </div>
-                        <div class="course-description">
-                            تركز على إكساب المعلم مهارات بناء أدوات التقويم وتحليل نتائج الطلاب وربطها بنواتج التعلم.
+                        
+                        <!-- دورة 5 -->
+                        <div class="certificate-item">
+                            <img src="https://i.ibb.co/4nfpRyzC/Screenshot-2025-11-28-20-41-00-72-f541918c7893c52dbd1ee5d319333948.jpg" alt="شهادة تحليل أداء الطلاب وتقديم تغذية راجعة" class="certificate-image">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">تحليل أداء الطلاب وتقديم تغذية راجعة</h3>
+                                <a href="https://rebrand.ly/6as769g" class="certificate-download" target="_blank">تحميل الشهادة</a>
+                            </div>
                         </div>
-                        <div class="course-impact">
-                            وقد انعكس أثرها في تحسين دقة التقييم، وتنويع أدوات التقويم، واتخاذ قرارات تعليمية أكثر دقة وموضوعية.
+                        
+                        <!-- دورة 6 -->
+                        <div class="certificate-item">
+                            <img src="https://i.ibb.co/GQvLQQBJ/Screenshot-2025-11-28-20-43-23-67-f541918c7893c52dbd1ee5d319333948.jpg" alt="شهادة مهارات التعامل مع أدوات القياس والتقويم الإلكترونية" class="certificate-image">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">مهارات التعامل مع أدوات القياس والتقويم الإلكترونية</h3>
+                                <a href="https://rebrand.ly/gyo6bx8" class="certificate-download" target="_blank">تحميل الشهادة</a>
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- دورة 3 -->
-                    <div class="course-item">
-                        <div class="course-title">
-                            <span class="course-emoji">3️⃣</span>
-                            <span>الاستراتيجيات الحديثة في تدريس أساسيات اللغة الإنجليزية</span>
+                        
+                        <!-- دورة 7 -->
+                        <div class="certificate-item">
+                            <img src="https://i.ibb.co/0VR7gkVJ/Screenshot-2025-11-28-20-43-45-67-f541918c7893c52dbd1ee5d319333948.jpg" alt="شهادة التنمية المهنية لمعلمي اللغة الإنجليزية" class="certificate-image">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">التنمية المهنية لمعلمي اللغة الإنجليزية</h3>
+                                <a href="https://rebrand.ly/cvaq07u" class="certificate-download" target="_blank">تحميل الشهادة</a>
+                            </div>
                         </div>
-                        <div class="course-description">
-                            تهدف إلى تطوير أساليب تدريس المهارات الأساسية للغة باستخدام استراتيجيات حديثة قائمة على التفاعل والتعلم النشط.
+                        
+                        <!-- دورة 8 -->
+                        <div class="certificate-item">
+                            <img src="https://i.ibb.co/fzccMHsX/Screenshot-2025-11-28-20-44-11-62-f541918c7893c52dbd1ee5d319333948.jpg" alt="شهادة العبقرية في العملية التدريبية TOT" class="certificate-image">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">العبقرية في العملية التدريبية TOT</h3>
+                                <a href="https://rebrand.ly/3b4fce" class="certificate-download" target="_blank">تحميل الشهادة</a>
+                            </div>
                         </div>
-                        <div class="course-impact">
-                            وأسهمت في تبسيط المفاهيم اللغوية وزيادة مشاركة الطلاب وتحسن مستواهم التحصيلي.
+                        
+                        <!-- دورة 9 -->
+                        <div class="certificate-item">
+                            <img src="https://i.ibb.co/jZqM8wg6/Screenshot-2025-11-28-20-44-30-11-f541918c7893c52dbd1ee5d319333948.jpg" alt="شهادة بناء الاختبار الجيد" class="certificate-image">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">بناء الاختبار الجيد</h3>
+                                <a href="https://rebrand.ly/jecmws4" class="certificate-download" target="_blank">تحميل الشهادة</a>
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- دورة 4 -->
-                    <div class="course-item">
-                        <div class="course-title">
-                            <span class="course-emoji">4️⃣</span>
-                            <span>البيئة الصفية الجاذبة</span>
+                        
+                        <!-- دورة 10 -->
+                        <div class="certificate-item">
+                            <img src="https://i.ibb.co/LhNrvYBp/Screenshot-2025-11-28-20-44-48-81-f541918c7893c52dbd1ee5d319333948.jpg" alt="شهادة توظيف استراتيجيات التعليم في البيئة التدريبية الجاذبة" class="certificate-image">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">توظيف استراتيجيات التعليم في البيئة التدريبية الجاذبة</h3>
+                                <a href="https://2cm.es/1kaU8" class="certificate-download" target="_blank">تحميل الشهادة</a>
+                            </div>
                         </div>
-                        <div class="course-description">
-                            تعنى ببناء بيئة تعليمية محفزة وآمنة تعزز التعلم النشط والانضباط الإيجابي.
+                        
+                        <!-- دورة 11 -->
+                        <div class="certificate-item">
+                            <img src="https://i.ibb.co/N6F1RcZ5/Screenshot-2025-11-28-20-45-08-47-f541918c7893c52dbd1ee5d319333948.jpg" alt="شهادة تدريس مهاراتي التحدث والاستماع" class="certificate-image">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">تدريس مهاراتي التحدث والاستماع</h3>
+                                <a href="https://2cm.es/1kaUi" class="certificate-download" target="_blank">تحميل الشهادة</a>
+                            </div>
                         </div>
-                        <div class="course-impact">
-                            وقد أسهمت في تحسين إدارة الصف، وزيادة دافعية الطلاب، وانعكس ذلك على استقرار العملية التعليمية داخل الحجرة الدراسية.
-                        </div>
-                    </div>
-
-                    <!-- دورة 5 -->
-                    <div class="course-item">
-                        <div class="course-title">
-                            <span class="course-emoji">5️⃣</span>
-                            <span>تحليل أداء الطلاب وتقديم التغذية الراجعة</span>
-                        </div>
-                        <div class="course-description">
-                            تستهدف استخدام البيانات التعليمية في تحليل مستويات الطلاب وتقديم تغذية راجعة بنّاءة.
-                        </div>
-                        <div class="course-impact">
-                            وقد مكّنتني من تشخيص دقيق لجوانب القوة والضعف، وتحقيق تحسن ملموس في أداء الطلاب الأكاديمي.
-                        </div>
-                    </div>
-
-                    <!-- دورة 6 -->
-                    <div class="course-item">
-                        <div class="course-title">
-                            <span class="course-emoji">6️⃣</span>
-                            <span>أساسيات الترجمة</span>
-                        </div>
-                        <div class="course-description">
-                            تهدف إلى تنمية المهارات الأساسية في الترجمة بين اللغتين العربية والإنجليزية مع مراعاة الدقة والسياق.
-                        </div>
-                        <div class="course-impact">
-                            وقد عززت قدرتي على دعم الطلاب في فهم المعاني وتحسين مهاراتهم اللغوية بشكل أفضل.
-                        </div>
-                    </div>
-
-                    <!-- دورة 7 -->
-                    <div class="course-item">
-                        <div class="course-title">
-                            <span class="course-emoji">7️⃣</span>
-                            <span>مهارات التعامل مع أدوات القياس والتقويم الإلكترونية</span>
-                        </div>
-                        <div class="course-description">
-                            تركز على بناء الاختبارات الإلكترونية وتحليل نتائجها باستخدام التقنيات الحديثة.
-                        </div>
-                        <div class="course-impact">
-                            وقد أسهمت في تسريع عملية التقويم، ورفع دقة النتائج، وتقليل الجهد والوقت في متابعة تحصيل الطلاب.
-                        </div>
-                    </div>
-
-                    <!-- دورة 8 -->
-                    <div class="course-item">
-                        <div class="course-title">
-                            <span class="course-emoji">8️⃣</span>
-                            <span>التنمية المهنية لمعلمي اللغة الإنجليزية – المستوى الثالث</span>
-                        </div>
-                        <div class="course-description">
-                            دورة متقدمة تهدف إلى رفع كفاءة المعلم المهنية وفق أحدث الاتجاهات التربوية.
-                        </div>
-                        <div class="course-impact">
-                            وقد أسهمت في تطوير ممارساتي التدريسية وتحسين جودة التخطيط والتنفيذ داخل الصف.
-                        </div>
-                    </div>
-
-                    <!-- دورة 9 -->
-                    <div class="course-item">
-                        <div class="course-title">
-                            <span class="course-emoji">9️⃣</span>
-                            <span>العبقرية في العملية التعليمية</span>
-                        </div>
-                        <div class="course-description">
-                            تركز على تنمية الإبداع والابتكار في التخطيط والتنفيذ والتحفيز.
-                        </div>
-                        <div class="course-impact">
-                            وقد ساعدتني على تقديم الدروس بأساليب غير تقليدية، مما زاد من دافعية الطلاب ومتعتهم أثناء التعلم.
+                        
+                        <!-- دورة 12 -->
+                        <div class="certificate-item">
+                            <img src="https://i.ibb.co/FLF62JB7/Screenshot-2025-11-28-20-45-33-32-f541918c7893c52dbd1ee5d319333948.jpg" alt="شهادة اللقاءات التخصصية - لغة انجليزية" class="certificate-image">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">اللقاءات التخصصية - لغة انجليزية</h3>
+                                <a href="https://2cm.es/1kaUn" class="certificate-download" target="_blank">تحميل الشهادة</a>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- دورة 10 -->
-                    <div class="course-item">
-                        <div class="course-title">
-                            <span class="course-emoji">🔟</span>
-                            <span>بناء الاختبار الجيد</span>
-                        </div>
-                        <div class="course-description">
-                            تعنى بأسس إعداد الاختبارات التحصيلية وفق معايير علمية دقيقة.
-                        </div>
-                        <div class="course-impact">
-                            وقد انعكس أثرها في إعداد اختبارات أكثر جودة وشمولية ودقة في قياس نواتج التعلم.
-                        </div>
-                    </div>
-
-                    <!-- دورة 11 -->
-                    <div class="course-item">
-                        <div class="course-title">
-                            <span class="course-emoji">1️⃣1️⃣</span>
-                            <span>توظيف استراتيجيات التعليم في البيئة التدريبية الجاذبة</span>
-                        </div>
-                        <div class="course-description">
-                            تركز على تطبيق استراتيجيات التعلم النشط داخل البيئات التدريبية.
-                        </div>
-                        <div class="course-impact">
-                            وقد أسهمت في تصميم أنشطة تدريبية تفاعلية تحقق الأهداف وترفع مستوى التفاعل والدافعية لدى المتدربين.
-                        </div>
-                    </div>
-
-                    <!-- دورة 12 -->
-                    <div class="course-item">
-                        <div class="course-title">
-                            <span class="course-emoji">1️⃣2️⃣</span>
-                            <span>تدريس مهارتي التحدث والاستماع</span>
-                        </div>
-                        <div class="course-description">
-                            تعنى بتطوير أساليب تدريس مهارتي التحدث والاستماع في اللغة الإنجليزية باستخدام أنشطة تفاعلية.
-                        </div>
-                        <div class="course-impact">
-                            وقد أسهمت في رفع الكفاءة التواصلية للطلاب وزيادة ثقتهم في استخدام اللغة داخل الصف.
-                        </div>
-                    </div>
-
-                    <!-- دورة 13 -->
-                    <div class="course-item">
-                        <div class="course-title">
-                            <span class="course-emoji">1️⃣3️⃣</span>
-                            <span>التوعية بقواعد السلوك والمواظبة المحدثة</span>
-                        </div>
-                        <div class="course-description">
-                            تهدف إلى نشر ثقافة الانضباط المدرسي والالتزام بالأنظمة.
-                        </div>
-                        <div class="course-impact">
-                            وقد ساعدتني على تعزيز السلوك الإيجابي لدى الطلاب، ورفع مستوى الانضباط والمواظبة المدرسية.
-                        </div>
-                    </div>
-
-                    <!-- دورة 14 -->
-                    <div class="course-item">
-                        <div class="course-title">
-                            <span class="course-emoji">1️⃣4️⃣</span>
-                            <span>اللقاءات التخصصية لمادة اللغة الإنجليزية</span>
-                        </div>
-                        <div class="course-description">
-                            لقاءات تهدف إلى تبادل الخبرات ومناقشة أفضل الممارسات في تدريس اللغة الإنجليزية.
-                        </div>
-                        <div class="course-impact">
-                            وقد أسهمت في تطوير أسلوبي التدريسي وتحسين نواتج تعلم الطلاب.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certificates Section -->
-        <section id="certificates">
-            <h2 class="section-title" id="certificatesTitle">شهادات الدورات التدريبية</h2>
-            <div class="card fade-in-up">
-                <div class="portfolio-filters">
-                    <button class="filter-btn active" data-filter="all" id="filterAllCert">الكل</button>
-                    <button class="filter-btn" data-filter="teaching" id="filterTeaching">تعليمي</button>
-                    <button class="filter-btn" data-filter="other" id="filterOther">أخرى</button>
                 </div>
                 
-                <div class="certificates-grid">
-                    <!-- شهادة 1 -->
-                    <div class="certificate-item" data-category="teaching">
-                        <div class="certificate-img">
-                            <img src="https://i.ibb.co/s9fcJcr7/1.jpg" alt="شهادة مهارات التفكير الناقد" class="lazy" data-src="https://i.ibb.co/s9fcJcr7/1.jpg">
+                <!-- قسم أخرى -->
+                <div class="training-category">
+                    <h3 class="training-category-title" id="trainingCategory2">أخرى</h3>
+                    <div class="certificates-grid">
+                        <!-- دورة 13 -->
+                        <div class="certificate-item">
+                            <img src="https://i.ibb.co/84tXzBZw/Screenshot-2025-11-28-20-42-57-73-f541918c7893c52dbd1ee5d319333948.jpg" alt="شهادة أساسيات الترجمة" class="certificate-image">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">أساسيات الترجمة</h3>
+                                <a href="https://rebrand.ly/ya3twae" class="certificate-download" target="_blank">تحميل الشهادة</a>
+                            </div>
                         </div>
-                        <div class="certificate-content">
-                            <h3>مهارات التفكير الناقد والإبداعي</h3>
-                            <p>شهادة معتمدة في مهارات التفكير الناقد والإبداعي ودمجها في المواد الدراسية</p>
-                            <a href="https://www.mediafire.com/file/1m5i9cwhiqz3dwl/%25E2%2580%258E%25E2%2581%25A8%25D8%25B4%25D9%2587%25D8%25A7%25D8%25AF%25D8%25A9_%25D9%2585%25D9%2587%25D8%25A7%25D8%25B1%25D8%25A7%25D8%25AA_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2584%25D8%25AA%25D9%2581%25D9%2583%25D9%258A%25D8%25B1_%25D8%25A7%25D9%2584%25D9%2586%25D8%25A7%25D9%2582%25D8%25AF_%25D9%2588%25D8%25A7%25D9%2584%25D8%25A7%25D8%25A8%25D8%25AF%25D8%25A7%25D8%25B9%25D9%258A_%25D9%2588%25D8%25AF%25D9%2585%25D8%25AC%25D9%2587%25D8%25A7_%25D9%2581%25D9%258A_%25D8%25A7%25D9%2584%25D9%2585%25D9%2588%25D8%25A7%25D8%25AF_%25D8%25A7%25D9%2584%25D8%25AF%25D8%25B1%25D8%25A7%25D8%25B3%25D9%258A%25D8%25A9%25E2%2581%25A9.pdf/file" target="_blank" class="btn btn-primary download-btn">
-                                <i class="fas fa-download"></i>
-                                تحميل الشهادة
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- شهادة 2 -->
-                    <div class="certificate-item" data-category="teaching">
-                        <div class="certificate-img">
-                            <img src="https://i.ibb.co/6cHn5ny1/2.jpg" alt="شهادة القياس والتقويم التربوي" class="lazy" data-src="https://i.ibb.co/6cHn5ny1/2.jpg">
-                        </div>
-                        <div class="certificate-content">
-                            <h3>القياس والتقويم التربوي</h3>
-                            <p>شهادة معتمدة في القياس والتقويم التربوي وأساليب التقييم الحديثة</p>
-                            <a href="https://www.mediafire.com/file/ylwfuhzhyt4m0x9/%25E2%2580%258E%25E2%2581%25A8%25D8%25B4%25D9%2587%25D8%25A7%25D8%25AF%25D8%25A9_%25D8%25A7%25D9%2584%25D9%2582%25D9%258A%25D8%25A7%25D8%25B3_%25D9%2588%25D8%25A7%25D9%2584%25D8%25A7%25D9%2584%25D8%25AA%25D9%2582%25D9%2588%25D9%258A%25D9%2585_%25D8%25A7%25D9%2584%25D8%25AA%25D8%25B1%25D8%25A8%25D9%2588%25D9%258A%25E2%2581%25A9.pdf/file" target="_blank" class="btn btn-primary download-btn">
-                                <i class="fas fa-download"></i>
-                                تحميل الشهادة
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- شهادة 3 -->
-                    <div class="certificate-item" data-category="teaching">
-                        <div class="certificate-img">
-                            <img src="https://i.ibb.co/DfbgfFtL/3.jpg" alt="شهادة الاستراتيجيات الحديثة في تدريس اللغة الإنجليزية" class="lazy" data-src="https://i.ibb.co/DfbgfFtL/3.jpg">
-                        </div>
-                        <div class="certificate-content">
-                            <h3>الاستراتيجيات الحديثة في تدريس اللغة الإنجليزية</h3>
-                            <p>شهادة معتمدة في الاستراتيجيات الحديثة لتدريس أساسيات اللغة الإنجليزية</p>
-                            <a href="https://www.mediafire.com/file/br7i8kkshy5qv6r/%25E2%2580%258E%25E2%2581%25A8%25D8%25B4%25D9%2587%25D8%25A7%25D8%25AF%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25A7%25D8%25B3%25D8%25AA%25D8%25B1%25D8%25A7%25D8%25AA%25D9%258A%25D8%25AC%25D9%258A%25D8%25A7%25D8%25AA_%25D8%25A7%25D9%2584%25D8%25AD%25D8%25AF%25D9%258A%25D8%25AB%25D8%25A9_%25D9%2581%25D9%258A_%25D8%25A7%25D8%25B3%25D8%25A7%25D8%25B3%25D9%258A%25D8%25A7%25D8%25AA_%25D8%25A7%25D9%2584%25D9%2584%25D8%25BA%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2586%25D8%25AC%25D9%2584%25D9%258A%25D8%25B2%25D9%258A%25D8%25A9%25E2%2581%25A9.pdf/file" target="_blank" class="btn btn-primary download-btn">
-                                <i class="fas fa-download"></i>
-                                تحميل الشهادة
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- شهادة 4 -->
-                    <div class="certificate-item" data-category="teaching">
-                        <div class="certificate-img">
-                            <img src="https://i.ibb.co/7JH4pjBT/4.jpg" alt="شهادة البيئة الصفية الجاذبة" class="lazy" data-src="https://i.ibb.co/7JH4pjBT/4.jpg">
-                        </div>
-                        <div class="certificate-content">
-                            <h3>البيئة الصفية الجاذبة</h3>
-                            <p>شهادة معتمدة في تصميم وإدارة البيئة الصفية الجاذبة والمحفزة للتعلم</p>
-                            <a href="https://www.mediafire.com/file/5lpzoh55grwth8h/%25E2%2580%258E%25E2%2581%25A8%25D8%25B4%25D9%2587%25D8%25A7%25D8%25AF%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25A8%25D9%258A%25D9%258A%25D9%2594%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25B5%25D9%2581%25D9%258A%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25AC%25D8%25A7%25D8%25B0%25D8%25A8%25D8%25A9%25E2%2581%25A9.pdf/file" target="_blank" class="btn btn-primary download-btn">
-                                <i class="fas fa-download"></i>
-                                تحميل الشهادة
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- شهادة 5 -->
-                    <div class="certificate-item" data-category="teaching">
-                        <div class="certificate-img">
-                            <img src="https://i.ibb.co/99B2rcMN/5.jpg" alt="شهادة تحليل أداء الطلاب" class="lazy" data-src="https://i.ibb.co/99B2rcMN/5.jpg">
-                        </div>
-                        <div class="certificate-content">
-                            <h3>تحليل أداء الطلاب وتقديم تغذية راجعة</h3>
-                            <p>شهادة معتمدة في تحليل أداء الطلاب وتقديم التغذية الراجعة الفعالة</p>
-                            <a href="https://www.mediafire.com/file/lcx20fw7uwvhtbm/%25E2%2580%258E%25E2%2581%25A8%25D8%25B4%25D9%2587%25D8%25A7%25D8%25AF%25D8%25A9_%25D8%25AA%25D8%25AD%25D9%2584%25D9%258A%25D9%2584_%25D8%25A7%25D9%2594%25D8%25AF%25D8%25A7%25D8%25A1_%25D8%25A7%25D9%2584%25D8%25B7%25D9%2584%25D8%25A7%25D8%25A8_%25D9%2588%25D8%25A7%25D8%25B3%25D8%25AA%25D8%25AE%25D8%25AF%25D8%25A7%25D9%2585_%25D8%25A7%25D9%2584%25D8%25AA%25D8%25BA%25D8%25B0%25D9%258A%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25B1%25D8%25A7%25D8%25AC%25D8%25B9%25D8%25A9%25E2%2581%25A9.pdf/file" target="_blank" class="btn btn-primary download-btn">
-                                <i class="fas fa-download"></i>
-                                تحميل الشهادة
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- شهادة 6 -->
-                    <div class="certificate-item" data-category="other">
-                        <div class="certificate-img">
-                            <img src="https://i.ibb.co/mV52L5Hf/6.jpg" alt="شهادة أساسيات الترجمة" class="lazy" data-src="https://i.ibb.co/mV52L5Hf/6.jpg">
-                        </div>
-                        <div class="certificate-content">
-                            <h3>أساسيات الترجمة</h3>
-                            <p>شهادة معتمدة في أساسيات ومبادئ الترجمة بين اللغتين العربية والإنجليزية</p>
-                            <a href="https://www.mediafire.com/file/4by9vpzij9smpht/Certificate_for_%25D9%2581%25D9%2587%25D8%25AF_%25D9%2586%25D8%25BA%25D9%258A%25D9%2585%25D8%25B4_%25D8%25A7%25D9%2584%25D8%25AE%25D8%25A7%25D9%2584%25D8%25AF%25D9%258A_for_%25D8%25B4%25D9%2587%25D8%25A7%25D8%25AF%25D8%25A9_%25D8%25AF%25D9%2588%25D8%25B1%25D8%25A9_%25D8%25A3%25D8%25B3%25D8%25A7%25D8%25B3%25D9%258A%25D8%25A7%25D8%25AA_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2584%25D8%25AA%25D8%25B1%25D8%25AC%25D9%2585%25D8%25A9.pdf/file" target="_blank" class="btn btn-primary download-btn">
-                                <i class="fas fa-download"></i>
-                                تحميل الشهادة
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- شهادة 7 -->
-                    <div class="certificate-item" data-category="teaching">
-                        <div class="certificate-img">
-                            <img src="https://i.ibb.co/xShYN2g7/7.jpg" alt="شهادة التعامل مع أدوات القياس والتقويم الإلكترونية" class="lazy" data-src="https://i.ibb.co/xShYN2g7/7.jpg">
-                        </div>
-                        <div class="certificate-content">
-                            <h3>مهارات التعامل مع أدوات القياس والتقويم الإلكترونية</h3>
-                            <p>شهادة معتمدة في استخدام أدوات القياس والتقويم الإلكترونية في التعليم</p>
-                            <a href="https://www.mediafire.com/file/33iz2k72lqr9r7n/%25D9%2585%25D9%2587%25D8%25A7%25D8%25B1%25D8%25A7%25D8%25AA_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2584%25D8%25AA%25D8%25B9%25D8%25A7%25D9%2585%25D9%2584_%25D9%2585%25D8%25B9_%25D8%25A3%25D8%25AF%25D9%2588%25D8%25A7%25D8%25AA_%25D8%25A7%25D9%2584%25D9%2582%25D9%258A%25D8%25A7%25D8%25B3_%25D9%2588%25D8%25A7%25D9%2584%25D8%25A7%25D9%2584%25D8%25AA%25D9%2582%25D9%2588%25D9%258A%25D9%2585_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2584%25D9%2583%25D8%25AA%25D8%25B1%25D9%2588%25D9%2586%25D9%258A%25D8%25A9.php.pdf/file" target="_blank" class="btn btn-primary download-btn">
-                                <i class="fas fa-download"></i>
-                                تحميل الشهادة
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- شهادة 8 -->
-                    <div class="certificate-item" data-category="teaching">
-                        <div class="certificate-img">
-                            <img src="https://i.ibb.co/BHj37qKz/8.jpg" alt="شهادة التنمية المهنية لمعلمي اللغة الإنجليزية" class="lazy" data-src="https://i.ibb.co/BHj37qKz/8.jpg">
-                        </div>
-                        <div class="certificate-content">
-                            <h3>التنمية المهنية لمعلمي اللغة الإنجليزية</h3>
-                            <p>شهادة معتمدة في التنمية المهنية لمعلمي اللغة الإنجليزية - المستوى الثالث</p>
-                            <a href="https://www.mediafire.com/file/c9kpwvolamjgyfi/%25D8%25A7%25D9%2584%25D8%25A7%25D9%2584%25D8%25AA%25D9%2586%25D9%2585%25D9%258A%25D8%25A9_%25D8%25A7%25D9%2584%25D9%2585%25D9%2585%25D9%2587%25D9%2586%25D9%258A%25D8%25A9_%25D9%2584%25D9%2584%25D9%2585%25D8%25B9%25D9%2584%25D9%2585%25D9%258A%25D9%2586_%25D8%25A7%25D9%2584%25D9%2584%25D8%25BA%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2586%25D8%25AC%25D9%2584%25D9%258A%25D8%25B2%25D9%258A%25D8%25A9_%2528_%25D8%25A7%25D9%2584%25D9%2585%25D8%25B3%25D8%25AA%25D9%2588%25D9%2589_3%2529.php.pdf/file" target="_blank" class="btn btn-primary download-btn">
-                                <i class="fas fa-download"></i>
-                                تحميل الشهادة
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- شهادة 9 -->
-                    <div class="certificate-item" data-category="teaching">
-                        <div class="certificate-img">
-                            <img src="https://i.ibb.co/x8KmXG0m/9.jpg" alt="شهادة العبقرية في العملية التدريبية" class="lazy" data-src="https://i.ibb.co/x8KmXG0m/9.jpg">
-                        </div>
-                        <div class="certificate-content">
-                            <h3>العبقرية في العملية التدريبية</h3>
-                            <p>شهادة معتمدة في العبقرية في العملية التدريبية (TOT)</p>
-                            <a href="https://www.mediafire.com/file/lb129yr42malqhv/%25D8%25A7%25D9%2584%25D8%25B9%25D8%25A8%25D9%2582%25D8%25B1%25D9%258A%25D8%25A9_%25D9%2581%25D9%258A_%25D8%25A7%25D9%2584%25D8%25B9%25D9%2585%25D9%2584%25D9%258A%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2584%25D8%25AA%25D8%25AF%25D8%25B1%25D9%258A%25D8%25A8%25D9%258A%25D8%25A9.pdf/file" target="_blank" class="btn btn-primary download-btn">
-                                <i class="fas fa-download"></i>
-                                تحميل الشهادة
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- شهادة 10 -->
-                    <div class="certificate-item" data-category="teaching">
-                        <div class="certificate-img">
-                            <img src="https://i.ibb.co/MxJxBHsH/10.jpg" alt="شهادة بناء الاختبار الجيد" class="lazy" data-src="https://i.ibb.co/MxJxBHsH/10.jpg">
-                        </div>
-                        <div class="certificate-content">
-                            <h3>بناء الاختبار الجيد</h3>
-                            <p>شهادة معتمدة في بناء الاختبارات الجيدة والفعالة</p>
-                            <a href="https://www.mediafire.com/file/uo2o7rqqv3j87g5/%25D8%25A8%25D9%2586%25D8%25A7%25D8%25A1_%25D8%25A7%25D9%2584%25D8%25A7%25D8%25AE%25D8%25AA%25D8%25A8%25D8%25A7%25D8%25B1_%25D8%25A7%25D9%2584%25D8%25AC%25D9%258A%25D8%25AF_%2528%25D8%25A7%25D9%2584%25D9%2581%25D8%25B5%25D9%2584_%25D8%25A7%25D9%2584%25D8%25AF%25D8%25B1%25D8%25A7%25D8%25B3%25D9%258A_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2588%25D9%2584%2529.php.pdf/file" target="_blank" class="btn btn-primary download-btn">
-                                <i class="fas fa-download"></i>
-                                تحميل الشهادة
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- شهادة 11 -->
-                    <div class="certificate-item" data-category="teaching">
-                        <div class="certificate-img">
-                            <img src="https://i.ibb.co/60LbCHLy/11.jpg" alt="شهادة توظيف استراتيجيات التعليم" class="lazy" data-src="https://i.ibb.co/60LbCHLy/11.jpg">
-                        </div>
-                        <div class="certificate-content">
-                            <h3>توظيف استراتيجيات التعليم في البيئة التدريبية الجاذبة</h3>
-                            <p>شهادة معتمدة في توظيف استراتيجيات التعليم في البيئة التدريبية الجاذبة</p>
-                            <a href="https://www.mediafire.com/file/jt7h17gdjl81gb3/%25D8%25AA%25D9%2588%25D8%25B8%25D9%258A%25D9%2581_%25D8%25A7%25D8%25B3%25D8%25AA%25D8%25B1%25D8%25A7%25D8%25AA%25D9%258A%25D8%25AC%25D9%258A%25D8%25A7%25D8%25AA_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2584%25D8%25AA%25D8%25B9%25D9%2584%25D9%258A%25D9%2585_%25D9%2581%25D9%258A_%25D8%25A7%25D9%2584%25D8%25A8%25D9%258A%25D8%25A6%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2584%25D8%25AA%25D8%25AF%25D8%25B1%25D9%258A%25D8%25A8%25D9%258A%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2584%25D8%25AC%25D8%25A7%25D8%25B0%25D8%25A8%25D8%25A9.pdf/file" target="_blank" class="btn btn-primary download-btn">
-                                <i class="fas fa-download"></i>
-                                تحميل الشهادة
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- شهادة 12 -->
-                    <div class="certificate-item" data-category="teaching">
-                        <div class="certificate-img">
-                            <img src="https://i.ibb.co/Z6mRby92/12.jpg" alt="شهادة تدريس مهاراتي التحدث والاستماع" class="lazy" data-src="https://i.ibb.co/Z6mRby92/12.jpg">
-                        </div>
-                        <div class="certificate-content">
-                            <h3>تدريس مهارتي التحدث والاستماع</h3>
-                            <p>شهادة معتمدة في تدريس مهارات التحدث والاستماع في اللغة الإنجليزية</p>
-                            <a href="https://www.mediafire.com/file/lnukcn37plu0bjt/%25D8%25AA%25D8%25AF%25D8%25B1%25D9%258A%25D8%25B3_%25D9%2585%25D9%2587%25D8%25A7%25D8%25B1%25D8%25A7%25D8%25AA%25D9%258A_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2584%25D8%25AA%25D8%25AD%25D8%25AF%25D8%25AB_%25D9%2588%25D8%25A7%25D9%2584%25D8%25A5%25D8%25B3%25D8%25AA%25D9%2585%25D8%25A7%25D8%25B9.php.pdf/file" target="_blank" class="btn btn-primary download-btn">
-                                <i class="fas fa-download"></i>
-                                تحميل الشهادة
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- شهادة 13 -->
-                    <div class="certificate-item" data-category="teaching">
-                        <div class="certificate-img">
-                            <img src="https://i.ibb.co/rGVtkJN0/13.jpg" alt="شهادة اللقاءات التخصصية للغة الإنجليزية" class="lazy" data-src="https://i.ibb.co/rGVtkJN0/13.jpg">
-                        </div>
-                        <div class="certificate-content">
-                            <h3>اللقاءات التخصصية للغة الإنجليزية</h3>
-                            <p>شهادة معتمدة في اللقاءات التخصصية لمادة اللغة الإنجليزية</p>
-                            <a href="https://www.mediafire.com/file/oybk1nug304u5cw/%25D8%25AF%25D9%2588%25D8%25B1%25D8%25A9_%25D8%25A7%25D9%2584%25D9%2584%25D9%2582%25D8%25A7%25D8%25A1%25D8%25A7%25D8%25AA_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2584%25D8%25AA%25D8%25AE%25D8%25B5%25D8%25B5%25D9%258A%25D8%25A9_%25D9%2584%25D9%2584%25D8%25BA%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2586%25D8%25AC%25D9%2584%25D9%258A%25D8%25B2%25D9%258A%25D8%25A9.pdf/file" target="_blank" class="btn btn-primary download-btn">
-                                <i class="fas fa-download"></i>
-                                تحميل الشهادة
-                            </a>
-                        </div>
-                    </div>
-                    
-                    <!-- شهادة 14 -->
-                    <div class="certificate-item" data-category="other">
-                        <div class="certificate-img">
-                            <img src="https://i.ibb.co/wZsxpBRX/14.jpg" alt="شهادة العمل التطوعي" class="lazy" data-src="https://i.ibb.co/wZsxpBRX/14.jpg">
-                        </div>
-                        <div class="certificate-content">
-                            <h3>شهادة العمل التطوعي</h3>
-                            <p>شهادة معتمدة في العمل التطوعي بمقدار 105 ساعة تطوعية</p>
-                            <a href="https://www.mediafire.com/file/3msfzyf0afgm172/%25D8%25B4%25D9%2587%25D8%25A7%25D8%25AF%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25A7%25D9%2584%25D8%25AA%25D8%25B7%25D9%2588%25D8%25B9_%25D9%25A1%25D9%25A0%25D9%25A5_%25D8%25B3%25D8%25A7%25D8%25B9%25D8%25A9.pdf/file" target="_blank" class="btn btn-primary download-btn">
-                                <i class="fas fa-download"></i>
-                                تحميل الشهادة
-                            </a>
+                        
+                        <!-- دورة 14 -->
+                        <div class="certificate-item">
+                            <img src="https://i.ibb.co/XrpNtj7S/Screenshot-2025-11-28-20-45-52-18-f541918c7893c52dbd1ee5d319333948.jpg" alt="شهادة العمل التطوعي" class="certificate-image">
+                            <div class="certificate-content">
+                                <h3 class="certificate-title">شهادة العمل التطوعي</h3>
+                                <a href="https://2cm.es/1kaUv" class="certificate-download" target="_blank">تحميل الشهادة</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2289,13 +1980,13 @@
                     <button class="filter-btn" data-filter="interactive" id="filterInteractive">تفاعلية</button>
                     <button class="filter-btn" data-filter="strategies" id="filterStrategies">استراتيجيات</button>
                     <button class="filter-btn" data-filter="presentations" id="filterPresentations">عروض</button>
-                    <button class="filter-btn" data-filter="participation" id="filterParticipation">مشاركات</button>
+                    <button class="filter-btn" data-filter="participations" id="filterParticipations">المشاركات</button>
                 </div>
                 
                 <div class="portfolio-grid">
                     <!-- مشروع اختبار الرخصة المهنية التفاعلي -->
                     <div class="portfolio-item" data-category="interactive">
-                        <img src="https://i.ibb.co/h12KB7Gv/Professional-License-Exam.png" alt="اختبار الرخصة المهنية التفاعلي" class="lazy" data-src="https://i.ibb.co/h12KB7Gv/Professional-License-Exam.png">
+                        <img src="https://i.ibb.co/FLsfsgbL/IMG-1829.jpg" alt="اختبار الرخصة المهنية التفاعلي">
                         <div class="portfolio-content">
                             <h3 id="project1Title">مشروع: اختبار الرخصة المهنية التفاعلي</h3>
                             <p id="project1Desc">مشروع تعليمي رقمي يهدف إلى محاكاة اختبار الرخصة المهنية للمعلمين، من خلال تقديم أسئلة تفاعلية مبنية على المعايير المعتمدة، مع تغذية راجعة فورية توضح السبب العلمي لكل إجابة صحيحة أو خاطئة، بما يسهم في رفع كفاءة المتدربين وتعزيز جاهزيتهم للاختبار الرسمي.</p>
@@ -2312,7 +2003,7 @@
 
                                 ويأتي التعلم القائم على التحفيز والتحدي كأحد الأساليب التي تسهم في ترسيخ المفاهيم بطريقة مشوقة، وتساعد الطلاب على التعلم بروح المنافسة الإيجابية. كما يمثل التعلم التعاوني ركيزة أساسية في بناء مهارات التواصل والعمل الجماعي، من خلال إتاحة الفرصة للطلاب لتبادل الآراء، ومناقشة الأفكار، وحل المشكلات بشكل جماعي. كذلك أحرص على توظيف التقنيات التعليمية الحديثة التي تسهم في عرض المحتوى بصورة جذابة، وتتيح تفاعل جميع الطلاب ومشاركتهم في تصحيح المفاهيم وبناء المعرفة بشكل مباشر.<br><br>
 
-                                وتعد هذه الممارسات نماذج من جملة من الاستراتيجيات التي أعمل على تنويعها داخل الحصة بما يراعي الفروق الفردية، ويحقق الأهداف التعليمية، وتهيئ بيئة تعليمية نشطة ومحفزة تسهم في تحسين مستوى التحصيل الدراسي وتعزيز مهارات القرن الحادي والعشرين.
+                                وتعد هذه الممارسات نماذج من جملة من الاستراتيجيات التي أعمل على تنويعها داخل الحصة بما يراعي الفروق الفردية، ويحقق الأهداف التعليمية، ويهيئ بيئة تعليمية نشطة ومحفزة تسهم في تحسين مستوى التحصيل الدراسي وتعزيز مهارات القرن الحادي والعشرين.
                             </p>
                             
                             <!-- معرض الصور التفاعلي -->
@@ -2320,33 +2011,29 @@
                                 <div class="gallery-scroll" id="galleryScroll">
                                     <!-- الصور الثلاثة الأولى مع عناوينها الحالية -->
                                     <div class="gallery-item">
-                                        <img src="https://i.ibb.co/YrXjKC4/strategy7.jpg" alt="مهارات القرن الحادي والعشرين" class="lazy" data-src="https://i.ibb.co/YrXjKC4/strategy7.jpg">
+                                        <img src="https://i.ibb.co/YrXjKC4/strategy7.jpg" alt="مهارات القرن الحادي والعشرين">
                                         <div class="gallery-caption" id="galleryCaption1">تعزيز مهارات القرن الحادي والعشرين لدى الطلاب</div>
                                     </div>
                                     <div class="gallery-item">
-                                        <img src="https://i.ibb.co/DPWWd5Z9/strategy4.jpg" alt="أنشطة تعليمية تفاعلية" class="lazy" data-src="https://i.ibb.co/DPWWd5Z9/strategy4.jpg">
+                                        <img src="https://i.ibb.co/DPWWd5Z9/strategy4.jpg" alt="أنشطة تعليمية تفاعلية">
                                         <div class="gallery-caption" id="galleryCaption2">أنشطة تعليمية تفاعلية لتحسين مستوى التحصيل الدراسي</div>
                                     </div>
                                     <div class="gallery-item">
-                                        <img src="https://i.ibb.co/bR1Cn1WZ/strategy6.jpg" alt="بيئة تعليمية نشطة" class="lazy" data-src="https://i.ibb.co/bR1Cn1WZ/strategy6.jpg">
+                                        <img src="https://i.ibb.co/bR1Cn1WZ/strategy6.jpg" alt="بيئة تعليمية نشطة">
                                         <div class="gallery-caption" id="galleryCaption3">إعداد بيئة تعليمية نشطة ومحفزة للطلاب</div>
                                     </div>
-                                    <!-- باقي الصور مع التعليق الجديد -->
+                                    <!-- باقي الصور بدون تعليقات -->
                                     <div class="gallery-item">
-                                        <img src="https://i.ibb.co/DyNDhNX/strategy1.jpg" alt="استراتيجية تعليمية تفاعلية" class="lazy" data-src="https://i.ibb.co/DyNDhNX/strategy1.jpg">
-                                        <div class="gallery-caption">تطبيق استراتيجيات تعليمية حديثة لتعزيز التفاعل داخل الصف.</div>
+                                        <img src="https://i.ibb.co/DyNDhNX/strategy1.jpg" alt="استراتيجية تعليمية تفاعلية">
                                     </div>
                                     <div class="gallery-item">
-                                        <img src="https://i.ibb.co/BK6XTNG0/strategy2.jpg" alt="التعلم التعاوني" class="lazy" data-src="https://i.ibb.co/BK6XTNG0/strategy2.jpg">
-                                        <div class="gallery-caption">تطبيق استراتيجيات تعليمية حديثة لتعزيز التفاعل داخل الصف.</div>
+                                        <img src="https://i.ibb.co/BK6XTNG0/strategy2.jpg" alt="التعلم التعاوني">
                                     </div>
                                     <div class="gallery-item">
-                                        <img src="https://i.ibb.co/LzbN9WYb/strategy3.jpg" alt="تقنيات تعليمية حديثة" class="lazy" data-src="https://i.ibb.co/LzbN9WYb/strategy3.jpg">
-                                        <div class="gallery-caption">تطبيق استراتيجيات تعليمية حديثة لتعزيز التفاعل داخل الصف.</div>
+                                        <img src="https://i.ibb.co/LzbN9WYb/strategy3.jpg" alt="تقنيات تعليمية حديثة">
                                     </div>
                                     <div class="gallery-item">
-                                        <img src="https://i.ibb.co/C3bhdCFt/strategy5.jpg" alt="مهارات التفكير والعمل" class="lazy" data-src="https://i.ibb.co/C3bhdCFt/strategy5.jpg">
-                                        <div class="gallery-caption">تطبيق استراتيجيات تعليمية حديثة لتعزيز التفاعل داخل الصف.</div>
+                                        <img src="https://i.ibb.co/C3bhdCFt/strategy5.jpg" alt="مهارات التفكير والعمل">
                                     </div>
                                 </div>
                                 
@@ -2370,41 +2057,38 @@
                     
                     <!-- مشروع عروض تقديمية -->
                     <div class="portfolio-item" data-category="presentations">
-                        <img src="https://via.placeholder.com/300x180/1A3A5F/FFFFFF?text=عروض+تقديمية" alt="عروض تقديمية" class="lazy" data-src="https://via.placeholder.com/300x180/1A3A5F/FFFFFF?text=عروض+تقديمية">
+                        <img src="https://i.ibb.co/QxN76QX/74297-DE5-6-FD2-4839-AC44-664-FDDA70903.png" alt="عروض تقديمية">
                         <div class="portfolio-content">
                             <h3 id="project3Title">عروض تقديمية تفاعلية</h3>
                             <p id="project3Desc">تصميم عروض تفاعلية جذابة للطلاب باستخدام أحدث الأدوات والتقنيات التعليمية. تتضمن هذه العروض أنشطة تفاعلية، ومقاطع فيديو تعليمية، وأسئلة تقييم فورية لضمان مشاركة فعالة من الطلاب.</p>
-                            <a href="https://visionof2030-pixel.github.io/English-quiz/" class="project-link" target="_blank"><span id="project3Link">عرض المشروع</span> <i class="fas fa-external-link-alt"></i></a>
-                        </div>
-                    </div>
-                    
-                    <!-- المشاركة الأولى -->
-                    <div class="portfolio-item" data-category="participation">
-                        <div class="portfolio-content">
-                            <h3>عضوية لجنة التميز والتفاعل المهني</h3>
-                            <p>جانب من مشاركتي بصفتي عضوًا في لجنة التميز المدرسية، دعمًا للتفاعل مع المجتمع المهني، وتعزيزًا للتعاون وتبادل الخبرات مع الزملاء، والمشاركة في المبادرات التعليمية التطويرية.</p>
-                            
-                            <div class="participation-gallery">
-                                <div class="participation-img">
-                                    <img src="https://i.ibb.co/N6zvYFTm/participation1-1.jpg" alt="عضوية لجنة التميز والتفاعل المهني 1" class="lazy" data-src="https://i.ibb.co/N6zvYFTm/participation1-1.jpg">
-                                </div>
-                                <div class="participation-img">
-                                    <img src="https://i.ibb.co/93SBfMCM/participation1-2.jpg" alt="عضوية لجنة التميز والتفاعل المهني 2" class="lazy" data-src="https://i.ibb.co/93SBfMCM/participation1-2.jpg">
-                                </div>
+                            <div class="project-links">
+                                <a href="https://visionof2030-pixel.github.io/English-quiz/" class="project-link" target="_blank"><span id="project3Link1">المشروع الأول</span> <i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://ijassar36-cell.github.io/Test1/" class="project-link" target="_blank"><span id="project3Link2">المشروع الثاني</span> <i class="fas fa-external-link-alt"></i></a>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- المشاركة الثانية -->
-                    <div class="portfolio-item" data-category="participation">
+                    <!-- المشاركة الأولى: عضوية لجنة التميز والتفاعل المهني -->
+                    <div class="portfolio-item" data-category="participations">
                         <div class="portfolio-content">
-                            <h3>تعزيز القيم الوطنية من خلال فعاليات اليوم الوطني</h3>
-                            <p>مشاركتي في فعاليات اليوم الوطني، تجسيدًا لقيم الانتماء والولاء للوطن، وتعزيزًا لدور المدرسة في غرس القيم الوطنية لدى الطلاب.</p>
+                            <h3 id="participation1Title">عضوية لجنة التميز والتفاعل المهني</h3>
+                            <p id="participation1Desc">جانب من مشاركتي بصفتي عضوًا في لجنة التميز المدرسية، دعمًا للتفاعل مع المجتمع المهني، وتعزيزًا للتعاون وتبادل الخبرات مع الزملاء، والمشاركة في المبادرات التعليمية التطويرية.</p>
                             
-                            <div class="participation-gallery">
-                                <div class="participation-img">
-                                    <img src="https://i.ibb.co/x855CYrT/participation2.jpg" alt="تعزيز القيم الوطنية من خلال فعاليات اليوم الوطني" class="lazy" data-src="https://i.ibb.co/x855CYrT/participation2.jpg">
-                                </div>
+                            <div class="participation-images">
+                                <img src="https://i.ibb.co/tpsJXVFc/IMG-20250921-WA0004.jpg" alt="عضوية لجنة التميز والتفاعل المهني - صورة 1" class="participation-image">
+                                <img src="https://i.ibb.co/9kxKvxYz/IMG-20250921-WA0005.jpg" alt="عضوية لجنة التميز والتفاعل المهني - صورة 2" class="participation-image">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- المشاركة الثانية: تعزيز القيم الوطنية -->
+                    <div class="portfolio-item" data-category="participations">
+                        <div class="portfolio-content">
+                            <h3 id="participation2Title">تعزيز القيم الوطنية من خلال فعاليات اليوم الوطني</h3>
+                            <p id="participation2Desc">مشاركتي في فعاليات اليوم الوطني، تجسيدًا لقيم الانتماء والولاء للوطن، وتعزيزًا لدور المدرسة في غرس القيم الوطنية لدى الطلاب.</p>
+                            
+                            <div class="participation-images">
+                                <img src="https://i.ibb.co/SDTxLqxh/IMG-20250925-WA0098-1.jpg" alt="تعزيز القيم الوطنية من خلال فعاليات اليوم الوطني" class="participation-image">
                             </div>
                         </div>
                     </div>
@@ -2461,7 +2145,7 @@
 
         <!-- Contact Section -->
         <section id="contact">
-            <h2 class="section-title" id="contactTitle">تواصل معي</h2>
+            <h2 class="section-title" id="contactTitle">بيانات التواصل</h2>
             <div class="card fade-in-up">
                 <div style="text-align: center; padding: 25px;">
                     <h3 style="color: var(--primary); margin-bottom: 15px;" id="contactSubtitle">للتواصل</h3>
@@ -2470,26 +2154,6 @@
                         <p><i class="fas fa-phone" style="color: var(--accent);"></i> <span id="contactPhone">+9665554449824</span></p>
                     </div>
                 </div>
-            </div>
-            
-            <!-- نموذج التواصل -->
-            <div class="card fade-in-up">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" id="contactName" placeholder="الاسم الكامل" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" id="contactEmailInput" placeholder="البريد الإلكتروني" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea id="contactMessage" placeholder="رسالتك..." rows="5" required></textarea>
-                    </div>
-                    <div class="form-message" id="formMessage"></div>
-                    <button type="submit" class="btn btn-primary" style="width: 100%;" id="submitBtn">
-                        <i class="fas fa-paper-plane"></i>
-                        <span id="sendMessageBtn">إرسال الرسالة</span>
-                    </button>
-                </form>
             </div>
         </section>
     </main>
@@ -2517,7 +2181,7 @@
         "@type": "Person",
         "name": "فهد الخالدي",
         "jobTitle": "معلم متقدم - تخصص اللغة الإنجليزية",
-        "description": "معلم متخصص في اللغة الإنجليزية مع 14+ سنة خبرة في تطوير أساليب التعليم الحديثة",
+        "description": "معلم متخصص في اللغة الإنجليزية مع 13+ سنة خبرة في تطوير أساليب التعليم الحديثة",
         "email": "iFahadenglish@gmail.com",
         "telephone": "+966554449824",
         "url": "https://example.com",
@@ -2554,28 +2218,27 @@
             ar: {
                 pageTitle: "فهد الخالدي",
                 heroTitle: "الملف المهني للمعلم فهد الخالدي",
-                heroSubtitle: "معلم متخصص في اللغة الإنجليزية مع 14+ سنة خبرة في تطوير أساليب التعليم الحديثة",
+                heroSubtitle: "معلم متخصص في اللغة الإنجليزية مع 13+ سنة خبرة في تطوير أساليب التعليم الحديثة",
                 heroStat1: "سنوات خبرة",
                 heroStat2: "ساعة تدريب",
-                heroStat3: "ساعات تطوع",
+                heroStat3: "ساعات تطوعية",
                 aboutTitle: "نبذة عني",
                 visionTitle: "الرؤية التعليمية",
                 experienceTitle: "الخبرات المهنية",
                 achievementsTitle: "الإنجازات",
                 skillsTitle: "المهارات والكفاءات",
-                trainingTitle: "الدورات التالية",
-                certificatesTitle: "شهادات الدورات التدريبية",
+                trainingTitle: "الدورات التدريبية",
                 portfolioTitle: "معرض الأعمال",
                 testimonialsTitle: "التوصيات",
                 techTitle: "التقنية",
-                contactTitle: "تواصل معي",
+                contactTitle: "بيانات التواصل",
                 name: "فهد نغيمش حميد الخالدي",
                 jobTitle: "معلم متقدم – تخصص اللغة الإنجليزية",
                 bioText: "أؤمن أن التعليم ليس مجرد نقل معرفة، بل رسالة سامية لصناعة الأثر وبناء الإنسان. أطمح إلى أن أكون جزءًا فاعلًا في تطوير التعليم بالمملكة من خلال توظيف التقنيات الحديثة، وصناعة بيئات تعلم محفزة، تعزز التفكير النقدي والإبداعي، وتبني الثقة لدى الطالب. نظرتي المستقبلية تقوم على التعلم المستمر، وتطوير المهارات المهنية، ومواكبة التحولات الرقمية بما يخدم مخرجات التعليم وجودته في إطار رؤية المملكة 2030.",
                 badge: "🏆 حاصل على درجة 95 في التخصص",
                 stat1: "سنوات خبرة",
                 stat2: "ساعات تدريبية",
-                stat3: "ساعات تطوع",
+                stat3: "ساعات تطوعية",
                 visionItem1Title: "التعليم المتمركز حول الطالب",
                 visionItem1Desc: "أؤمن بأن كل طالب فريد ويحتاج إلى أساليب تعلم مخصصة تناسب احتياجاته وقدراته.",
                 visionItem2Title: "الشراكة مع أولياء الأمور",
@@ -2584,7 +2247,7 @@
                 visionItem3Desc: "أدمج التعلم القائم على المشاريع لتعزيز التفكير النقدي وحل المشكلات.",
                 visionItem4Title: "التعلم المستمر",
                 visionItem4Desc: "أؤمن بأن المعلم المتعلم باستمرار هو الأكثر قدرة على إلهام طلابه.",
-                achievementText: "في عام 2022 حصلتُ على ترقية إلى رتبة معلم متقدم بعد مسيرة مهنية امتدت لسنوات كمعلم ممارس، قدمت خلالها أداءً متميزًا أسهم في تطوير العملية التعليمية داخل المدرسة. جاءت هذه الترقية تقديرًا لجهودي في توظيف استراتيجيات تدريس حديثة تعزز مهارات التفكير النقدي والإبداعي لدى الطلاب، إضافة إلى قدرتي على تحليل نواتج التعلم وبناء خطط علاجية فردية أثمرت عن تحسين واضح في مستويات الطلاب.<br><br>وقد عكست هذه الترقية ثقة الجهة التعليمية بمهاراتي المهنية، خصوصًا في مجال تصميم أنشطة مبتكرة تُدمج مهارات الفهم العميق، والعمل التعاوني، والتعليم الذاتي داخل البيئة الصفية. كما كانت اعترافًا بدوري في تطوير البرامج التربوية والأنشطة التعليمية قبل عام 2022، ومساهمتي في بناء بيئة صفية محفزة يشعر فيها الطلاب بالأمان والرغبة في المشاركة والتعلم.<br><br>تعد هذه الترقية محطة مهمة في مسيرتي، لأنها لم تكن مجرد انتقال إلى مستوى وظيفي أعلى، بل كانت نتيجة تراكم خبرات وممارسات مهنية أثبتت أثرها على الطلاب وعلى منظومة التعليم داخل المدرسة. واليوم أواصل عملي كمعلم متقدم ملتزم بالتحسين المستمر، وتطبيق أفضل الممارسات التربوية، والمساهمة في رفع جودة التعليم وتحقيق نواتج تعلم أعلى.",
+                achievementText: "في عام 2021 حصلتُ على ترقية إلى رتبة معلم متقدم بعد مسيرة مهنية امتدت لسنوات كمعلم ممارس، قدمت خلالها أداءً متميزًا أسهم في تطوير العملية التعليمية داخل المدرسة. جاءت هذه الترقية تقديرًا لجهودي في توظيف استراتيجيات تدريس حديثة تعزز مهارات التفكير النقدي والإبداعي لدى الطلاب، إضافة إلى قدرتي على تحليل نواتج التعلم وبناء خطط علاجية فردية أثمرت عن تحسين واضح في مستويات الطلاب.<br><br>وقد عكست هذه الترقية ثقة الجهة التعليمية بمهاراتي المهنية، خصوصًا في مجال تصميم أنشطة مبتكرة تُدمج مهارات الفهم العميق، والعمل التعاوني، والتعليم الذاتي داخل البيئة الصفية. كما كانت اعترافًا بدوري في تطوير البرامج التربوية والأنشطة التعليمية قبل عام 2021، ومساهمتي في بناء بيئة صفية محفزة يشعر فيها الطلاب بالأمان والرغبة في المشاركة والتعلم.<br><br>تعد هذه الترقية محطة مهمة في مسيرتي، لأنها لم تكن مجرد انتقال إلى مستوى وظيفي أعلى، بل كانت نتيجة تراكم خبرات وممارسات مهنية أثبتت أثرها على الطلاب وعلى منظومة التعليم داخل المدرسة. واليوم أواصل عملي كمعلم متقدم ملتزم بالتحسين المستمر، وتطبيق أفضل الممارسات التربوية، والمساهمة في رفع جودة التعليم وتحقيق نواتج تعلم أعلى.",
                 techText: "أتمتع بشغف كبير تجاه التقنية والتعليم الرقمي، وأواكب أحدث التطورات في مجال الذكاء الاصطناعي وتطبيقاته التعليمية. أمتلك خبرة عملية في تصميم وتطوير أنشطة تفاعلية واختبارات إلكترونية باستخدام HTML وCSS وJavaScript، مما يثري تجربة التعلم ويجعلها أكثر تفاعلية وجاذبية للطلاب. أستخدم أدوات الذكاء الاصطناعي في تحليل أداء الطلاب وتصميم خطط تعليمية مخصصة، كما أصمم محتوى رقميًا مبتكرًا يتناسب مع احتياجات التعلم الحديثة. أسعى دائمًا لدمج التقنية في العملية التعليمية بطرق إبداعية تواكب متطلبات العصر الرقمي وتخدم أهداف رؤية المملكة 2030.",
                 footerText: "© 2024 جميع الحقوق محفوظة - فهد الخالدي",
                 // إضافة ترجمة نصوص الأيقونات
@@ -2594,7 +2257,6 @@
                 navAchievements: "الإنجازات",
                 navSkills: "المهارات",
                 navTrain: "الدورات",
-                navCertificates: "شهاداتي",
                 navTech: "التقنية",
                 navPortfolio: "معرض الأعمال",
                 navTestimonials: "التوصيات",
@@ -2610,21 +2272,6 @@
                 skill6: "دمج التقنية في التعليم",
                 skill7: "تصميم أنشطة تفاعلية",
                 skill8: "تطوير اختبارات إلكترونية",
-                // ترجمة الدورات
-                course1: "التفكير الناقد والإبداعي ودمجه في المواد الدراسية",
-                course2: "القياس والتقويم التربوي",
-                course3: "الاستراتيجية الحديثة في تدريس أساسيات اللغة الإنجليزية",
-                course4: "البيئة الصفية الجاذبة",
-                course5: "تحليل أداء الطلاب وتقديم التغذية الراجعة",
-                course6: "أساسيات الترجمة",
-                course7: "مهارات التعامل مع أدوات القياس والتقويم الإلكترونية",
-                course8: "التنمية المهنية لمعلمي اللغة الإنجليزية - المستوى الثالث",
-                course9: "العبقرية في العملية التعليمية",
-                course10: "بناء الاختيار الجيد",
-                course11: "توظيف استراتيجيات التعليم في البيئة التدريبية الجاذبة",
-                course12: "تدريس مهارتي التحدث والاستماع",
-                course13: "التوعية بقواعد السلوك والمواظبة المحدثة",
-                course14: "اللقاءات التخصصية لمادة اللغة الإنجليزية",
                 // ترجمة المشاريع
                 project1Title: "مشروع: اختبار الرخصة المهنية التفاعلي",
                 project1Desc: "مشروع تعليمي رقمي يهدف إلى محاكاة اختبار الرخصة المهنية للمعلمين، من خلال تقديم أسئلة تفاعلية مبنية على المعايير المعتمدة، مع تغذية راجعة فورية توضح السبب العلمي لكل إجابة صحيحة أو خاطئة، بما يسهم في رفع كفاءة المتدربين وتعزيز جاهزيتهم للاختبار الرسمي.",
@@ -2633,7 +2280,8 @@
                 project2Desc1: "تُعدّ الاستراتيجيات الحديثة عنصرًا محوريًا في تطوير العملية التعليمية وتعزيز فاعلية التعلم داخل الصف؛ إذ تسهم في رفع مستوى التفاعل، وتحفيز الدافعية، وتنمية مهارات التفكير والعمل لدى الطلاب. ومن هذا المنطلق أحرص على توظيف مجموعة متنوعة من الأساليب التدريسية التي تجمع بين المتعة والفائدة، وتعتمد على التفاعل الإيجابي والمشاركة الفعّالة.<br><br>ويأتي التعلم القائم على التحفيز والتحدي كأحد الأساليب التي تسهم في ترسيخ المفاهيم بطريقة مشوقة، وتساعد الطلاب على التعلم بروح المنافسة الإيجابية. كما يمثل التعلم التعاوني ركيزة أساسية في بناء مهارات التواصل والعمل الجماعي، من خلال إتاحة الفرصة للطلاب لتبادل الآراء، ومناقشة الأفكار، وحل المشكلات بشكل جماعي. كذلك أحرص على توظيف التقنيات التعليمية الحديثة التي تسهم في عرض المحتوى بصورة جذابة، وتتيح تفاعل جميع الطلاب ومشاركتهم في تصحيح المفاهيم وبناء المعرفة بشكل مباشر.<br><br>وتعد هذه الممارسات نماذج من جملة من الاستراتيجيات التي أعمل على تنويعها داخل الحصة بما يراعي الفروق الفردية، ويحقق الأهداف التعليمية، ويهيئ بيئة تعليمية نشطة ومحفزة تسهم في تحسين مستوى التحصيل الدراسي وتعزيز مهارات القرن الحادي والعشرين.",
                 project3Title: "عروض تقديمية تفاعلية",
                 project3Desc: "تصميم عروض تفاعلية جذابة للطلاب باستخدام أحدث الأدوات والتقنيات التعليمية. تتضمن هذه العروض أنشطة تفاعلية، ومقاطع فيديو تعليمية، وأسئلة تقييم فورية لضمان مشاركة فعالة من الطلاب.",
-                project3Link: "عرض المشروع",
+                project3Link1: "المشروع الأول",
+                project3Link2: "المشروع الثاني",
                 // ترجمة التوصيات
                 testimonial1Text: "\"المعلم فهد يتميز بالإبداع والابتكار في أساليب التدريس، وقد قدم إضافة حقيقية لفريق العمل\"",
                 testimonial1Author: "مدير المدرسة",
@@ -2648,7 +2296,6 @@
                 contactSubtitle: "للتواصل",
                 contactEmail: "iFahadenglish@gmail.com",
                 contactPhone: "+966554449824",
-                sendMessageBtn: "إرسال الرسالة",
                 // ترجمة الفوتر
                 footerName: "فهد الخالدي",
                 footerDesc: "معلم متخصص في اللغة الإنجليزية - تطوير التعليم من خلال التقنية والابتكار",
@@ -2672,15 +2319,23 @@
                 filterInteractive: "تفاعلية",
                 filterStrategies: "استراتيجيات",
                 filterPresentations: "عروض",
-                filterParticipation: "مشاركات",
+                filterParticipations: "المشاركات",
                 // ترجمة أزرار CTA
                 viewWorkBtn: "استعرض أعمالي",
-                contactBtn: "تواصل معي"
+                contactBtn: "تواصل معي",
+                // ترجمة المشاركات الجديدة
+                participation1Title: "عضوية لجنة التميز والتفاعل المهني",
+                participation1Desc: "جانب من مشاركتي بصفتي عضوًا في لجنة التميز المدرسية، دعمًا للتفاعل مع المجتمع المهني، وتعزيزًا للتعاون وتبادل الخبرات مع الزملاء، والمشاركة في المبادرات التعليمية التطويرية.",
+                participation2Title: "تعزيز القيم الوطنية من خلال فعاليات اليوم الوطني",
+                participation2Desc: "مشاركتي في فعاليات اليوم الوطني، تجسيدًا لقيم الانتماء والولاء للوطن، وتعزيزًا لدور المدرسة في غرس القيم الوطنية لدى الطلاب.",
+                // ترجمة أقسام التدريب
+                trainingCategory1: "تدريب تربوي",
+                trainingCategory2: "أخرى"
             },
             en: {
                 pageTitle: "Fahad AlKhaldi",
                 heroTitle: "Professional Portfolio - Fahad AlKhaldi",
-                heroSubtitle: "English Language Specialist with 14+ Years Experience in Modern Teaching Methods",
+                heroSubtitle: "English Language Specialist with 13+ Years Experience in Modern Teaching Methods",
                 heroStat1: "Years Experience",
                 heroStat2: "Training Hours",
                 heroStat3: "Volunteer Hours",
@@ -2690,11 +2345,10 @@
                 achievementsTitle: "Achievements",
                 skillsTitle: "Skills & Competencies",
                 trainingTitle: "Training Courses",
-                certificatesTitle: "Training Certificates",
                 portfolioTitle: "Portfolio",
                 testimonialsTitle: "Testimonials",
                 techTitle: "Technology",
-                contactTitle: "Contact Me",
+                contactTitle: "Contact Information",
                 name: "Fahad Nughaimesh Humaid AlKhaldi",
                 jobTitle: "Advanced English Teacher",
                 bioText: "I believe that education is not merely about transferring knowledge, but a noble mission to make an impact and build individuals. I aspire to be an active part in developing education in the Kingdom by employing modern technologies, creating stimulating learning environments that enhance critical and creative thinking, and building student confidence. My future vision is based on continuous learning, developing professional skills, and keeping pace with digital transformations that serve educational outcomes and quality within the framework of Saudi Vision 2030.",
@@ -2710,7 +2364,7 @@
                 visionItem3Desc: "I integrate project-based learning to enhance critical thinking and problem-solving.",
                 visionItem4Title: "Continuous Learning",
                 visionItem4Desc: "I believe that a continuously learning teacher is the most capable of inspiring his students.",
-                achievementText: "In 2022, I was promoted to the rank of Senior Teacher after a professional career spanning years as a practicing teacher, during which I provided outstanding performance that contributed to the development of the educational process within the school. This promotion came in recognition of my efforts in employing modern teaching strategies that enhance students' critical and creative thinking skills, in addition to my ability to analyze learning outcomes and build individual remedial plans that resulted in a clear improvement in student levels.<br><br>This promotion reflected the educational authority's confidence in my professional skills, especially in designing innovative activities that integrate deep understanding skills, collaborative work, and self-learning within the classroom environment. It was also an acknowledgment of my role in developing educational programs and activities before 2022, and my contribution to building a stimulating classroom environment where students feel safe and eager to participate and learn.<br><br>This promotion is an important milestone in my career, as it was not just a transition to a higher functional level, but rather the result of accumulated experiences and professional practices that proved their impact on students and the educational system within the school. Today, I continue my work as a senior teacher committed to continuous improvement, applying the best educational practices, and contributing to raising the quality of education and achieving higher learning outcomes.",
+                achievementText: "In 2021, I was promoted to the rank of Senior Teacher after a professional career spanning years as a practicing teacher, during which I provided outstanding performance that contributed to the development of the educational process within the school. This promotion came in recognition of my efforts in employing modern teaching strategies that enhance students' critical and creative thinking skills, in addition to my ability to analyze learning outcomes and build individual remedial plans that resulted in a clear improvement in student levels.<br><br>This promotion reflected the educational authority's confidence in my professional skills, especially in designing innovative activities that integrate deep understanding skills, collaborative work, and self-learning within the classroom environment. It was also an acknowledgment of my role in developing educational programs and activities before 2021, and my contribution to building a stimulating classroom environment where students feel safe and eager to participate and learn.<br><br>This promotion is an important milestone in my career, as it was not just a transition to a higher functional level, but rather the result of accumulated experiences and professional practices that proved their impact on students and the educational system within the school. Today, I continue my work as a senior teacher committed to continuous improvement, applying the best educational practices, and contributing to raising the quality of education and achieving higher learning outcomes.",
                 techText: "I have a great passion for technology and digital education, and I keep up with the latest developments in the field of artificial intelligence and its educational applications. I have practical experience in designing and developing interactive activities and electronic tests using HTML, CSS, and JavaScript, which enriches the learning experience and makes it more interactive and attractive for students. I use AI tools to analyze student performance and design customized educational plans, and I also design innovative digital content that suits modern learning needs. I always strive to integrate technology into the educational process in creative ways that keep pace with the requirements of the digital age and serve the goals of Saudi Vision 2030.",
                 footerText: "© 2024 All Rights Reserved - Fahad AlKhaldi",
                 // إضافة ترجمة نصوص الأيقونات
@@ -2720,7 +2374,6 @@
                 navAchievements: "Achievements",
                 navSkills: "Skills",
                 navTrain: "Training",
-                navCertificates: "My Certificates",
                 navTech: "Technology",
                 navPortfolio: "Portfolio",
                 navTestimonials: "Testimonials",
@@ -2736,21 +2389,6 @@
                 skill6: "Integrating technology into education",
                 skill7: "Designing interactive activities",
                 skill8: "Developing electronic tests",
-                // ترجمة الدورات
-                course1: "Critical and Creative Thinking and its Integration into Academic Subjects",
-                course2: "Educational Measurement and Evaluation",
-                course3: "Modern Strategy in Teaching English Language Basics",
-                course4: "Attractive Classroom Environment",
-                course5: "Analyzing Student Performance and Providing Feedback",
-                course6: "Translation Fundamentals",
-                course7: "Skills for Dealing with Electronic Measurement and Assessment Tools",
-                course8: "Professional Development for English Teachers - Level Three",
-                course9: "Genius in the Educational Process",
-                course10: "Building Good Choices",
-                course11: "Employing Teaching Strategies in an Attractive Training Environment",
-                course12: "Teaching Speaking and Listening Skills",
-                course13: "Awareness of Updated Behavior and Attendance Rules",
-                course14: "Specialized Meetings for English Language Subject",
                 // ترجمة المشاريع
                 project1Title: "Project: Interactive Professional License Exam",
                 project1Desc: "A digital educational project that aims to simulate the professional license exam for teachers, by providing interactive questions based on approved standards, with immediate feedback that explains the scientific reason for each correct or incorrect answer, which helps raise the efficiency of trainees and enhance their readiness for the official exam.",
@@ -2759,7 +2397,8 @@
                 project2Desc1: "Modern strategies are a pivotal element in developing the educational process and enhancing the effectiveness of learning in the classroom. They contribute to raising the level of interaction, stimulating motivation, and developing thinking and working skills among students. From this standpoint, I am keen to employ a variety of teaching methods that combine fun and benefit, and rely on positive interaction and effective participation.<br><br>Challenge-based learning comes as one of the methods that helps consolidate concepts in an exciting way and helps students learn with a spirit of positive competition. Cooperative learning also represents a fundamental pillar in building communication and teamwork skills, by providing students with the opportunity to exchange opinions, discuss ideas, and solve problems collectively. I also strive to employ modern educational technologies that contribute to presenting content in an attractive way, and allow all students to interact and participate in correcting concepts and building knowledge directly.<br><br>These practices are examples of a range of strategies that I work to diversify within the class, taking into account individual differences, achieving educational goals, and preparing an active and stimulating educational environment that contributes to improving academic achievement and enhancing 21st century skills.",
                 project3Title: "Interactive Presentations",
                 project3Desc: "Designing interactive and engaging presentations for students using the latest educational tools and technologies. These presentations include interactive activities, educational videos, and instant assessment questions to ensure effective student participation.",
-                project3Link: "View Project",
+                project3Link1: "Project One",
+                project3Link2: "Project Two",
                 // ترجمة التوصيات
                 testimonial1Text: "\"Teacher Fahad is distinguished by creativity and innovation in teaching methods, and has made a real addition to the work team\"",
                 testimonial1Author: "School Principal",
@@ -2774,7 +2413,6 @@
                 contactSubtitle: "For Contact",
                 contactEmail: "iFahadenglish@gmail.com",
                 contactPhone: "+966554449824",
-                sendMessageBtn: "Send Message",
                 // ترجمة الفوتر
                 footerName: "Fahad AlKhaldi",
                 footerDesc: "English Language Specialist - Developing Education Through Technology and Innovation",
@@ -2798,10 +2436,18 @@
                 filterInteractive: "Interactive",
                 filterStrategies: "Strategies",
                 filterPresentations: "Presentations",
-                filterParticipation: "Participation",
+                filterParticipations: "Participations",
                 // ترجمة أزرار CTA
                 viewWorkBtn: "View My Work",
-                contactBtn: "Contact Me"
+                contactBtn: "Contact Me",
+                // ترجمة المشاركات الجديدة
+                participation1Title: "Membership in Excellence and Professional Interaction Committee",
+                participation1Desc: "Aspects of my participation as a member of the School Excellence Committee, supporting interaction with the professional community, enhancing cooperation and exchange of experiences with colleagues, and participating in developmental educational initiatives.",
+                participation2Title: "Promoting National Values through National Day Activities",
+                participation2Desc: "My participation in National Day activities, embodying the values of belonging and loyalty to the homeland, and enhancing the school's role in instilling national values in students.",
+                // ترجمة أقسام التدريب
+                trainingCategory1: "Educational Training",
+                trainingCategory2: "Other"
             }
         };
 
@@ -2813,7 +2459,6 @@
 
         // عناصر DOM
         const langBtn = document.getElementById('langBtn');
-        const langText = document.getElementById('langText');
         const themeBtn = document.getElementById('themeBtn');
         const pageTitle = document.getElementById('pageTitle');
         const heroTitle = document.getElementById('heroTitle');
@@ -2827,7 +2472,6 @@
         const achievementsTitle = document.getElementById('achievementsTitle');
         const skillsTitle = document.getElementById('skillsTitle');
         const trainingTitle = document.getElementById('trainingTitle');
-        const certificatesTitle = document.getElementById('certificatesTitle');
         const portfolioTitle = document.getElementById('portfolioTitle');
         const testimonialsTitle = document.getElementById('testimonialsTitle');
         const techTitle = document.getElementById('techTitle');
@@ -2861,11 +2505,91 @@
         const navAchievements = document.getElementById('navAchievements');
         const navSkills = document.getElementById('navSkills');
         const navTrain = document.getElementById('navTrain');
-        const navCertificates = document.getElementById('navCertificates');
         const navTech = document.getElementById('navTech');
         const navPortfolio = document.getElementById('navPortfolio');
         const navTestimonials = document.getElementById('navTestimonials');
         const navContact = document.getElementById('navContact');
+
+        // عناصر المهارات
+        const skillCat1 = document.getElementById('skillCat1');
+        const skillCat2 = document.getElementById('skillCat2');
+        const skill1 = document.getElementById('skill1');
+        const skill2 = document.getElementById('skill2');
+        const skill3 = document.getElementById('skill3');
+        const skill4 = document.getElementById('skill4');
+        const skill5 = document.getElementById('skill5');
+        const skill6 = document.getElementById('skill6');
+        const skill7 = document.getElementById('skill7');
+        const skill8 = document.getElementById('skill8');
+
+        // عناصر المشاريع
+        const project1Title = document.getElementById('project1Title');
+        const project1Desc = document.getElementById('project1Desc');
+        const project1Link = document.getElementById('project1Link');
+        const project2Title = document.getElementById('project2Title');
+        const project2Desc1 = document.getElementById('project2Desc1');
+        const project3Title = document.getElementById('project3Title');
+        const project3Desc = document.getElementById('project3Desc');
+        const project3Link1 = document.getElementById('project3Link1');
+        const project3Link2 = document.getElementById('project3Link2');
+
+        // عناصر التوصيات
+        const testimonial1Text = document.getElementById('testimonial1Text');
+        const testimonial1Author = document.getElementById('testimonial1Author');
+        const testimonial1Position = document.getElementById('testimonial1Position');
+        const testimonial2Text = document.getElementById('testimonial2Text');
+        const testimonial2Author = document.getElementById('testimonial2Author');
+        const testimonial2Position = document.getElementById('testimonial2Position');
+        const testimonial3Text = document.getElementById('testimonial3Text');
+        const testimonial3Author = document.getElementById('testimonial3Author');
+        const testimonial3Position = document.getElementById('testimonial3Position');
+
+        // عناصر الاتصال
+        const contactSubtitle = document.getElementById('contactSubtitle');
+        const contactEmail = document.getElementById('contactEmail');
+        const contactPhone = document.getElementById('contactPhone');
+
+        // عناصر الفوتر
+        const footerName = document.getElementById('footerName');
+        const footerDesc = document.getElementById('footerDesc');
+
+        // عناصر المعرض التفاعلي
+        const scrollUpText = document.getElementById('scrollUpText');
+        const scrollDownText = document.getElementById('scrollDownText');
+        const galleryCaption1 = document.getElementById('galleryCaption1');
+        const galleryCaption2 = document.getElementById('galleryCaption2');
+        const galleryCaption3 = document.getElementById('galleryCaption3');
+
+        // عناصر قسم الخبرات
+        const exp1Title = document.getElementById('exp1Title');
+        const exp1Location = document.getElementById('exp1Location');
+        const exp2Title = document.getElementById('exp2Title');
+        const exp2Location = document.getElementById('exp2Location');
+        const exp3Title = document.getElementById('exp3Title');
+        const exp3Location = document.getElementById('exp3Location');
+        const exp4Title = document.getElementById('exp4Title');
+        const exp4Location = document.getElementById('exp4Location');
+
+        // عناصر التصفية
+        const filterAll = document.getElementById('filterAll');
+        const filterInteractive = document.getElementById('filterInteractive');
+        const filterStrategies = document.getElementById('filterStrategies');
+        const filterPresentations = document.getElementById('filterPresentations');
+        const filterParticipations = document.getElementById('filterParticipations');
+
+        // عناصر CTA
+        const viewWorkBtn = document.getElementById('viewWorkBtn');
+        const contactBtn = document.getElementById('contactBtn');
+
+        // عناصر المشاركات الجديدة
+        const participation1Title = document.getElementById('participation1Title');
+        const participation1Desc = document.getElementById('participation1Desc');
+        const participation2Title = document.getElementById('participation2Title');
+        const participation2Desc = document.getElementById('participation2Desc');
+
+        // عناصر أقسام التدريب
+        const trainingCategory1 = document.getElementById('trainingCategory1');
+        const trainingCategory2 = document.getElementById('trainingCategory2');
 
         // تحديث أيقونة الوضع الليلي
         function updateThemeIcon() {
@@ -2891,7 +2615,6 @@
             achievementsTitle.textContent = t.achievementsTitle;
             skillsTitle.textContent = t.skillsTitle;
             trainingTitle.textContent = t.trainingTitle;
-            certificatesTitle.textContent = t.certificatesTitle;
             portfolioTitle.textContent = t.portfolioTitle;
             testimonialsTitle.textContent = t.testimonialsTitle;
             techTitle.textContent = t.techTitle;
@@ -2922,11 +2645,91 @@
             navAchievements.textContent = t.navAchievements;
             navSkills.textContent = t.navSkills;
             navTrain.textContent = t.navTrain;
-            navCertificates.textContent = t.navCertificates;
             navTech.textContent = t.navTech;
             navPortfolio.textContent = t.navPortfolio;
             navTestimonials.textContent = t.navTestimonials;
             navContact.textContent = t.navContact;
+            
+            // تحديث المهارات
+            skillCat1.textContent = t.skillCat1;
+            skillCat2.textContent = t.skillCat2;
+            skill1.textContent = t.skill1;
+            skill2.textContent = t.skill2;
+            skill3.textContent = t.skill3;
+            skill4.textContent = t.skill4;
+            skill5.textContent = t.skill5;
+            skill6.textContent = t.skill6;
+            skill7.textContent = t.skill7;
+            skill8.textContent = t.skill8;
+            
+            // تحديث المشاريع
+            project1Title.textContent = t.project1Title;
+            project1Desc.textContent = t.project1Desc;
+            project1Link.textContent = t.project1Link;
+            project2Title.textContent = t.project2Title;
+            project2Desc1.innerHTML = t.project2Desc1;
+            project3Title.textContent = t.project3Title;
+            project3Desc.textContent = t.project3Desc;
+            project3Link1.textContent = t.project3Link1;
+            project3Link2.textContent = t.project3Link2;
+            
+            // تحديث التوصيات
+            testimonial1Text.textContent = t.testimonial1Text;
+            testimonial1Author.textContent = t.testimonial1Author;
+            testimonial1Position.textContent = t.testimonial1Position;
+            testimonial2Text.textContent = t.testimonial2Text;
+            testimonial2Author.textContent = t.testimonial2Author;
+            testimonial2Position.textContent = t.testimonial2Position;
+            testimonial3Text.textContent = t.testimonial3Text;
+            testimonial3Author.textContent = t.testimonial3Author;
+            testimonial3Position.textContent = t.testimonial3Position;
+            
+            // تحديث الاتصال
+            contactSubtitle.textContent = t.contactSubtitle;
+            contactEmail.textContent = t.contactEmail;
+            contactPhone.textContent = t.contactPhone;
+            
+            // تحديث الفوتر
+            footerName.textContent = t.footerName;
+            footerDesc.textContent = t.footerDesc;
+            
+            // تحديث المعرض التفاعلي
+            scrollUpText.textContent = t.scrollUpText;
+            scrollDownText.textContent = t.scrollDownText;
+            galleryCaption1.textContent = t.galleryCaption1;
+            galleryCaption2.textContent = t.galleryCaption2;
+            galleryCaption3.textContent = t.galleryCaption3;
+            
+            // تحديث قسم الخبرات
+            exp1Title.textContent = t.exp1Title;
+            exp1Location.textContent = t.exp1Location;
+            exp2Title.textContent = t.exp2Title;
+            exp2Location.textContent = t.exp2Location;
+            exp3Title.textContent = t.exp3Title;
+            exp3Location.textContent = t.exp3Location;
+            exp4Title.textContent = t.exp4Title;
+            exp4Location.textContent = t.exp4Location;
+            
+            // تحديث أزرار التصفية
+            filterAll.textContent = t.filterAll;
+            filterInteractive.textContent = t.filterInteractive;
+            filterStrategies.textContent = t.filterStrategies;
+            filterPresentations.textContent = t.filterPresentations;
+            filterParticipations.textContent = t.filterParticipations;
+            
+            // تحديث أزرار CTA
+            viewWorkBtn.textContent = t.viewWorkBtn;
+            contactBtn.textContent = t.contactBtn;
+            
+            // تحديث المشاركات الجديدة
+            participation1Title.textContent = t.participation1Title;
+            participation1Desc.textContent = t.participation1Desc;
+            participation2Title.textContent = t.participation2Title;
+            participation2Desc.textContent = t.participation2Desc;
+            
+            // تحديث أقسام التدريب
+            trainingCategory1.textContent = t.trainingCategory1;
+            trainingCategory2.textContent = t.trainingCategory2;
             
             // تحديث اتجاه النص
             document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
@@ -2937,7 +2740,9 @@
         langBtn.addEventListener('click', () => {
             currentLang = currentLang === 'ar' ? 'en' : 'ar';
             loadLanguage(currentLang);
-            langText.textContent = currentLang === 'ar' ? 'EN' : 'AR';
+            langBtn.innerHTML = currentLang === 'ar' ? 
+                '<i class="fas fa-language"></i><span>EN</span>' : 
+                '<i class="fas fa-language"></i><span>AR</span>';
         });
 
         // حدث تبديل الوضع الليلي
@@ -3010,112 +2815,6 @@
             const scrolled = (window.scrollY / windowHeight) * 100;
             scrollProgressBar.style.width = scrolled + '%';
         });
-
-        // Lazy Loading للصور
-        function initLazyLoading() {
-            const lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
-            
-            if ('IntersectionObserver' in window) {
-                const lazyImageObserver = new IntersectionObserver(function(entries, observer) {
-                    entries.forEach(function(entry) {
-                        if (entry.isIntersecting) {
-                            const lazyImage = entry.target;
-                            lazyImage.src = lazyImage.dataset.src;
-                            lazyImage.classList.remove('lazy');
-                            lazyImage.classList.add('loaded');
-                            lazyImageObserver.unobserve(lazyImage);
-                        }
-                    });
-                });
-                
-                lazyImages.forEach(function(lazyImage) {
-                    lazyImageObserver.observe(lazyImage);
-                });
-            } else {
-                // Fallback للمتصفحات التي لا تدعم IntersectionObserver
-                lazyImages.forEach(function(lazyImage) {
-                    lazyImage.src = lazyImage.dataset.src;
-                    lazyImage.classList.remove('lazy');
-                    lazyImage.classList.add('loaded');
-                });
-            }
-        }
-
-        // تحسين نموذج التواصل
-        function initContactForm() {
-            const contactForm = document.getElementById('contactForm');
-            const formMessage = document.getElementById('formMessage');
-            const submitBtn = document.getElementById('submitBtn');
-            const sendMessageBtnText = document.getElementById('sendMessageBtn');
-            
-            contactForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                
-                const name = document.getElementById('contactName').value.trim();
-                const email = document.getElementById('contactEmailInput').value.trim();
-                const message = document.getElementById('contactMessage').value.trim();
-                
-                // التحقق من صحة البيانات
-                if (!name || !email || !message) {
-                    showFormMessage(
-                        currentLang === 'ar' ? 
-                            'يرجى ملء جميع الحقول المطلوبة.' : 
-                            'Please fill in all required fields.',
-                        'error'
-                    );
-                    return;
-                }
-                
-                // التحقق من صحة البريد الإلكتروني
-                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                if (!emailRegex.test(email)) {
-                    showFormMessage(
-                        currentLang === 'ar' ? 
-                            'يرجى إدخال بريد إلكتروني صحيح.' : 
-                            'Please enter a valid email address.',
-                        'error'
-                    );
-                    return;
-                }
-                
-                // إظهار حالة التحميل
-                setButtonLoading(true);
-                
-                // محاكاة إرسال النموذج (يمكن استبدالها برمز إرسال حقيقي)
-                setTimeout(() => {
-                    const successMessage = currentLang === 'ar' ? 
-                        `شكراً ${name}، تم استلام رسالتك بنجاح! سأتواصل معك قريباً.` : 
-                        `Thank you ${name}, your message has been received! I will contact you soon.`;
-                    
-                    showFormMessage(successMessage, 'success');
-                    contactForm.reset();
-                    setButtonLoading(false);
-                }, 2000);
-            });
-            
-            function showFormMessage(message, type) {
-                formMessage.textContent = message;
-                formMessage.className = 'form-message ' + type;
-                formMessage.style.display = 'block';
-                
-                // إخفاء الرسالة بعد 5 ثواني
-                setTimeout(() => {
-                    formMessage.style.display = 'none';
-                }, 5000);
-            }
-            
-            function setButtonLoading(loading) {
-                if (loading) {
-                    submitBtn.classList.add('btn-loading');
-                    sendMessageBtnText.textContent = currentLang === 'ar' ? 'جاري الإرسال...' : 'Sending...';
-                    submitBtn.disabled = true;
-                } else {
-                    submitBtn.classList.remove('btn-loading');
-                    sendMessageBtnText.textContent = currentLang === 'ar' ? 'إرسال الرسالة' : 'Send Message';
-                    submitBtn.disabled = false;
-                }
-            }
-        }
 
         // وظيفة إدارة معرض الصور
         function initGallery() {
@@ -3244,39 +2943,6 @@
             });
         }
 
-        // وظيفة تصفية الشهادات
-        function initCertificatesFilter() {
-            const filterBtns = document.querySelectorAll('#certificates .filter-btn');
-            const certificateItems = document.querySelectorAll('.certificate-item');
-            
-            filterBtns.forEach(btn => {
-                btn.addEventListener('click', () => {
-                    // إزالة النشط من جميع الأزرار
-                    filterBtns.forEach(b => b.classList.remove('active'));
-                    // إضافة النشط للزر المحدد
-                    btn.classList.add('active');
-                    
-                    const filterValue = btn.getAttribute('data-filter');
-                    
-                    certificateItems.forEach(item => {
-                        if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                            item.style.display = 'flex';
-                            setTimeout(() => {
-                                item.style.opacity = '1';
-                                item.style.transform = 'translateY(0)';
-                            }, 100);
-                        } else {
-                            item.style.opacity = '0';
-                            item.style.transform = 'translateY(20px)';
-                            setTimeout(() => {
-                                item.style.display = 'none';
-                            }, 300);
-                        }
-                    });
-                });
-            });
-        }
-
         // وظيفة شريط التوصيات
         function initTestimonialSlider() {
             const testimonialSlides = document.getElementById('testimonialSlides');
@@ -3321,18 +2987,36 @@
             fadeElements.forEach(el => observer.observe(el));
         }
 
+        // تحسين تحميل الصور بشكل فوري
+        function preloadImages() {
+            const images = document.querySelectorAll('img');
+            images.forEach(img => {
+                // إزالة أي تأخير في تحميل الصور
+                img.style.opacity = '1';
+                // إذا كانت الصورة قد تم تحميلها بالفعل، تأكد من إظهارها
+                if (img.complete) {
+                    img.style.opacity = '1';
+                } else {
+                    img.addEventListener('load', function() {
+                        this.style.opacity = '1';
+                    });
+                    img.addEventListener('error', function() {
+                        console.error('Error loading image: ', this.src);
+                    });
+                }
+            });
+        }
+
         // التحميل الأولي
         loadLanguage(currentLang);
         
         // تهيئة جميع المكونات عند تحميل الصفحة
         document.addEventListener('DOMContentLoaded', () => {
-            initLazyLoading();
+            preloadImages();
             initGallery();
             initPortfolioFilter();
-            initCertificatesFilter();
             initTestimonialSlider();
             initScrollAnimations();
-            initContactForm();
         });
     </script>
 </body>
