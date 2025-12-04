@@ -1,4 +1,5 @@
 
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -1862,7 +1863,7 @@
                     أؤمن أن التعليم ليس مجرد نقل معرفة، بل رسالة سامية لصناعة الأثر وبناء الإنسان. أطمح إلى أن أكون جزءًا فاعلًا في تطوير التعليم بالمملكة من خلال توظيف التقنيات الحديثة، وصناعة بيئات تعلم محفزة، تعزز التفكير النقدي والإبداعي، وتبني الثقة لدى الطالب. نظرتي المستقبلية تقوم على التعلم المستمر، وتطوير المهارات المهنية، ومواكبة التحولات الرقمية بما يخدم مخرجات التعليم وجودته في إطار رؤية المملكة 2030.
                 </p>
 
-                <div class="badge" id="badge">🏆 حاصل على درجة 95 في التخصص</div>
+                <div class="badge" id="badge">ملف الإنجاز لعام ١٤٤٧ هـ</div>
 
                 <div class="stats-grid">
                     <div class="stat-card">
@@ -2009,13 +2010,13 @@
                         </p>
                         <div class="badge">
                             <i class="fas fa-file-pdf"></i>
-                            <span>ملف تفاعلي - يمكن التصفح مباشرة</span>
+                            <span>ملف الإنجاز لعام ١٤٤٧ هـ</span>
                         </div>
                     </div>
                     
                     <div class="pdf-viewer-container">
                         <div class="pdf-viewer-header">
-                            <h3 id="pdfViewerTitle">ملف الإنجاز المهني للمعلم فهد الخالدي</h3>
+                            <h3 id="pdfViewerTitle">ملف الإنجاز المهني للمعلم فهد الخالدي - ١٤٤٧ هـ</h3>
                             <div class="pdf-actions">
                                 <a href="https://drive.google.com/file/d/109O8XbxTbS6R3ZyO6SgKzZYYJpa6d7Ty/view?usp=drivesdk" 
                                    class="btn btn-primary" target="_blank" id="downloadPdfBtn">
@@ -2025,20 +2026,21 @@
                             </div>
                         </div>
                         
-                        <!-- معاينة PDF من Google Drive -->
+                        <!-- معاينة PDF من Google Drive - تم زيادة الارتفاع بشكل كبير -->
                         <div class="pdf-embed">
                             <iframe 
                                 src="https://drive.google.com/file/d/109O8XbxTbS6R3ZyO6SgKzZYYJpa6d7Ty/preview" 
                                 width="100%" 
-                                height="600" 
+                                height="850" 
                                 frameborder="0"
                                 allow="autoplay"
-                                title="ملف الإنجاز المهني - فهد الخالدي">
+                                title="ملف الإنجاز المهني - فهد الخالدي"
+                                loading="eager">
                             </iframe>
                             
                             <div class="pdf-note">
                                 <i class="fas fa-info-circle"></i>
-                                <span id="pdfNoteText">يمكنك التصفح داخل الملف مباشرة باستخدام أزرار التكبير/التصغير أو تحميله للاطلاع التفصيلي</span>
+                                <span id="pdfNoteText">ملاحظة: سيتم تحديث ملف الإنجاز بشكل دوري حتى نهاية العام الدراسي ١٤٤٧ هـ - يمكنك التصفح داخل الملف مباشرة باستخدام أزرار التكبير/التصغير أو تحميله للاطلاع التفصيلي</span>
                             </div>
                         </div>
                         
@@ -2494,7 +2496,7 @@
                 name: "فهد نغيمش حميد الخالدي",
                 jobTitle: "معلم متقدم – تخصص اللغة الإنجليزية",
                 bioText: "أؤمن أن التعليم ليس مجرد نقل معرفة، بل رسالة سامية لصناعة الأثر وبناء الإنسان. أطمح إلى أن أكون جزءًا فاعلًا في تطوير التعليم بالمملكة من خلال توظيف التقنيات الحديثة، وصناعة بيئات تعلم محفزة، تعزز التفكير النقدي والإبداعي، وتبني الثقة لدى الطالب. نظرتي المستقبلية تقوم على التعلم المستمر، وتطوير المهارات المهنية، ومواكبة التحولات الرقمية بما يخدم مخرجات التعليم وجودته في إطار رؤية المملكة 2030.",
-                badge: "🏆 حاصل على درجة 95 في التخصص",
+                badge: "ملف الإنجاز لعام ١٤٤٧ هـ",
                 stat1: "سنوات خبرة",
                 stat2: "ساعات تدريبية",
                 stat3: "ساعات تطوعية",
@@ -2593,9 +2595,9 @@
                 trainingCategory1: "تدريب تربوي",
                 trainingCategory2: "أخرى",
                 // ترجمة قسم ملف الإنجاز
-                pdfViewerTitle: "ملف الإنجاز المهني للمعلم فهد الخالدي",
+                pdfViewerTitle: "ملف الإنجاز المهني للمعلم فهد الخالدي - ١٤٤٧ هـ",
                 downloadPdfBtn: "تحميل الملف",
-                pdfNoteText: "يمكنك التصفح داخل الملف مباشرة باستخدام أزرار التكبير/التصغير أو تحميله للاطلاع التفصيلي",
+                pdfNoteText: "ملاحظة: سيتم تحديث ملف الإنجاز بشكل دوري حتى نهاية العام الدراسي ١٤٤٧ هـ - يمكنك التصفح داخل الملف مباشرة باستخدام أزرار التكبير/التصغير أو تحميله للاطلاع التفصيلي",
                 portfolioSectionsTitle: "محتويات ملف الإنجاز:",
                 section1Title: "السيرة المهنية",
                 section1Desc: "نظرة شاملة على المسيرة التعليمية والخبرات العملية",
@@ -2627,7 +2629,7 @@
                 name: "Fahad Nughaimesh Humaid AlKhaldi",
                 jobTitle: "Advanced English Teacher",
                 bioText: "I believe that education is not merely about transferring knowledge, but a noble mission to make an impact and build individuals. I aspire to be an active part in developing education in the Kingdom by employing modern technologies, creating stimulating learning environments that enhance critical and creative thinking, and building student confidence. My future vision is based on continuous learning, developing professional skills, and keeping pace with digital transformations that serve educational outcomes and quality within the framework of Saudi Vision 2030.",
-                badge: "🏆 Achieved a score of 95 in specialization",
+                badge: "Portfolio for 1447 AH",
                 stat1: "Years of Experience",
                 stat2: "Training Hours",
                 stat3: "Volunteer Hours",
@@ -2726,9 +2728,9 @@
                 trainingCategory1: "Educational Training",
                 trainingCategory2: "Other",
                 // ترجمة قسم ملف الإنجاز
-                pdfViewerTitle: "Professional Portfolio - Fahad AlKhaldi",
+                pdfViewerTitle: "Professional Portfolio - Fahad AlKhaldi - 1447 AH",
                 downloadPdfBtn: "Download File",
-                pdfNoteText: "You can browse directly within the file using zoom in/out buttons or download it for detailed viewing",
+                pdfNoteText: "Note: The portfolio will be updated periodically until the end of the academic year 1447 AH - You can browse directly within the file using zoom in/out buttons or download it for detailed viewing",
                 portfolioSectionsTitle: "Portfolio Contents:",
                 section1Title: "Professional Biography",
                 section1Desc: "Comprehensive overview of educational journey and practical experiences",
