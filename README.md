@@ -1,4 +1,6 @@
 
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -476,6 +478,185 @@
             transform: translateY(-5px);
             box-shadow: var(--shadow-hover);
             border-right-color: var(--accent);
+        }
+
+        /* أنماط قسم ملف الإنجاز */
+        .portfolio-card {
+            background: linear-gradient(135deg, var(--card-bg), var(--bg));
+            border-radius: 12px;
+            padding: 25px;
+            border: 1px solid var(--border);
+        }
+
+        .portfolio-intro {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .portfolio-intro p {
+            color: var(--text);
+            line-height: 1.7;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+        }
+
+        .portfolio-intro .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--yellow-gradient);
+            color: var(--primary-dark);
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: 700;
+            box-shadow: 0 3px 8px rgba(245, 215, 110, 0.3);
+        }
+
+        .pdf-viewer-container {
+            background: var(--card-bg);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border);
+            margin: 20px 0;
+        }
+
+        .pdf-viewer-header {
+            background: var(--blue-gradient);
+            color: white;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .pdf-viewer-header h3 {
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .pdf-actions .btn {
+            padding: 8px 20px;
+            font-size: 0.85rem;
+        }
+
+        .pdf-embed {
+            position: relative;
+            background: #f8f9fa;
+            min-height: 400px;
+        }
+
+        .pdf-embed iframe {
+            display: block;
+            border: none;
+        }
+
+        .pdf-note {
+            background: rgba(26, 58, 95, 0.05);
+            padding: 12px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-top: 1px solid var(--border);
+        }
+
+        .pdf-note i {
+            color: var(--accent);
+            font-size: 1rem;
+        }
+
+        .pdf-note span {
+            color: var(--light-text);
+            font-size: 0.85rem;
+        }
+
+        .portfolio-sections {
+            padding: 25px;
+            background: linear-gradient(135deg, var(--card-bg), var(--bg));
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .portfolio-sections h4 {
+            color: var(--primary);
+            margin-bottom: 20px;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .sections-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 15px;
+        }
+
+        .section-item {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+        }
+
+        .section-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent);
+        }
+
+        .section-item i {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 15px;
+        }
+
+        .section-item h5 {
+            color: var(--primary);
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .section-item p {
+            color: var(--light-text);
+            font-size: 0.85rem;
+            line-height: 1.5;
+        }
+
+        /* تحسينات للعرض على الجوال */
+        @media (max-width: 768px) {
+            .pdf-viewer-header {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+            
+            .pdf-embed {
+                min-height: 300px;
+            }
+            
+            .pdf-embed iframe {
+                height: 300px;
+            }
+            
+            .sections-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sections-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .pdf-embed iframe {
+                height: 250px;
+            }
         }
 
         /* Profile Section */
@@ -1590,6 +1771,10 @@
                         <i class="fas fa-star"></i>
                         <span id="navSkills">المهارات</span>
                     </a>
+                    <a href="#eportfolio" class="nav-item" data-section="eportfolio">
+                        <i class="fas fa-folder-open"></i>
+                        <span id="navEportfolio">ملف الإنجاز</span>
+                    </a>
                     <a href="#training" class="nav-item" data-section="training">
                         <i class="fas fa-graduation-cap"></i>
                         <span id="navTrain">الدورات</span>
@@ -1809,6 +1994,80 @@
                             <li><i class="fas fa-check"></i> <span id="skill7">تصميم أنشطة تفاعلية</span></li>
                             <li><i class="fas fa-check"></i> <span id="skill8">تطوير اختبارات إلكترونية</span></li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- E-Portfolio Section -->
+        <section id="eportfolio">
+            <h2 class="section-title" id="eportfolioTitle">ملف الإنجاز الإلكتروني</h2>
+            <div class="card fade-in-up">
+                <div class="portfolio-card">
+                    <div class="portfolio-intro">
+                        <p id="eportfolioText">
+                            يقدم ملف الإنجاز الإلكتروني نظرة شاملة على مسيرتي المهنية في مجال تعليم اللغة الإنجليزية، ويوثق أهم الإنجازات والتطورات في مساري التعليمي. يتضمن الملف مجموعة من الوثائق والشهادات التي تعكس تطور كفاياتي المهنية وأثرها في العملية التعليمية.
+                        </p>
+                        <div class="badge">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>ملف تفاعلي - يمكن التصفح مباشرة</span>
+                        </div>
+                    </div>
+                    
+                    <div class="pdf-viewer-container">
+                        <div class="pdf-viewer-header">
+                            <h3 id="pdfViewerTitle">ملف الإنجاز المهني للمعلم فهد الخالدي</h3>
+                            <div class="pdf-actions">
+                                <a href="https://drive.google.com/file/d/109O8XbxTbS6R3ZyO6SgKzZYYJpa6d7Ty/view?usp=drivesdk" 
+                                   class="btn btn-primary" target="_blank" id="downloadPdfBtn">
+                                    <i class="fas fa-download"></i>
+                                    <span>تحميل الملف</span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- معاينة PDF من Google Drive -->
+                        <div class="pdf-embed">
+                            <iframe 
+                                src="https://drive.google.com/file/d/109O8XbxTbS6R3ZyO6SgKzZYYJpa6d7Ty/preview" 
+                                width="100%" 
+                                height="600" 
+                                frameborder="0"
+                                allow="autoplay"
+                                title="ملف الإنجاز المهني - فهد الخالدي">
+                            </iframe>
+                            
+                            <div class="pdf-note">
+                                <i class="fas fa-info-circle"></i>
+                                <span id="pdfNoteText">يمكنك التصفح داخل الملف مباشرة باستخدام أزرار التكبير/التصغير أو تحميله للاطلاع التفصيلي</span>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio-sections">
+                            <h4 id="portfolioSectionsTitle">محتويات ملف الإنجاز:</h4>
+                            <div class="sections-grid">
+                                <div class="section-item">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <h5 id="section1Title">السيرة المهنية</h5>
+                                    <p id="section1Desc">نظرة شاملة على المسيرة التعليمية والخبرات العملية</p>
+                                </div>
+                                <div class="section-item">
+                                    <i class="fas fa-trophy"></i>
+                                    <h5 id="section2Title">الإنجازات والتكريمات</h5>
+                                    <p id="section2Desc">وثائق الترقيات والجوائز والشهادات التقديرية</p>
+                                </div>
+                                <div class="section-item">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                    <h5 id="section3Title">التطوير المهني</h5>
+                                    <p id="section3Desc">الدورات التدريبية وورش العمل والبرامج التطويرية</p>
+                                </div>
+                                <div class="section-item">
+                                    <i class="fas fa-chart-line"></i>
+                                    <h5 id="section4Title">تقييم الأداء</h5>
+                                    <p id="section4Desc">تقارير تقييم الأداء وتغذية راجعة من الإدارة والزملاء</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -2227,6 +2486,7 @@
                 experienceTitle: "الخبرات المهنية",
                 achievementsTitle: "الإنجازات",
                 skillsTitle: "المهارات والكفاءات",
+                eportfolioTitle: "ملف الإنجاز الإلكتروني",
                 trainingTitle: "الدورات التدريبية",
                 portfolioTitle: "معرض الأعمال",
                 testimonialsTitle: "التوصيات",
@@ -2248,6 +2508,7 @@
                 visionItem4Title: "التعلم المستمر",
                 visionItem4Desc: "أؤمن بأن المعلم المتعلم باستمرار هو الأكثر قدرة على إلهام طلابه.",
                 achievementText: "في عام 2021 حصلتُ على ترقية إلى رتبة معلم متقدم بعد مسيرة مهنية امتدت لسنوات كمعلم ممارس، قدمت خلالها أداءً متميزًا أسهم في تطوير العملية التعليمية داخل المدرسة. جاءت هذه الترقية تقديرًا لجهودي في توظيف استراتيجيات تدريس حديثة تعزز مهارات التفكير النقدي والإبداعي لدى الطلاب، إضافة إلى قدرتي على تحليل نواتج التعلم وبناء خطط علاجية فردية أثمرت عن تحسين واضح في مستويات الطلاب.<br><br>وقد عكست هذه الترقية ثقة الجهة التعليمية بمهاراتي المهنية، خصوصًا في مجال تصميم أنشطة مبتكرة تُدمج مهارات الفهم العميق، والعمل التعاوني، والتعليم الذاتي داخل البيئة الصفية. كما كانت اعترافًا بدوري في تطوير البرامج التربوية والأنشطة التعليمية قبل عام 2021، ومساهمتي في بناء بيئة صفية محفزة يشعر فيها الطلاب بالأمان والرغبة في المشاركة والتعلم.<br><br>تعد هذه الترقية محطة مهمة في مسيرتي، لأنها لم تكن مجرد انتقال إلى مستوى وظيفي أعلى، بل كانت نتيجة تراكم خبرات وممارسات مهنية أثبتت أثرها على الطلاب وعلى منظومة التعليم داخل المدرسة. واليوم أواصل عملي كمعلم متقدم ملتزم بالتحسين المستمر، وتطبيق أفضل الممارسات التربوية، والمساهمة في رفع جودة التعليم وتحقيق نواتج تعلم أعلى.",
+                eportfolioText: "يقدم ملف الإنجاز الإلكتروني نظرة شاملة على مسيرتي المهنية في مجال تعليم اللغة الإنجليزية، ويوثق أهم الإنجازات والتطورات في مساري التعليمي. يتضمن الملف مجموعة من الوثائق والشهادات التي تعكس تطور كفاياتي المهنية وأثرها في العملية التعليمية.",
                 techText: "أتمتع بشغف كبير تجاه التقنية والتعليم الرقمي، وأواكب أحدث التطورات في مجال الذكاء الاصطناعي وتطبيقاته التعليمية. أمتلك خبرة عملية في تصميم وتطوير أنشطة تفاعلية واختبارات إلكترونية باستخدام HTML وCSS وJavaScript، مما يثري تجربة التعلم ويجعلها أكثر تفاعلية وجاذبية للطلاب. أستخدم أدوات الذكاء الاصطناعي في تحليل أداء الطلاب وتصميم خطط تعليمية مخصصة، كما أصمم محتوى رقميًا مبتكرًا يتناسب مع احتياجات التعلم الحديثة. أسعى دائمًا لدمج التقنية في العملية التعليمية بطرق إبداعية تواكب متطلبات العصر الرقمي وتخدم أهداف رؤية المملكة 2030.",
                 footerText: "© 2024 جميع الحقوق محفوظة - فهد الخالدي",
                 // إضافة ترجمة نصوص الأيقونات
@@ -2256,6 +2517,7 @@
                 navExp: "الخبرات",
                 navAchievements: "الإنجازات",
                 navSkills: "المهارات",
+                navEportfolio: "ملف الإنجاز",
                 navTrain: "الدورات",
                 navTech: "التقنية",
                 navPortfolio: "معرض الأعمال",
@@ -2330,7 +2592,20 @@
                 participation2Desc: "مشاركتي في فعاليات اليوم الوطني، تجسيدًا لقيم الانتماء والولاء للوطن، وتعزيزًا لدور المدرسة في غرس القيم الوطنية لدى الطلاب.",
                 // ترجمة أقسام التدريب
                 trainingCategory1: "تدريب تربوي",
-                trainingCategory2: "أخرى"
+                trainingCategory2: "أخرى",
+                // ترجمة قسم ملف الإنجاز
+                pdfViewerTitle: "ملف الإنجاز المهني للمعلم فهد الخالدي",
+                downloadPdfBtn: "تحميل الملف",
+                pdfNoteText: "يمكنك التصفح داخل الملف مباشرة باستخدام أزرار التكبير/التصغير أو تحميله للاطلاع التفصيلي",
+                portfolioSectionsTitle: "محتويات ملف الإنجاز:",
+                section1Title: "السيرة المهنية",
+                section1Desc: "نظرة شاملة على المسيرة التعليمية والخبرات العملية",
+                section2Title: "الإنجازات والتكريمات",
+                section2Desc: "وثائق الترقيات والجوائز والشهادات التقديرية",
+                section3Title: "التطوير المهني",
+                section3Desc: "الدورات التدريبية وورش العمل والبرامج التطويرية",
+                section4Title: "تقييم الأداء",
+                section4Desc: "تقارير تقييم الأداء وتغذية راجعة من الإدارة والزملاء"
             },
             en: {
                 pageTitle: "Fahad AlKhaldi",
@@ -2344,6 +2619,7 @@
                 experienceTitle: "Professional Experience",
                 achievementsTitle: "Achievements",
                 skillsTitle: "Skills & Competencies",
+                eportfolioTitle: "E-Portfolio",
                 trainingTitle: "Training Courses",
                 portfolioTitle: "Portfolio",
                 testimonialsTitle: "Testimonials",
@@ -2365,6 +2641,7 @@
                 visionItem4Title: "Continuous Learning",
                 visionItem4Desc: "I believe that a continuously learning teacher is the most capable of inspiring his students.",
                 achievementText: "In 2021, I was promoted to the rank of Senior Teacher after a professional career spanning years as a practicing teacher, during which I provided outstanding performance that contributed to the development of the educational process within the school. This promotion came in recognition of my efforts in employing modern teaching strategies that enhance students' critical and creative thinking skills, in addition to my ability to analyze learning outcomes and build individual remedial plans that resulted in a clear improvement in student levels.<br><br>This promotion reflected the educational authority's confidence in my professional skills, especially in designing innovative activities that integrate deep understanding skills, collaborative work, and self-learning within the classroom environment. It was also an acknowledgment of my role in developing educational programs and activities before 2021, and my contribution to building a stimulating classroom environment where students feel safe and eager to participate and learn.<br><br>This promotion is an important milestone in my career, as it was not just a transition to a higher functional level, but rather the result of accumulated experiences and professional practices that proved their impact on students and the educational system within the school. Today, I continue my work as a senior teacher committed to continuous improvement, applying the best educational practices, and contributing to raising the quality of education and achieving higher learning outcomes.",
+                eportfolioText: "The e-portfolio provides a comprehensive overview of my professional career in English language teaching, documenting the most important achievements and developments in my educational journey. The file includes a collection of documents and certificates that reflect the development of my professional competencies and their impact on the educational process.",
                 techText: "I have a great passion for technology and digital education, and I keep up with the latest developments in the field of artificial intelligence and its educational applications. I have practical experience in designing and developing interactive activities and electronic tests using HTML, CSS, and JavaScript, which enriches the learning experience and makes it more interactive and attractive for students. I use AI tools to analyze student performance and design customized educational plans, and I also design innovative digital content that suits modern learning needs. I always strive to integrate technology into the educational process in creative ways that keep pace with the requirements of the digital age and serve the goals of Saudi Vision 2030.",
                 footerText: "© 2024 All Rights Reserved - Fahad AlKhaldi",
                 // إضافة ترجمة نصوص الأيقونات
@@ -2373,6 +2650,7 @@
                 navExp: "Experience",
                 navAchievements: "Achievements",
                 navSkills: "Skills",
+                navEportfolio: "E-Portfolio",
                 navTrain: "Training",
                 navTech: "Technology",
                 navPortfolio: "Portfolio",
@@ -2447,7 +2725,20 @@
                 participation2Desc: "My participation in National Day activities, embodying the values of belonging and loyalty to the homeland, and enhancing the school's role in instilling national values in students.",
                 // ترجمة أقسام التدريب
                 trainingCategory1: "Educational Training",
-                trainingCategory2: "Other"
+                trainingCategory2: "Other",
+                // ترجمة قسم ملف الإنجاز
+                pdfViewerTitle: "Professional Portfolio - Fahad AlKhaldi",
+                downloadPdfBtn: "Download File",
+                pdfNoteText: "You can browse directly within the file using zoom in/out buttons or download it for detailed viewing",
+                portfolioSectionsTitle: "Portfolio Contents:",
+                section1Title: "Professional Biography",
+                section1Desc: "Comprehensive overview of educational journey and practical experiences",
+                section2Title: "Achievements & Honors",
+                section2Desc: "Promotion documents, awards, and appreciation certificates",
+                section3Title: "Professional Development",
+                section3Desc: "Training courses, workshops, and development programs",
+                section4Title: "Performance Evaluation",
+                section4Desc: "Performance evaluation reports and feedback from management and colleagues"
             }
         };
 
@@ -2471,6 +2762,7 @@
         const experienceTitle = document.getElementById('experienceTitle');
         const achievementsTitle = document.getElementById('achievementsTitle');
         const skillsTitle = document.getElementById('skillsTitle');
+        const eportfolioTitle = document.getElementById('eportfolioTitle');
         const trainingTitle = document.getElementById('trainingTitle');
         const portfolioTitle = document.getElementById('portfolioTitle');
         const testimonialsTitle = document.getElementById('testimonialsTitle');
@@ -2492,6 +2784,7 @@
         const visionItem4Title = document.getElementById('visionItem4Title');
         const visionItem4Desc = document.getElementById('visionItem4Desc');
         const achievementText = document.getElementById('achievementText');
+        const eportfolioText = document.getElementById('eportfolioText');
         const techText = document.getElementById('techText');
         const footerText = document.getElementById('footerText');
         const navScroll = document.getElementById('navScroll');
@@ -2504,6 +2797,7 @@
         const navExp = document.getElementById('navExp');
         const navAchievements = document.getElementById('navAchievements');
         const navSkills = document.getElementById('navSkills');
+        const navEportfolio = document.getElementById('navEportfolio');
         const navTrain = document.getElementById('navTrain');
         const navTech = document.getElementById('navTech');
         const navPortfolio = document.getElementById('navPortfolio');
@@ -2591,6 +2885,20 @@
         const trainingCategory1 = document.getElementById('trainingCategory1');
         const trainingCategory2 = document.getElementById('trainingCategory2');
 
+        // عناصر قسم ملف الإنجاز
+        const pdfViewerTitle = document.getElementById('pdfViewerTitle');
+        const downloadPdfBtn = document.getElementById('downloadPdfBtn');
+        const pdfNoteText = document.getElementById('pdfNoteText');
+        const portfolioSectionsTitle = document.getElementById('portfolioSectionsTitle');
+        const section1Title = document.getElementById('section1Title');
+        const section1Desc = document.getElementById('section1Desc');
+        const section2Title = document.getElementById('section2Title');
+        const section2Desc = document.getElementById('section2Desc');
+        const section3Title = document.getElementById('section3Title');
+        const section3Desc = document.getElementById('section3Desc');
+        const section4Title = document.getElementById('section4Title');
+        const section4Desc = document.getElementById('section4Desc');
+
         // تحديث أيقونة الوضع الليلي
         function updateThemeIcon() {
             themeBtn.innerHTML = currentTheme === 'light' ? 
@@ -2614,6 +2922,7 @@
             experienceTitle.textContent = t.experienceTitle;
             achievementsTitle.textContent = t.achievementsTitle;
             skillsTitle.textContent = t.skillsTitle;
+            eportfolioTitle.textContent = t.eportfolioTitle;
             trainingTitle.textContent = t.trainingTitle;
             portfolioTitle.textContent = t.portfolioTitle;
             testimonialsTitle.textContent = t.testimonialsTitle;
@@ -2635,6 +2944,7 @@
             visionItem4Title.textContent = t.visionItem4Title;
             visionItem4Desc.textContent = t.visionItem4Desc;
             achievementText.innerHTML = t.achievementText;
+            eportfolioText.textContent = t.eportfolioText;
             techText.textContent = t.techText;
             footerText.textContent = t.footerText;
             
@@ -2644,6 +2954,7 @@
             navExp.textContent = t.navExp;
             navAchievements.textContent = t.navAchievements;
             navSkills.textContent = t.navSkills;
+            navEportfolio.textContent = t.navEportfolio;
             navTrain.textContent = t.navTrain;
             navTech.textContent = t.navTech;
             navPortfolio.textContent = t.navPortfolio;
@@ -2730,6 +3041,20 @@
             // تحديث أقسام التدريب
             trainingCategory1.textContent = t.trainingCategory1;
             trainingCategory2.textContent = t.trainingCategory2;
+            
+            // تحديث قسم ملف الإنجاز
+            pdfViewerTitle.textContent = t.pdfViewerTitle;
+            downloadPdfBtn.textContent = t.downloadPdfBtn;
+            pdfNoteText.textContent = t.pdfNoteText;
+            portfolioSectionsTitle.textContent = t.portfolioSectionsTitle;
+            section1Title.textContent = t.section1Title;
+            section1Desc.textContent = t.section1Desc;
+            section2Title.textContent = t.section2Title;
+            section2Desc.textContent = t.section2Desc;
+            section3Title.textContent = t.section3Title;
+            section3Desc.textContent = t.section3Desc;
+            section4Title.textContent = t.section4Title;
+            section4Desc.textContent = t.section4Desc;
             
             // تحديث اتجاه النص
             document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
